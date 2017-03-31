@@ -1,4 +1,4 @@
 title : C# LINQ for beginners
 plan:
-  - title: Background: Delegates
+  - title: Background - Delegates
     statement: markdowns/delegates.md
