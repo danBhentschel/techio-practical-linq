@@ -23,7 +23,7 @@ namespace Delegates
             AssertAreEqual("Hello, there!", Answers[2], "there");
 
             Console.WriteLine($"{CgMessage} \"\"");
-            Console.WriteLine($"{CgMessage> Congratulations, you did it!");
+            Console.WriteLine($"{CgMessage} Congratulations, you did it!");
         }
 
         private static void AssertAreEqual(string expected, string actual, string provided)
