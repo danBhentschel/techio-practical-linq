@@ -1,0 +1,6 @@
+title : Content name
+plan:
+  - title: Part 1
+    statement: markdowns/part1.md
+  - title: Part 2
+    statement: markdowns/part2.md
