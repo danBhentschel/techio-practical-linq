@@ -39,7 +39,7 @@ namespace Delegates
 
                 var errCaret = new string(' ', offset) + '^' + new string(' ', expected.Length - offset - 1);
                 Console.WriteLine($"{CgMessage} EXPECTED: <{expected}>  GOT: <{actual}>");
-                Console.WriteLine($"{CgMessage} \"           {errCaret}         {errCaret}\"");
+                Console.WriteLine($"{CgMessage} \"           {errCaret}        {errCaret}\"");
             }
 
             Assert.AreEqual(expected, actual);
