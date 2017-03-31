@@ -14,20 +14,22 @@ namespace Delegates
         {
             Answers = null;
 
-            Console.WriteLine("CG> message --channel \"execution progress\" Running...");
-
             Example1.DoSayHello();
+            var cgMessage = "CG> message -channel \"exercise results\"";
 
-            Assert.IsNotNull(Answers, "You need to call Example1Runner.TestSayHello()");
-            Console.WriteLine($"CG> message --channel \"exercise results\" IN: <World> OUT: <{Answers[0]}>");
-            Assert.AreEqual("Hello, World!", Answers[0]);
-            Console.WriteLine($"CG> message --channel \"exercise results\" IN: <Dolly> OUT: <{Answers[1]}>");
-            Assert.AreEqual("Hello, Dolly!", Answers[1]);
-            Console.WriteLine($"CG> message --channel \"exercise results\" IN: <there> OUT: <{Answers[2]}>");
-            Assert.AreEqual("Hello, there!", Answers[2]);
+            Assert.IsNotNull(Answers, $"\n{cgMessage} You need to call Example1Runner.TestSayHello()");
+            AssertAreEqual("Hello, World!", Answers[0], "World");
+            AssertAreEqual("Hello, Dolly!", Answers[1], "Dolly");
+            AssertAreEqual("Hello, there!", Answers[2], "there");
 
             Console.WriteLine("CG> message --channel \"exercise results\" \"\"");
             Console.WriteLine("CG> message --channel \"exercise results\" Congratulations, you did it!");
+        }
+
+        private static void AssertAreEqual(string expected, string actual, string in)
+        {
+            Assert.AreEqual(expected, actual, $"\n{cgMessage} EXPECTED: <{expected}>  GOT: <{actual}>");
+            Console.WriteLine($"{cgMessage} IN: <{in}> OUT: <{actual}>");
         }
     }
 }
