@@ -1,6 +1,6 @@
 # Background: Delegates
 
-Delegates are a very important part of LINQ. Much of the more powerful capabilities of LINQ make use of delegates.
+Delegates are a very important part of LINQ. Many of the more powerful capabilities of LINQ make use of delegates.
 
 A delegate is simply a reference to a method. Delegates can be stored and passed around in a variable, like so:
 
