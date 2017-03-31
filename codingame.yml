@@ -1,6 +1,4 @@
-title : Content name
+title : C# LINQ for beginners
 plan:
-  - title: Part 1
-    statement: markdowns/part1.md
-  - title: Part 2
-    statement: markdowns/part2.md
+  - title: Background: Delegates
+    statement: markdowns/delegates.md
