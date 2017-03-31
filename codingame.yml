@@ -5,8 +5,8 @@ plan:
   - title: "Exercise: Delegates"
     statement: markdowns/delegates_exercise.md
 projects:
-    linq-examples:
-        root: /projects
+    delegates-examples:
+        root: /projects/Delegates/Delegates
         runner:
             name: codingame/dotnet-runner
             version: latest
