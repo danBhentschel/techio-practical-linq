@@ -20,6 +20,7 @@ namespace Delegates
             Assert.AreEqual("Hello, World!", Answers[0]);
             Assert.AreEqual("Hello, Dolly!", Answers[1]);
             Assert.AreEqual("Hello, there!", Answers[2]);
+            Console.WriteLine("CG> message You did it!");
         }
     }
 }
