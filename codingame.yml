@@ -8,5 +8,5 @@ projects:
     delegates-examples:
         root: /projects/Delegates
         runner:
-            name: codingame/dotnet-runner
+            name: danbhentschel/cg-dotnet-runner
             version: latest

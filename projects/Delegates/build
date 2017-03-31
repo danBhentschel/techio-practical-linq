@@ -1,4 +1,0 @@
-#!/bin/bash
-
-echo "CG> redirect-streams --inputs out null"
-echo "CG> message --channel build In the builder"
