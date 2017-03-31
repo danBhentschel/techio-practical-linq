@@ -28,7 +28,21 @@ namespace Delegates
 
         private static void AssertAreEqual(string expected, string actual, string provided)
         {
-            Assert.AreEqual(expected, actual, $"\n{CgMessage} EXPECTED: <{expected}>  GOT: <{actual}>");
+            if (expected != actual) {
+                var offset = 0;
+                for (var i = 0; i < expected.Length; i++) {
+                    if (expected[i] != actual[1])) {
+                        offset = i;
+                        break;
+                    }
+                }
+
+                var errCaret = new string(' ', offset) + '^' + new string(' ', expected.Length - offset - 1);
+                Console.WriteLine($"{CgMessage} EXPECTED: <{expected}>  GOT: <{actual}>");
+                Console.WriteLine($"{CgMessage}            {errCaret}         {errCaret}");
+            }
+
+            Assert.AreEqual(expected, actual);
             Console.WriteLine($"{CgMessage} IN: <{provided}> OUT: <{actual}>");
         }
     }
