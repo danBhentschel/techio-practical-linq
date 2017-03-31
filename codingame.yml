@@ -6,7 +6,7 @@ plan:
     statement: markdowns/delegates_exercise.md
 projects:
     delegates-examples:
-        root: /projects/Delegates/Delegates
+        root: /projects/Delegates
         runner:
             name: codingame/dotnet-runner
             version: latest
