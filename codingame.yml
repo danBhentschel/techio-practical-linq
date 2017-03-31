@@ -2,3 +2,11 @@ title : C# LINQ for beginners
 plan:
   - title: "Background: Delegates"
     statement: markdowns/delegates.md
+  - title: "Exercise: Delegates"
+    statement: markdowns/delegates_exercise.md
+projects:
+    linq-examples:
+        root: /projects
+        runner:
+            name: codingame/dotnet-runner
+            version: latest

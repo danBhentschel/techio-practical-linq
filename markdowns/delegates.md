@@ -16,14 +16,16 @@ public static void PrintWith_2and4(FuncTwoInts func)
 public static void Execute()
 {
     // Prints 8
-    PrintWith_2and4((a, b) => a * b);
+    PrintWith_2and4((first, second) => first * second);
     // Prints 6
-    PrintWith_2and4((a, b) => a + b);
+    PrintWith_2and4((one, two) => one + two);
     // Prints 224
     PrintWith_2and4((a, b) => int.Parse($"{a}{a}{b}"));
     // Prints 9999
-    PrintWith_2and4((a, b) => 9999);
+    PrintWith_2and4((foo, bar) => 9999);
 }
 ```
 
-The method `PrintWith_2and4()` takes a delegate as a parameter. The passed-in delegate must accept two `int` parameters and return an `int`.
+The method `PrintWith_2and4()` takes a delegate as a parameter. The passed-in delegate must accept two `int` parameters and return an `int`. 
+
+`PrintWith_2and4()` executes the provided method reference with 2 and 4 as arguments, and then prints the result.
