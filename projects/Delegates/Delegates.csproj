@@ -5,10 +5,14 @@
   </PropertyGroup>
 
   <PropertyGroup>    
-    <TargetFramework>netcoreapp1.0</TargetFramework>    
+    <TargetFramework>netcoreapp1.1</TargetFramework>    
     <ApplicationIcon />    
     <OutputTypeEx>library</OutputTypeEx>    
     <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath />
   </PropertyGroup>
 
   <ItemGroup>
