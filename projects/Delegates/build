@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo CG> redirect-streams --inputs out null
