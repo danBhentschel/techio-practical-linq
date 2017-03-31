@@ -31,7 +31,7 @@ namespace Delegates
             if (expected != actual) {
                 var offset = 0;
                 for (var i = 0; i < expected.Length; i++) {
-                    if (expected[i] != actual[1])) {
+                    if (expected[i] != actual[i]) {
                         offset = i;
                         break;
                     }
