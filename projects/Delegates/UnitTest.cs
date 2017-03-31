@@ -26,10 +26,10 @@ namespace Delegates
             Console.WriteLine("CG> message --channel \"exercise results\" Congratulations, you did it!");
         }
 
-        private static void AssertAreEqual(string expected, string actual, string in)
+        private static void AssertAreEqual(string expected, string actual, string provided)
         {
             Assert.AreEqual(expected, actual, $"\n{cgMessage} EXPECTED: <{expected}>  GOT: <{actual}>");
-            Console.WriteLine($"{cgMessage} IN: <{in}> OUT: <{actual}>");
+            Console.WriteLine($"{cgMessage} IN: <{provided}> OUT: <{actual}>");
         }
     }
 }
