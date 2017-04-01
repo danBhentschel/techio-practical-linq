@@ -9,4 +9,4 @@ projects:
         root: /projects/Delegates
         runner:
             name: danbhentschel/cg-dotnet-runner
-            version: 1.7
+            version: 1.8
