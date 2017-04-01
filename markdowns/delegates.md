@@ -39,7 +39,8 @@ The `TwoFuncInts` type can be used to declare method parameters, as shown here:
 ```C#
 public static void PrintWith_2and4(FuncTwoInts func)
 {
-    Console.WriteLine(func(2, 4));
+    int result = func(2, 4);
+    Console.WriteLine(result);
 }
 ```
 
