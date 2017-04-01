@@ -14,7 +14,7 @@ namespace Delegates
         {
             Answers = null;
 
-            Delegates.Exercise1.DoSayHello();
+            Delegates.DelegatesExercise1.DoSayHello();
 
             if (Answers == null)
             {
