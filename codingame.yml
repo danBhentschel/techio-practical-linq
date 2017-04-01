@@ -5,8 +5,8 @@ plan:
   - title: "Exercise: Delegates"
     statement: markdowns/delegates_exercise.md
 projects:
-    delegates-examples:
-        root: /projects/Delegates
+    linq-exercises:
+        root: /projects/Linq
         runner:
             name: danbhentschel/cg-dotnet-runner
-            version: 1.8
+            version: 1.9
