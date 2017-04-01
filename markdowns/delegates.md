@@ -68,4 +68,4 @@ public static void Execute()
 
 For each of the above calls, `PrintWith_2and4()` executes the provided method reference with 2 and 4 as arguments, and then prints the result.
 
-#### Head to the next page to try an exercise using delegates -->>>
+#### Head to the next section to try an exercise using delegates -->>>
