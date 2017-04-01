@@ -51,7 +51,7 @@ namespace Delegates
             var errCaret = new string(' ', offset) + '^' +
                            new string(' ', expected.Length - offset - 1);
             CgMessage($"EXPECTED: <{expected}>  GOT: <{actual}>");
-            CgMessage($"           {errCaret}        {errCaret}");
+            CgMessage($"           {errCaret}         {errCaret}");
         }
 
         private static int GetDiffOffest(string expected, string actual)
