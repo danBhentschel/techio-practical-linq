@@ -15,7 +15,7 @@ The line above defines the type `FuncTwoInts`, which can be used to declare vari
 private static int Add(int one, int two)
 {
 	return one + two;
-}
+};
 
 private FuncTwoInts theFunc = Add;
 ```
