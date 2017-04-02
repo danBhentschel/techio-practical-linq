@@ -1,5 +1,9 @@
 title : C# LINQ for beginners
 plan:
+  - title: "Welcome"
+    statement: markdowns/welcome.md
+  - title: "Introduction"
+    statement: markdowns/introduction.md
   - title: "Background: Delegates"
     statement: markdowns/delegates.md
   - title: "Exercise: Delegates"
