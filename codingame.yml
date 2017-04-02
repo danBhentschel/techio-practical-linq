@@ -1,9 +1,12 @@
 title : C# LINQ for beginners
 plan:
-  - title: "Welcome"
-    statement: markdowns/welcome.md
-  - title: "Introduction"
-    statement: markdowns/introduction.md
+  - title: "About this Course"
+    description: "Gives an introduction to the course"
+    plan:
+    - title: "Welcome"
+      statement: markdowns/welcome.md
+    - title: "Introduction"
+      statement: markdowns/introduction.md
   - title: "Background: Delegates"
     description: "Gives background information on using delegates and lambda expressions in C#"
     plan:
