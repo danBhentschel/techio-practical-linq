@@ -5,11 +5,14 @@ plan:
   - title: "Introduction"
     statement: markdowns/introduction.md
   - title: "Background: Delegates"
-    statement: markdowns/delegates.md
-  - title: "Background: Delegates as Parameters"
-    statement: markdowns/delegate_parameters.md
-  - title: "Exercise: Delegates"
-    statement: markdowns/delegates_exercise.md
+    description: "Gives background information on using delegates and lambda expressions in C#"
+    plan:
+    - title: "Background: Delegates"
+      statement: markdowns/delegates.md
+    - title: "Background: Delegates as Parameters"
+      statement: markdowns/delegate_parameters.md
+    - title: "Exercise: Delegates"
+      statement: markdowns/delegates_exercise.md
 projects:
     linq-exercises:
         root: /projects/Linq
