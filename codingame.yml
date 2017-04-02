@@ -6,6 +6,8 @@ plan:
     statement: markdowns/introduction.md
   - title: "Background: Delegates"
     statement: markdowns/delegates.md
+  - title: "Background: Delegates as Parameters"
+    statement: markdowns/delegate_parameters.md
   - title: "Exercise: Delegates"
     statement: markdowns/delegates_exercise.md
 projects:
