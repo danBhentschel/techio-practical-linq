@@ -7,9 +7,9 @@ plan:
   - title: "Background: Delegates"
     description: "Gives background information on using delegates and lambda expressions in C#"
     plan:
-    - title: "Background: Delegates"
+    - title: "Intro to Delegates"
       statement: markdowns/delegates.md
-    - title: "Background: Delegates as Parameters"
+    - title: "Delegates as Parameters"
       statement: markdowns/delegate_parameters.md
     - title: "Exercise: Delegates"
       statement: markdowns/delegates_exercise.md
