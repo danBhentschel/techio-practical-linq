@@ -20,6 +20,7 @@ namespace Delegates
             Assert.AreEqual("Hello, my baby!", Answers[1]);
             Assert.AreEqual("Hello, my honey!", Answers[2]);
 
+            Answers.ForEach(CgMessage);
             CgMessage(string.Empty);
             CgMessage("Congratulations, you did it!");
         }

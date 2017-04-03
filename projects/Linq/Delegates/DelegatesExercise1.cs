@@ -5,7 +5,7 @@
     // Following the example in the lesson, declare the 
     // type SayHello as a delegate that takes a single
     // string parameter and returns a string result.
-    //
+
     // public ... SayHello ...
 
     public static class DelegatesExercise1
