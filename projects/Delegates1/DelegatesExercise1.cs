@@ -1,4 +1,4 @@
-﻿namespace Delegates1
+namespace Delegates1
 {
     // Uncomment the SayHello delegate declaration
     //
