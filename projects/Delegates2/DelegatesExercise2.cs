@@ -8,7 +8,7 @@
         {
             // Uncomment the call to TestSayHello()
             //
-            // The method ExerciseRunner.TestSayHello() takes a
+            // The method Exercise.TestSayHello() takes a
             // SayHello delegate as input. Pass it a delegate
             // method that, when given a string "foo", will
             // return the string "Hello, foo!".
