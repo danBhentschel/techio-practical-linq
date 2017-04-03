@@ -18,7 +18,7 @@ namespace Delegates2
 
             if (Answers == null)
             {
-                CgMessage("You need to call ExerciseRunner.TestSayHello()");
+                CgMessage("You need to call Exercise.TestSayHello()");
             }
             Assert.IsNotNull(Answers);
             AssertAreEqual("Hello, World!", Answers[0], "World");
