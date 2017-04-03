@@ -23,9 +23,9 @@ projects:
         root: /projects/Delegates1
         runner:
             name: danbhentschel/cg-dotnet-runner
-            version: 1.10
+            version: "1.10"
     delegates2:
         root: /projects/Delegates2
         runner:
             name: danbhentschel/cg-dotnet-runner
-            version: 1.10
+            version: "1.10"
