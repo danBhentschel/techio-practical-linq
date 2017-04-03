@@ -12,9 +12,24 @@ namespace Delegates
         [TestMethod]
         public void Exercise1()
         {
+            Answers = new List<string>();
+
+            Delegates1.DelegatesExercise1.CallSayHelloDelegate(s => $"Hello, {s}!");
+
+            Assert.AreEqual("Hello, World!", Answers[0]);
+            Assert.AreEqual("Hello, my baby!", Answers[1]);
+            Assert.AreEqual("Hello, my honey!", Answers[2]);
+
+            CgMessage(string.Empty);
+            CgMessage("Congratulations, you did it!");
+        }
+
+        [TestMethod]
+        public void Exercise2()
+        {
             Answers = null;
 
-            Delegates.DelegatesExercise1.DoSayHello();
+            Delegates2.DelegatesExercise2.DoSayHello();
 
             if (Answers == null)
             {

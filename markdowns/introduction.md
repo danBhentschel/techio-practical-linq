@@ -3,7 +3,7 @@
 The C# programming language is quite popular with developers, in large part because of its many powerful and intuitive language features. One of these impressive (and fun, in a nerdy way) features is LINQ.
 
 ### LINQ != SQL
-The acronym LINQ stands for Language Integrated Query, and is very roughly based on SQL. Newcomers to C# often misinterpret this to mean that LINQ is a database access API. It is true that LINQ was conceived as a way to access the data in a database from code, and that it maintains that functionality. But that is not the extent of its utility.
+The acronym LINQ stands for Language Integrated Query, and LINQ syntax is very roughly based on SQL. Newcomers to C# often misinterpret this to mean that LINQ is a database access API. It is true that LINQ was conceived as a way to access the data in a database from code, and that it maintains that functionality. But that is not the extent of its utility.
 
 
 ### The LINQ paradigm

@@ -4,4 +4,4 @@ In the previous lessons, we learned how to declare delegate types, and how to pa
 
 In this exercise, you must pass a delegate to a method call in order to produce the desired results. This delegate takes a single `string` argument and returns a `string` result.
 
-@[Delegates Exercise]({"stubs": ["Delegates/DelegatesExercise1.cs"], "command": "Delegates.UnitTest.Exercise1"})
+@[Delegates Exercise]({"stubs": ["Delegates/DelegatesExercise2.cs"], "command": "Delegates.UnitTest.Exercise2"})

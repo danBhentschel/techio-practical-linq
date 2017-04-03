@@ -10,8 +10,10 @@ plan:
   - title: "Background: Delegates"
     description: "Background information on using delegates and lambda expressions in C#"
     plan:
-    - title: "Intro to Delegates"
-      statement: markdowns/delegates.md
+    - title: "Delegate Declarations"
+      statement: markdowns/delegate_declarations.md
+    - title: "Delegate Variables"
+      statement: markdowns/delegate_variables.md
     - title: "Delegates as Parameters"
       statement: markdowns/delegate_parameters.md
     - title: "Exercise: Delegates"

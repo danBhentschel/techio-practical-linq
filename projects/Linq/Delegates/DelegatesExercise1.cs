@@ -1,20 +1,20 @@
-﻿namespace Delegates
+﻿namespace Delegates1
 {
-    public delegate string SayHello(string subject);
+    // Uncomment the SayHello delegate declaration
+    //
+    // Following the example in the lesson, declare the 
+    // type SayHello as a delegate that takes a single
+    // string parameter and returns a string result.
+    //
+    // public ... SayHello ...
 
-    public class DelegatesExercise1
+    public static class DelegatesExercise1
     {
-        public static void DoSayHello()
+        public static void CallSayHelloDelegate(SayHello func)
         {
-            // Uncomment the call to TestSayHello()
-            //
-            // The method ExerciseRunner.TestSayHello() takes a
-            // SayHello delegate as input. Pass it a delegate
-            // method that, when given a string "foo", will
-            // return the string "Hello, foo!".
-
-            // ExerciseRunner.TestSayHello(<something>);
-
+            Exercise.PrintAnswer(func("World"));
+            Exercise.PrintAnswer(func("my baby"));
+            Exercise.PrintAnswer(func("my honey"));
         }
     }
 }
