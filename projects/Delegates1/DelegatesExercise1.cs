@@ -7,6 +7,7 @@
     // string parameter and returns a string result.
 
     // public ... SayHello ...
+    public delegate string SayHello(string subject); // CG_REM
 
     public static class DelegatesExercise1
     {
