@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Delegates
+namespace Delegates2
 {
     [TestClass]
     public class UnitTest
@@ -10,27 +10,11 @@ namespace Delegates
         public static List<string> Answers;
 
         [TestMethod]
-        public void Exercise1()
-        {
-            Answers = new List<string>();
-
-            Delegates1.DelegatesExercise1.CallSayHelloDelegate(s => $"Hello, {s}!");
-
-            Assert.AreEqual("Hello, World!", Answers[0]);
-            Assert.AreEqual("Hello, my baby!", Answers[1]);
-            Assert.AreEqual("Hello, my honey!", Answers[2]);
-
-            Answers.ForEach(CgMessage);
-            CgMessage(string.Empty);
-            CgMessage("Congratulations, you did it!");
-        }
-
-        [TestMethod]
         public void Exercise2()
         {
             Answers = null;
 
-            Delegates2.DelegatesExercise2.DoSayHello();
+            DelegatesExercise2.DoSayHello();
 
             if (Answers == null)
             {
