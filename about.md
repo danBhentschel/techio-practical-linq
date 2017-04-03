@@ -7,5 +7,5 @@ The lessons provided here are geared towards the experienced coder who is lookin
 
 Students should have a good understanding of the fundamentals of C#. Required skills include crafting of classes, interfaces, fields, and methods. A rudimentary understanding of generics is also recommended. 
 
-## Content
+## Course Content
 The lesson plan starts out with some essential background material, followed by some introductory LINQ concepts. It then discusses several commonly used LINQ commands in more detail, and finishes up with some hints and precautions for how to get the most out of LINQ while avoiding some of the pitfalls.
