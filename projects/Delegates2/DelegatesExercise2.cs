@@ -14,7 +14,6 @@
             // return the string "Hello, foo!".
 
             // Exercise.TestSayHello(<something>);
-            Exercise.TestSayHello(subject => $"Hello, {subject}!"); // CG_REM
 
         }
     }

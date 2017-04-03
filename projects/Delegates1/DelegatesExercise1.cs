@@ -1,4 +1,4 @@
-namespace Delegates1
+﻿namespace Delegates1
 {
     // Uncomment the SayHello delegate declaration
     //
@@ -7,7 +7,6 @@ namespace Delegates1
     // string parameter and returns a string result.
 
     // public ... SayHello ...
-    public delegate string SayHello(string subject); // CG_REM
 
     public static class DelegatesExercise1
     {
