@@ -20,12 +20,8 @@ plan:
       statement: markdowns/delegates_exercise.md
 projects:
     delegates1:
-        root: /projects/Delegates1
-        runner:
-            name: danbhentschel/cg-dotnet-runner
-            version: "1.10"
+      root: /projects/Delegates1
+      runner: "danbhentschel/cg-dotnet-runner:1.10"
     delegates2:
-        root: /projects/Delegates2
-        runner:
-            name: danbhentschel/cg-dotnet-runner
-            version: "1.10"
+      root: /projects/Delegates2
+      runner: "danbhentschel/cg-dotnet-runner:1.10"
