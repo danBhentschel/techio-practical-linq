@@ -21,7 +21,7 @@ plan:
 projects:
     delegates1:
       root: /projects/Delegates1
-      runner: "danbhentschel/cg-dotnet-runner:1.10"
+      runner: "danbhentschel/cg-dotnet-runner:1.11"
     delegates2:
       root: /projects/Delegates2
-      runner: "danbhentschel/cg-dotnet-runner:1.10"
+      runner: "danbhentschel/cg-dotnet-runner:1.11"
