@@ -18,10 +18,25 @@ plan:
       statement: markdowns/delegate_parameters.md
     - title: "Exercise: Delegates"
       statement: markdowns/delegates_exercise.md
+  - title: "Background: Extension methods"
+    description: "Background information on extension methods in C#"
+    plan:
+    - title: "Writing extension methods"
+      statement: markdowns/extension_intro.md
+    - title: "Exercise: Extension methods"
+      statement: markdowns/extension_exercise.md
+  - title: "Background: Generators"
+    description: "Background information on creating and using generators in C#"
+    plan:
+    - title: "IEnumerable<T>"
+      statement: markdowns/ienumerable.md
 projects:
     delegates1:
       root: /projects/Delegates1
       runner: "danbhentschel/cg-dotnet-runner:1.9"
     delegates2:
       root: /projects/Delegates2
+      runner: "danbhentschel/cg-dotnet-runner:1.9"
+    extensionmethods1:
+      root: /projects/ExtensionMethods1
       runner: "danbhentschel/cg-dotnet-runner:1.9"
