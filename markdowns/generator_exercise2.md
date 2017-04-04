@@ -1,6 +1,6 @@
 # Exercise: Bounded generator
 
-In this example, you will implement the same generator as before, but this time the sequence will be limited to the first `n` values, where `n` is a parameter to the method. As a reminder, here is the sequence you will be implementing.
+In this exercise, you will implement the same generator as in the unbounded generator exercise, but this time the sequence will be limited to the first `n` values, where `n` is a parameter to the method. As a reminder, here is the sequence you will be implementing:
 
 Alternate between adding 2 to the previous number, then multiplying the previous number by 2. Here are the first several values in this sequence:
 
