@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ExtensionMethods1
+namespace Background1
 {
     // Uncomment the TransformationFunction delegate declaration
     //

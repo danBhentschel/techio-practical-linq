@@ -10,7 +10,7 @@ One of the more commonly used methods in LINQ is the `Select()` method. `Select(
 
 `Select()` takes each element, one-at-a-time, from a source `IEnumerable<T>`, applies a delegate function to the elements, and then returns an `IEnumerable<U>` result.
 
-**NOTE:** The type inside the collection can change, hence the change to `U` vs. `T`.
+**NOTE:** The type inside the collection can change, hence the change from `IEnumerable<T>` to `IEnumerable<U>`.
 
 ### Implement a Transform() method
 

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ExtensionMethods1
+namespace Background1
 {
     [TestClass]
     public class UnitTest
