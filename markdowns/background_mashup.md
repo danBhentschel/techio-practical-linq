@@ -14,7 +14,7 @@ One of the more commonly used methods in LINQ is the `Select()` method. `Select(
 
 ### Implement a Transform() method
 
-Let's avoid the complications of dealing with generics in this example. Here is what you need to do:
+In order to avoid the complications of dealing with generics in this exercise, let's limit the extension method to only work with `IEnumerable<int>`. Here is what you need to do:
 
  - Implement an extension to `IEnumerable<int>` called `Transform()`
  - The `Transform()` method should accept, as a parameter, a delegate that takes an `int` input and returns an `int` output
