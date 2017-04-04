@@ -29,7 +29,15 @@ plan:
     description: "Background information on creating and using generators in C#"
     plan:
     - title: "IEnumerable<T>"
-      statement: markdowns/ienumerable.md
+      statement: markdowns/ienumerable_intro.md
+    - title: "Generators"
+      statement: markdowns/ienumerable_generator.md
+    - title: "Exercise: Unbounded generator"
+      statement: markdowns/generator_exercise1.md
+    - title: "Using generators"
+      statement: markdowns/using_generators.md
+    - title: "More generator examples"
+      statement: markdowns/using_generators2.md
 projects:
     delegates1:
       root: /projects/Delegates1
@@ -39,4 +47,7 @@ projects:
       runner: "danbhentschel/cg-dotnet-runner:1.9"
     extensionmethods1:
       root: /projects/ExtensionMethods1
+      runner: "danbhentschel/cg-dotnet-runner:1.9"
+    generators1:
+      root: /projects/Generators1
       runner: "danbhentschel/cg-dotnet-runner:1.9"

@@ -1,8 +1,8 @@
 # Background: Extension Methods
 
-Extension methods in C# allow the addition of new methods to a type without modifying the original source code for that type. This can be very useful for adding functionality to classes or interfaces found in a third-party library, or even in the .NET Framework libraries.
+Extension methods in C# allow the addition of new methods to a pre-existing type, without modifying the original source code for that type. This can be very useful for adding functionality to classes or interfaces found in a third-party library, or even in the .NET Framework libraries.
 
-All LINQ methods are extension methods
+All LINQ methods are extension methods, defined in the `System.Linq` namespace.
 
 ### Example extension method
 
@@ -12,9 +12,9 @@ namespace IntExtensions
 {
     public static class CoolExtensionsForInt
     {
-        public static string ToRs(this int num)
+        public static string Growl(this int num)
         {
-            return new string('R', num);
+            return $"G{new string('r', num)}";
         }
     }
 }
@@ -34,8 +34,8 @@ using IntExtensions;
 
 ...
 
-    // Prints "RRRRRRR" to the console
-    Console.WriteLine(7.ToRs());
+    // Prints "Grrrrrrr" to the console
+    Console.WriteLine(7.Growl());
 ```
 
-Notice that, since the extension method is defined in the `IntExtensions` namespace, that namespace must be included by a `using` directive.
+Notice that, since the extension method is defined in the `IntExtensions` namespace, that namespace must be included with a `using` directive.

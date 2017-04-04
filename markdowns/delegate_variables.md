@@ -1,4 +1,4 @@
-# Delegate Variables
+# Background: Delegate Variables
 
 ### Delegate expressions
 The `FuncTwoInts` type can be used to declare variables like this:
