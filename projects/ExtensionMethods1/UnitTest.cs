@@ -10,10 +10,13 @@ namespace ExtensionMethods1
         [TestMethod]
         public void Exercise1()
         {
+            CgMessage("About to test DoSayHello(\"World\")");
             var answer = ExtensionMethodsExercise1.DoSayHello("World");
             AssertAreEqual("Hello, World!", answer, "World");
+            CgMessage("About to test DoSayHello(\"Dolly\")");
             answer = ExtensionMethodsExercise1.DoSayHello("Dolly");
             AssertAreEqual("Hello, Dolly!", answer, "Dolly");
+            CgMessage("About to test DoSayHello(\"Nurse\")");
             answer = ExtensionMethodsExercise1.DoSayHello("Nurse");
             AssertAreEqual("Hello, Nurse!", answer, "Nurse");
 

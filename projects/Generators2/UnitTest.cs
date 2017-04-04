@@ -10,18 +10,21 @@ namespace Generators2
         [TestMethod]
         public void Exercise2()
         {
+            CgMessage("About to test: AddTwoThenDouble(10)");
             var enumerable = GeneratorsExercise2.AddTwoThenDouble(10);
             var answer = enumerable.Count().ToString();
             AssertAreEqual("10", answer, "10 values");
             answer = string.Join(" ", enumerable);
             AssertAreEqual("2 4 6 12 14 28 30 60 62 124", answer, "First 10 values");
 
+            CgMessage("About to test: AddTwoThenDouble(17)");
             enumerable = GeneratorsExercise2.AddTwoThenDouble(17);
             answer = enumerable.Count().ToString();
             AssertAreEqual("17", answer, "17 values");
             answer = string.Join(" ", enumerable.Skip(13));
             AssertAreEqual("508 510 1020 1022", answer, "Values 14 - 17");
 
+            CgMessage("About to test: AddTwoThenDouble(30)");
             answer = GeneratorsExercise2.AddTwoThenDouble(30).Count().ToString();
             AssertAreEqual("30", answer, "30 values");
 

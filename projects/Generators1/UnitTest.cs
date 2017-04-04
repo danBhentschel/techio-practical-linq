@@ -10,10 +10,15 @@ namespace Generators1
         [TestMethod]
         public void Exercise1()
         {
+            CgMessage("About to test AddTwoThenDouble().Take(10)");
             var answer = string.Join(" ", GeneratorsExercise1.AddTwoThenDouble().Take(10));
             AssertAreEqual("2 4 6 12 14 28 30 60 62 124", answer, "First 10 values");
+
+            CgMessage("About to test AddTwoThenDouble().Skip(13).Take(4)");
             answer = string.Join(" ", GeneratorsExercise1.AddTwoThenDouble().Skip(13).Take(4));
             AssertAreEqual("508 510 1020 1022", answer, "Values 14 - 17");
+
+            CgMessage("About to test AddTwoThenDouble().Skip(28).First()");
             answer = GeneratorsExercise1.AddTwoThenDouble().Skip(28).First().ToString();
             AssertAreEqual("65534", answer, "28th value");
 
