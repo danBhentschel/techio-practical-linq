@@ -22,6 +22,7 @@ projects:
     delegates1:
       root: /projects/Delegates1
       runner: "codingame/dotnet-runner:latest"
+      builder: build
     delegates2:
       root: /projects/Delegates2
       runner: "danbhentschel/cg-dotnet-runner:1.9"
