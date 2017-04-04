@@ -36,7 +36,7 @@ This won't work, though.
 
 `IEnumerable<T>` doesn't support the `[ ]` indexer operator, which somewhat makes sense. This Fibonacci generator isn't a static array that you can index into. It is a method call that returns a series of values as the result of an evaluation. So in order to retrieve the value at index `i`, you would need to evaluate the generator method `i` times.
 
-### Introducing a boundary with 
+### Making the sequence bounded with `Take()`
 There is another way to get the first 5 values of the sequence:
 
 ```C#

@@ -25,12 +25,12 @@ plan:
       statement: markdowns/extension_intro.md
     - title: "Exercise: Extension methods"
       statement: markdowns/extension_exercise.md
-  - title: "Background: Generators"
+  - title: "Background: Generators and IEnumerable<T>"
     description: "Background information on creating and using generators in C#"
     plan:
     - title: "IEnumerable<T>"
       statement: markdowns/ienumerable_intro.md
-    - title: "Generators"
+    - title: "Unbounded generators"
       statement: markdowns/ienumerable_generator.md
     - title: "Exercise: Unbounded generator"
       statement: markdowns/generator_exercise1.md
@@ -38,6 +38,12 @@ plan:
       statement: markdowns/using_generators.md
     - title: "More generator examples"
       statement: markdowns/using_generators2.md
+    - title: "Exiting a generator"
+      statement: markdowns/bounded_generators.md
+    - title: "Yield break"
+      statement: markdowns/bounded_generators2.md
+    - title: "Exercise: Bounded generator"
+      statement: markdowns/generator_exercise2.md
 projects:
     delegates1:
       root: /projects/Delegates1
@@ -50,4 +56,7 @@ projects:
       runner: "danbhentschel/cg-dotnet-runner:1.9"
     generators1:
       root: /projects/Generators1
+      runner: "danbhentschel/cg-dotnet-runner:1.9"
+    generators2:
+      root: /projects/Generators2
       runner: "danbhentschel/cg-dotnet-runner:1.9"
