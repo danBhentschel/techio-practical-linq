@@ -16,4 +16,4 @@ Let's avoid the complications of dealing with generics in this example. Here is 
  - The `Transform()` should generate an `IEnumerable<int>`
 
 
-@[Putting It Together Exercise]({"stubs": ["BackroundReviewExercise1.cs"], "command": "Background1.UnitTest.Exercise1", "project": "background1"})
+@[Putting It Together Exercise]({"stubs": ["BackgroundReviewExercise1.cs"], "command": "Background1.UnitTest.Exercise1", "project": "background1"})
