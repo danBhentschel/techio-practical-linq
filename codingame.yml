@@ -25,6 +25,8 @@ plan:
       statement: markdowns/extension_intro.md
     - title: "Exercise: Extension methods"
       statement: markdowns/extension_exercise.md
+    - title: "Passing extra parameters to an extension method"
+      statement: markdowns/extension_parameters.md
   - title: "Background: Generators and IEnumerable<T>"
     description: "Background information on creating and using generators in C#"
     plan:
@@ -44,6 +46,11 @@ plan:
       statement: markdowns/bounded_generators2.md
     - title: "Exercise: Bounded generator"
       statement: markdowns/generator_exercise2.md
+  - title: "Background: Putting it all together"
+    description: "Applying the background information to LINQ"
+    plan:
+    - title: "Exercise: Implement a LINQ method"
+      statement: markdowns/background_mashup.md
 projects:
     delegates1:
       root: /projects/Delegates1
@@ -59,4 +66,7 @@ projects:
       runner: "danbhentschel/cg-dotnet-runner:1.9"
     generators2:
       root: /projects/Generators2
+      runner: "danbhentschel/cg-dotnet-runner:1.9"
+    background1:
+      root: /projects/Background1
       runner: "danbhentschel/cg-dotnet-runner:1.9"

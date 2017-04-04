@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generators1", "Generators1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generators2", "Generators2\Generators2.csproj", "{0BB9C440-317E-45D3-9C6A-C4A1E5FC19FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Background1", "Background1\Background1.csproj", "{DEEE9BE8-750B-47EE-904E-85D0A5FA4DB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0BB9C440-317E-45D3-9C6A-C4A1E5FC19FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BB9C440-317E-45D3-9C6A-C4A1E5FC19FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BB9C440-317E-45D3-9C6A-C4A1E5FC19FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEEE9BE8-750B-47EE-904E-85D0A5FA4DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEE9BE8-750B-47EE-904E-85D0A5FA4DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEE9BE8-750B-47EE-904E-85D0A5FA4DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEE9BE8-750B-47EE-904E-85D0A5FA4DB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
