@@ -1,6 +1,6 @@
 # Exercise: Bounded generator
 
-In the previous lesson, we saw an example of a generator method that produces numbers in the Fibonacci sequence. See if you can write a generator method that implements the following sequence:
+In this example, you will implement the same generator as before, but this time the sequence will be limited to the first `n` values, where `n` is a parameter to the method. As a reminder, here is the sequence you will be implementing.
 
 Alternate between adding 2 to the previous number, then multiplying the previous number by 2. Here are the first several values in this sequence:
 
@@ -9,4 +9,4 @@ Alternate between adding 2 to the previous number, then multiplying the previous
 = 2,   4,   6,   12,  14,   28,   30,   60,   62 ...
 </pre>
 
-@[Unbounded Generator Exercise]({"stubs": ["GeneratorsExercise1.cs"], "command": "Generators1.UnitTest.Exercise1", "project": "generators1"})
+@[Bounded Generator Exercise]({"stubs": ["GeneratorsExercise2.cs"], "command": "Generators2.UnitTest.Exercise2", "project": "generators2"})

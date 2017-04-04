@@ -1,9 +1,9 @@
-# Background: `IEnumerable<T>`
+# Background: IEnumerable&lt;T&gt;
 
-### Why learn about generators and `IEnumerable<T>`?
+### Why learn about generators and IEnumerable&lt;T&gt;?
 LINQ methods are extension methods to the `IEnumerable<T>` interface. It is important to understand how `IEnumerable<T>` works to fully understand how LINQ works.
 
-### Collections as `IEnumerable<T>`
+### Collections as IEnumerable&lt;T&gt;
 A method returning an object that implements the `IEnumerable<T>` interface can be enumerated via a `foreach` block. For example:
 
 ```C#
@@ -13,7 +13,7 @@ public IEnumerable<int> GetInts()
 }
 ```
 
-Since `List<T>` implements `IEnumerable<T>`, you can do this, and you will be able to iterate the resulting list like so:
+Since `List<T>` implements `IEnumerable<T>`, you can iterate the return value from `GetInts()` like so:
 
 ```C#
 // Will print:

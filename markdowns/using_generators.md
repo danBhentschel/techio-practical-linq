@@ -1,6 +1,6 @@
 # Background: Using generators
 
-Using the `GetFibonacci()` method from the previous example, take a look at this line of code:
+Let's continue using the unbounded `GetFibonacci()` generator method from the previous lesson. Take a look at this line of code:
 
 ```C#
 Console.WriteLine(GetFibonacci().Count());
@@ -10,9 +10,9 @@ What will this print?
 
 Actually, it won't print anything. It will process for a while, and then eventually fail with the error:
 
-```
+<pre>
 System.OverflowException: Arithmetic operation resulted in an overflow.
-```
+</pre>
 
 Why do you think this is?
 
