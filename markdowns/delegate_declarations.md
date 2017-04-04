@@ -1,5 +1,6 @@
 # Background: Delegate Declarations
 
+### Why learn about delegates?
 When learning LINQ, it is important to have a good understanding of delegates in C#. Many of the more powerful capabilities of LINQ make use of delegates.
 
 ### What is a delegate?

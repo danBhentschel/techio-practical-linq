@@ -2,6 +2,7 @@
 
 Extension methods in C# allow the addition of new methods to a pre-existing type, without modifying the original source code for that type. This can be very useful for adding functionality to classes or interfaces found in a third-party library, or even in the .NET Framework libraries.
 
+### Why learn about extension methods?
 All LINQ methods are extension methods, defined in the `System.Linq` namespace.
 
 ### Example extension method
