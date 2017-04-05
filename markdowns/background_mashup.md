@@ -21,5 +21,34 @@ In order to avoid the complications of dealing with generics in this exercise, l
  - The `Transform()` method should be a generator that iterates through the input `IEnumerable<int>`, applies the delegate to each value, and `yield return`s the result
  - The `Transform()` should generate an `IEnumerable<int>`
 
+### Example delegate declaration
+```csharp
+public delegate int FuncTwoInts(int a, int b);
+```
+
+### Example extension method
+```csharp
+namespace IntExtensions
+{
+    public static class CoolExtensionsForInt
+    {
+        public static string Growl(this int num, char a, char b)
+        {
+            return $"{a}{new string(b, num)}";
+        }
+    }
+}
+```
+
+### Example generator
+```csharp
+public IEnumerable<int> GetDoubles(int n)
+{	
+	for (int i = 0; i < n; i++)
+	{
+		yield return i * 2;
+	}
+}
+```
 
 @[Putting It Together Exercise]({"stubs": ["BackgroundReviewExercise1.cs"], "command": "Background1.UnitTest.Exercise1", "project": "background1"})
