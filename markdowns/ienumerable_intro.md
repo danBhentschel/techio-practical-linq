@@ -6,7 +6,7 @@ LINQ methods are extension methods to the `IEnumerable<T>` interface. It is impo
 ### Collections as IEnumerable&lt;T&gt;
 A method returning an object that implements the `IEnumerable<T>` interface can be enumerated via a `foreach` block. For example:
 
-```C#
+```csharp
 public IEnumerable<int> GetInts()
 {
     return new List<int> { 2, 4, 5, 7 };
@@ -15,7 +15,7 @@ public IEnumerable<int> GetInts()
 
 Since `List<T>` implements `IEnumerable<T>`, you can iterate the return value from `GetInts()` like so:
 
-```C#
+```csharp
 // Will print:
 // Value: 2
 // Value: 4

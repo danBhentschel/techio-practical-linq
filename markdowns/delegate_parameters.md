@@ -2,7 +2,7 @@
 
 Still referring to the `FuncTwoInts` type, previously declared as:
 
-```C#
+```csharp
 public delegate int FuncTwoInts(int, int);
 ```
 
@@ -10,7 +10,7 @@ public delegate int FuncTwoInts(int, int);
 
 The `FuncTwoInts` type can be used to declare method parameters, as shown here:
 
-```C#
+```csharp
 public static void PrintWith_2and4(FuncTwoInts func)
 {
     int result = func(2, 4);
@@ -24,7 +24,7 @@ The method `PrintWith_2and4()` takes a delegate as an argument. The passed-in de
 
 Here are some examples of how the `PrintWith_2and4()` method can be called:
 
-```C#
+```csharp
 public static void Execute()
 {
     // Prints 8

@@ -5,7 +5,7 @@ There is a certain set of problems for which an unbounded generator is a great s
 ### Exiting the generator method
 One way to make a generator bounded is to simply allow the method to exit normally. Suppose we wanted `GetFibonacci()` to provide only the first `n` values of the sequence. We could write it like this:
 
-```C#
+```csharp
 public IEnumerable<int> GetFibonacci(int n)
 {
     int previousVal1 = 0;
@@ -23,7 +23,7 @@ public IEnumerable<int> GetFibonacci(int n)
 
 Now, we could use this new `GetFibonacci()` method like so:
 
-```C#
+```csharp
 // Will print:
 // Value: 1
 // Value: 2

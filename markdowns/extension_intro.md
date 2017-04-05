@@ -8,7 +8,7 @@ All LINQ methods are extension methods, defined in the `System.Linq` namespace.
 ### Example extension method
 
 Here is what an extension method declaration looks like:
-```C#
+```csharp
 namespace IntExtensions
 {
     public static class CoolExtensionsForInt
@@ -30,7 +30,7 @@ The name of the class isn't important, nor is the name of the method. The import
 
 The above extension method can be called as if it were a member of the `int` type. For example:
 
-```C#
+```csharp
 using IntExtensions;
 
 ...

@@ -5,7 +5,7 @@ Suppose we want to have a generator that provides a bounded sequence, but it's n
 ### The yield break statement
 Let's write a `GetFibonacci()` method that returns a sequence in which the maximum returned value is less-than-or-equal-to a provided `max` parameter. Here is one implementation of such a method:
 
-```C#
+```csharp
 public IEnumerable<int> GetFibonacci(int max)
 {
     int previousVal1 = 0;
@@ -24,7 +24,7 @@ public IEnumerable<int> GetFibonacci(int max)
 
 When execution hits the `yield break` statement, the iterator ends, as shown here using the `Count()` LINQ method:
 
-```C#
+```csharp
 // Prints the number 11, indicating that
 // there are 11 values <= 200:
 // 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144

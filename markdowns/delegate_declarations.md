@@ -6,7 +6,7 @@ When learning LINQ, it is important to have a good understanding of delegates in
 ### What is a delegate?
 A delegate is simply a reference to a method. Delegates can be stored and passed around in a variable, and hence they must have a type definition:
 
-```C#
+```csharp
 public delegate int FuncTwoInts(int, int);
 ```
 

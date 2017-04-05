@@ -3,7 +3,7 @@
 ### Iterating an unbounded generator
 Here is another example using the `GetFibonacci()` method:
 
-```C#
+```csharp
 // Will print:
 // Value: 1
 // Value: 2
@@ -24,7 +24,7 @@ This is one way to (quite literally) `break` out of the infinite iteration of th
 ### Indexing into an `IEnumerable<T>`
 You might be tempted to try to do this:
 
-```C#
+```csharp
 IEnumerable<int> fibonacci = GetFibonacci();
 for (int i = 0; i < 5; i++)
 {
@@ -39,7 +39,7 @@ It won't work, though.
 ### Making the sequence bounded with `Take()`
 Here is another way to get the first 5 values of the sequence:
 
-```C#
+```csharp
 // Will print:
 // Value: 1
 // Value: 2

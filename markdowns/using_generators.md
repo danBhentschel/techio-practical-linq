@@ -2,7 +2,7 @@
 
 Let's continue using the unbounded `GetFibonacci()` generator method from the previous lesson. Take a look at this line of code:
 
-```C#
+```csharp
 Console.WriteLine(GetFibonacci().Count());
 ```
 

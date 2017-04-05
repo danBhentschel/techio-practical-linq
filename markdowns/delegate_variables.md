@@ -3,7 +3,7 @@
 ### Delegate expressions
 The `FuncTwoInts` type can be used to declare variables like this:
 
-```C#
+```csharp
 private static int Add(int one, int two)
 {
 	return one + two;
@@ -14,7 +14,7 @@ private FuncTwoInts theFunc = Add;
 
 Or like this:
 
-```C#
+```csharp
 FuncTwoInts theFunc = delegate(int one, int two) {
     return one + two;
 };
@@ -22,7 +22,7 @@ FuncTwoInts theFunc = delegate(int one, int two) {
 
 Or this:
 
-```C#
+```csharp
 FuncTwoInts theFunc = (one, two) => {
     return one + two;
 };
@@ -30,7 +30,7 @@ FuncTwoInts theFunc = (one, two) => {
 
 Or even like this:
 
-```C#
+```csharp
 FuncTwoInts theFunc = (one, two) => one + two;
 ```
 

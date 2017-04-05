@@ -2,7 +2,7 @@
 
 An extension method can take extra parameters, in addition to an instance of the type that it is extending. Here is an example of that:
 
-```C#
+```csharp
 namespace IntExtensions
 {
     public static class CoolExtensionsForInt
@@ -17,7 +17,7 @@ namespace IntExtensions
 
 What does this do? Let's call it a few times and find out:
 
-```C#
+```csharp
 using IntExtensions;
 
 ...
