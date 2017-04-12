@@ -84,7 +84,7 @@ namespace LinqCourseEmbeddedCode
             {
                 //// START REPLACE: ".First()" ::: "[i]" ////
                 Console.WriteLine($"Value: {fibonacci.First()}");
-                //// END REPLACE ////
+                //// END REPLACE: ".First()" ////
             }
             //// END EMBED ////
         }
@@ -167,5 +167,15 @@ namespace LinqCourseEmbeddedCode
             Console.WriteLine(GetFibonacciUpTo(200).Count());
             //// END EMBED ////
         }
+
+        //// START EMBED: Declare GetDoubles() generator method ////
+        public IEnumerable<int> GetDoubles(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                yield return i * 2;
+            }
+        }
+        //// END EMBED ////
     }
 }

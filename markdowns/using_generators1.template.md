@@ -3,7 +3,7 @@
 Let's continue using the unbounded `GetFibonacci()` generator method from the previous lesson. Take a look at this line of code:
 
 ```csharp
-Console.WriteLine(GetFibonacci().Count());
+//// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Call GetFibonacci().Count()
 ```
 
 What will this print?

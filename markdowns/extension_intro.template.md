@@ -9,16 +9,7 @@ All LINQ methods are extension methods, defined in the `System.Linq` namespace.
 
 Here is what an extension method declaration looks like:
 ```csharp
-namespace IntExtensions
-{
-    public static class CoolExtensionsForInt
-    {
-        public static string Growl(this int num)
-        {
-            return $"G{new string('r', num)}";
-        }
-    }
-}
+//// EMBED: LinqCourseEmbeddedCode/CoolExtensionsForInt.cs, Example extension method declaration
 ```
 
 The name of the class isn't important, nor is the name of the method. The important elements are:
@@ -31,12 +22,7 @@ The name of the class isn't important, nor is the name of the method. The import
 The above extension method can be called as if it were a member of the `int` type. For example:
 
 ```csharp
-using IntExtensions;
-
-...
-
-    // Prints "Grrrrrrr" to the console
-    Console.WriteLine(7.Growl());
+//// EMBED: LinqCourseEmbeddedCode/ExtensionMethods1.cs, Call extension method
 ```
 
 Notice that, since the extension method is defined in the `IntExtensions` namespace, that namespace must be included with a `using` directive.

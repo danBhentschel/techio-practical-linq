@@ -5,19 +5,7 @@
 In the previous lesson, we looked at an `IEnumerable<int>` backed by a `List<int>`. An `IEnumerable<T>` could also be backed by a stateful method, rather than a static collection. This method is called a generator, and it looks like this:
 
 ```csharp
-public IEnumerable<int> GetFibonacci()
-{
-    int previousVal1 = 0;
-    int previousVal2 = 1;
-	
-	while (true)
-	{
-		int nextVal = previousVal1 + previousVal2;
-		previousVal1 = previousVal2;
-		previousVal2 = nextVal;
-		yield return nextVal;
-	}
-}
+//// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Declare GetFibonacci() generator method
 ```
 
 Wait a minute! What does that return? It looks like it's returning an `int`, even though the method declaration returns an `IEnumerable<int>`. And what's up with that infinite loop?

@@ -4,34 +4,25 @@
 The `FuncTwoInts` type can be used to declare variables like this:
 
 ```csharp
-private static int Add(int one, int two)
-{
-	return one + two;
-}
-
-private FuncTwoInts theFunc = Add;
+//// EMBED: LinqCourseEmbeddedCode/Delegates1.cs, Delegate expressions 1
 ```
 
 Or like this:
 
 ```csharp
-FuncTwoInts theFunc = delegate(int one, int two) {
-    return one + two;
-};
+//// EMBED: LinqCourseEmbeddedCode/Delegates1.cs, Delegate expressions 2
 ```
 
 Or this:
 
 ```csharp
-FuncTwoInts theFunc = (one, two) => {
-    return one + two;
-};
+//// EMBED: LinqCourseEmbeddedCode/Delegates1.cs, Delegate expressions 3
 ```
 
 Or even like this:
 
 ```csharp
-FuncTwoInts theFunc = (one, two) => one + two;
+//// EMBED: LinqCourseEmbeddedCode/Delegates1.cs, Delegate expressions 4
 ```
 
 ### Lambda expressions

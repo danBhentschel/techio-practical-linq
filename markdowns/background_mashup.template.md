@@ -23,32 +23,17 @@ In order to avoid the complications of dealing with generics in this exercise, l
 
 ### Example delegate declaration
 ```csharp
-public delegate int FuncTwoInts(int a, int b);
+//// EMBED: LinqCourseEmbeddedCode/Delegates1.cs, Example delegate declaration
 ```
 
 ### Example extension method
 ```csharp
-namespace IntExtensions
-{
-    public static class CoolExtensionsForInt
-    {
-        public static string Growl(this int num, char a, char b)
-        {
-            return $"{a}{new string(b, num)}";
-        }
-    }
-}
+//// EMBED: LinqCourseEmbeddedCode/CoolExtensionsForInt.cs, Example extension method declaration
 ```
 
 ### Example generator
 ```csharp
-public IEnumerable<int> GetDoubles(int n)
-{	
-	for (int i = 0; i < n; i++)
-	{
-		yield return i * 2;
-	}
-}
+//// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Declare GetDoubles() generator method
 ```
 
 @[Putting It Together Exercise]({"stubs": ["BackgroundReviewExercise1.cs"], "command": "Background1.UnitTest.Exercise1", "project": "background1"})

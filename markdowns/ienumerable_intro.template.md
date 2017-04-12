@@ -7,24 +7,13 @@ LINQ methods are extension methods to the `IEnumerable<T>` interface. It is impo
 A method returning an object that implements the `IEnumerable<T>` interface can be enumerated via a `foreach` block. For example:
 
 ```csharp
-public IEnumerable<int> GetInts()
-{
-    return new List<int> { 2, 4, 5, 7 };
-}
+//// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Declare method returning IEnumerable
 ```
 
 Since `List<T>` implements `IEnumerable<T>`, you can iterate the return value from `GetInts()` like so:
 
 ```csharp
-// Will print:
-// Value: 2
-// Value: 4
-// Value: 5
-// Value: 7
-foreach (int val in GetInts())
-{
-    Console.WriteLine($"Value: {val}");
-}
+//// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Call method returning IEnumerable
 ```
 
 Not all that surprising or impressive, is it? Well, let's take a look at generators next. That's where the true value of `IEnumerable<T>` lies.

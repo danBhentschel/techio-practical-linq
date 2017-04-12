@@ -37,11 +37,11 @@ plan:
     - title: "Exercise: Unbounded generator"
       statement: markdowns/generator_exercise1.md
     - title: "Using generators"
-      statement: markdowns/using_generators.md
+      statement: markdowns/using_generators1.md
     - title: "More generator examples"
       statement: markdowns/using_generators2.md
     - title: "Exiting a generator"
-      statement: markdowns/bounded_generators.md
+      statement: markdowns/bounded_generators1.md
     - title: "Yield break"
       statement: markdowns/bounded_generators2.md
     - title: "Exercise: Bounded generator"

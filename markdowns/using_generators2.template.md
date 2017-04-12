@@ -4,19 +4,7 @@
 Here is another example using the `GetFibonacci()` method:
 
 ```csharp
-// Will print:
-// Value: 1
-// Value: 2
-// Value: 3
-// Value: 5
-// Value: 8
-int i = 0;
-foreach (int val in GetFibonacci())
-{
-    if (i > 4) break;
-    Console.WriteLine($"Value: {val}");
-    i++;
-}
+//// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Iterate GetFibonacci() with a break
 ```
 
 This is one way to (quite literally) `break` out of the infinite iteration of this sequence.
@@ -25,11 +13,7 @@ This is one way to (quite literally) `break` out of the infinite iteration of th
 You might be tempted to try to do this:
 
 ```csharp
-IEnumerable<int> fibonacci = GetFibonacci();
-for (int i = 0; i < 5; i++)
-{
-    Console.WriteLine($"Value: {fibonacci[i]}");
-}
+//// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Try to index into GetFibonacci()
 ```
 
 It won't work, though.
@@ -40,16 +24,7 @@ It won't work, though.
 Here is another way to get the first 5 values of the sequence:
 
 ```csharp
-// Will print:
-// Value: 1
-// Value: 2
-// Value: 3
-// Value: 5
-// Value: 8
-foreach (int val in GetFibonacci().Take(5))
-{
-    Console.WriteLine($"Value: {val}");
-}
+//// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Bound GetFibonacci() with Take()
 ```
 
 In this example, the `Take()` method is a LINQ method that returns a bounded iterator to the first 5 values of the sequence provided by `GetFibonacci()`.

@@ -7,7 +7,7 @@ namespace IntExtensions
 {
     //// START REPLACE: "CoolExtensionsForInt2" ::: "CoolExtensionsForInt" ////
     public static class CoolExtensionsForInt2
-    //// END REPLACE ////
+    //// END REPLACE: "CoolExtensionsForInt2" ////
     {
         public static string Growl(this int num, char a, char b)
         {
