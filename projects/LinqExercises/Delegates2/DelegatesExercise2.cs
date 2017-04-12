@@ -14,6 +14,9 @@
             // return the string "Hello, foo!".
 
             // Exercise.TestSayHello(<something>);
+            //// START SOLUTION ////
+            Exercise.TestSayHello(s => $"Hello, {s}!");
+            //// END SOLUTION ////
 
         }
     }

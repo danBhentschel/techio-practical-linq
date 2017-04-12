@@ -7,7 +7,7 @@ namespace LinqCourseEmbeddedCode
     public class Delegates1
     {
         //// START EMBED: Example delegate declaration ////
-        public delegate int FuncTwoInts(int one, int two);
+        private delegate int FuncTwoInts(int one, int two);
         //// END EMBED ////
 
         //// START EMBED: Delegate expressions 1 ////

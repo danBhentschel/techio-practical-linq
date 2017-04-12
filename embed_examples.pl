@@ -2,7 +2,6 @@
 
 use strict;
 use warnings;
-use Data::Dumper;
 
 sub get_markdown_files_from($);
 sub embed_in_file($$);

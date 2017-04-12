@@ -24,7 +24,7 @@ In order to avoid the complications of dealing with generics in this exercise, l
 
 ### Example delegate declaration
 ```csharp
-public delegate int FuncTwoInts(int one, int two);
+private delegate int FuncTwoInts(int one, int two);
 ```
 
 ### Example extension method

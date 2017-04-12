@@ -14,5 +14,18 @@ namespace Generators1
         // public static ... AddTwoThenDouble()
         // {
         // }
+        //// START SOLUTION ////
+        public static IEnumerable<int> AddTwoThenDouble()
+        {
+            var val = 0;
+            while (true)
+            {
+                val += 2;
+                yield return val;
+                val *= 2;
+                yield return val;
+            }
+        }
+        //// END SOLUTION ////
     }
 }

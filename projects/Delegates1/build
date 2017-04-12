@@ -1,7 +1,0 @@
-#!/bin/bash
-
-mv entrypoint.sh /entrypoint.sh
-chmod ugo+x /entrypoint.sh
-
-mv parse_build_out.pl /parse_build_out.pl
-chmod ugo+x /parse_build_out.pl

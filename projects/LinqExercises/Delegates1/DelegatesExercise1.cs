@@ -7,6 +7,9 @@
     // string parameter and returns a string result.
 
     // public ... SayHello ...
+    //// START SOLUTION ////
+    public delegate string SayHello(string s);
+    //// END SOLUTION ////
 
     public static class DelegatesExercise1
     {

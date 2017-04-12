@@ -9,6 +9,9 @@ namespace Background1
     // int parameter and returns an int result.
 
     // public ... TransformationFunction ...
+    //// START SOLUTION ////
+    public delegate int TransformationFunction(int val);
+    //// END SOLUTION ////
 
     public static class BackgroundReviewExercise1
     {
@@ -25,5 +28,16 @@ namespace Background1
 
     // public ... class ...
     // { }
-
+    //// START SOLUTION ////
+    public static class Foo
+    {
+        public static IEnumerable<int> Transform(this IEnumerable<int> data, TransformationFunction func)
+        {
+            foreach (var val in data)
+            {
+                yield return func(val);
+            }
+        }
+    }
+    //// END SOLUTION ////
 }

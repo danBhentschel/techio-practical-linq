@@ -4,7 +4,7 @@
 Still referring to the `FuncTwoInts` type, previously declared as:
 
 ```csharp
-public delegate int FuncTwoInts(int one, int two);
+private delegate int FuncTwoInts(int one, int two);
 ```
 
 ### Declaring a method with a delegate argument
