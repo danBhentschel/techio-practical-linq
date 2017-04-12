@@ -1,0 +1,9 @@
+#!/bin/sh
+
+generated_files=$(./embed_examples.pl codingame.yml)
+
+IFS=$'\n'
+for file in $generated_files; do
+    git add "$file"
+done
+unset IFS
