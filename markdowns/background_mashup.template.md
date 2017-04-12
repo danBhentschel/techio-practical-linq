@@ -28,7 +28,7 @@ In order to avoid the complications of dealing with generics in this exercise, l
 
 ### Example extension method
 ```csharp
-//// EMBED: LinqCourseEmbeddedCode/CoolExtensionsForInt.cs, Example extension method declaration
+//// EMBED: LinqCourseEmbeddedCode/CoolExtensionsForInt2.cs, Example extension method with extra parameters
 ```
 
 ### Example generator

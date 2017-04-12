@@ -33,9 +33,9 @@ namespace IntExtensions
 {
     public static class CoolExtensionsForInt
     {
-        public static string Growl(this int num)
+        public static string Growl(this int num, char a, char b)
         {
-            return $"G{new string('r', num)}";
+            return $"{a}{new string(b, num)}";
         }
     }
 }

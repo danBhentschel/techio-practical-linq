@@ -4,3 +4,4 @@ projects/.vs
 LinqCourseEmbeddedCode/**/bin
 LinqCourseEmbeddedCode/**/obj
 LinqCourseEmbeddedCode/.vs
+**/.*.swp
