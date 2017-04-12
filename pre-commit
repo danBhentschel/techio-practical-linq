@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 generated_files=$(./embed_examples.pl codingame.yml)
 
