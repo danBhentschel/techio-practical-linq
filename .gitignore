@@ -1,3 +1,6 @@
 projects/**/bin
 projects/**/obj
 projects/.vs
+LinqCourseEmbeddedCode/**/bin
+LinqCourseEmbeddedCode/**/obj
+LinqCourseEmbeddedCode/.vs
