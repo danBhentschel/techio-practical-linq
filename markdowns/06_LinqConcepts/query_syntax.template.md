@@ -9,7 +9,7 @@ Query syntax has a very distinctive syntactical style. Because of its unique for
 //// EMBED: LinqCourseEmbeddedCode/LinqConcepts1.cs, LINQ query syntax
 ```
 
-For those who are familiar with SQL syntax, you might find some similarities in this example. It's not exactly the same as SQL, though. This example gathers all the strings in `animalNames` that are at least 6 characters in length, ordered from the entry with the fewest characters to the entry with the most characters.
+For those who are familiar with SQL syntax, you might find some similarities in this example. It's not exactly the same as SQL, though. This example gathers all the strings in `animalNames` that are at least 5 characters in length, ordered from the entry with the fewest characters to the entry with the most characters.
 
 The [MSDN documentation](https://msdn.microsoft.com/en-us/library/bb397947.aspx) claims that "*many people find query syntax simpler and easier to read*." I, on the other hand, consider it to be jarring and obscure.
 
