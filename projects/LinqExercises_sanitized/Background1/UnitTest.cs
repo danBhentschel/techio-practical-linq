@@ -15,16 +15,19 @@ namespace Background1
             var answer = string.Join(" ", enumerable);
             AssertAreEqual("1 2 3", answer, "{ 10, 20, 30 } -- x / 3");
 
+            CgMessage(string.Empty);
             CgMessage("About to test DoTransform(new List<int> { 7, 11, 15, 19 }, x => x - 7)");
             enumerable = BackgroundReviewExercise1.DoTransform(new List<int> { 7, 11, 15, 19 }, x => x - 7);
             answer = string.Join(" ", enumerable);
             AssertAreEqual("0 4 8 12", answer, "{ 7, 11, 15, 19 } -- x - 7");
 
+            CgMessage(string.Empty);
             CgMessage("About to test DoTransform(new List<int> { 1, 1, 1, 2, 2, 2 }, x => 20)");
             enumerable = BackgroundReviewExercise1.DoTransform(new List<int> { 1, 1, 1, 2, 2, 2 }, x => 20);
             answer = string.Join(" ", enumerable);
             AssertAreEqual("20 20 20 20 20 20", answer, "{ 1, 1, 1, 2, 2, 2 } -- 20");
 
+            CgMessage(string.Empty);
             CgMessage("About to test new List<int> { 1, 2, 3 }.Transform(x => x * 2)");
             enumerable = new List<int> { 1, 2, 3 }.Transform(x => x * 2);
             answer = string.Join(" ", enumerable);

@@ -1,7 +1,25 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
 # Exercise: Unbounded generator
 
-In the previous lesson, we saw an example of a generator method that produces numbers in the Fibonacci sequence. See if you can write a generator method that implements the following sequence:
+In the previous lesson, we saw an example of a generator method that produces numbers in the Fibonacci sequence. For reference, here is the code for that generator:
+
+```csharp
+private IEnumerable<int> GetFibonacci()
+{
+    int previousVal1 = 0;
+    int previousVal2 = 1;
+
+    while (true)
+    {
+        int nextVal = previousVal1 + previousVal2;
+        previousVal1 = previousVal2;
+        previousVal2 = nextVal;
+        yield return nextVal;
+    }
+}
+```
+
+Now, see if you can write your own generator method that implements the following sequence:
 
 Alternate between adding 2 to the previous number, then multiplying the previous number by 2. Here are the first several values in this sequence:
 

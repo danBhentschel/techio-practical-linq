@@ -5,13 +5,15 @@ Congratulations! We have made it through all the background material. We now kno
 
 Let's try it out!
 
+> **WARNING:** This exercise is quite challenging. Don't be discouraged if you are not able to solve it. You can continue with the rest of the course, and you will probably still be able to understand most of the material.
+
 ### LINQ Select() method
 
 One of the more commonly used methods in LINQ is the `Select()` method. `Select()` is an extension method to the `IEnumerable<T>` interface. It is analogous to the `map()` method found in many other programming languages.
 
 `Select()` takes each element, one-at-a-time, from a source `IEnumerable<T>`, applies a delegate function to the elements, and then returns an `IEnumerable<U>` result.
 
-**NOTE:** The type inside the collection can change, hence the change from `IEnumerable<T>` to `IEnumerable<U>`.
+> **NOTE:** The type inside the collection can change, hence the change from `IEnumerable<T>` to `IEnumerable<U>`.
 
 ### Implement a Transform() method
 

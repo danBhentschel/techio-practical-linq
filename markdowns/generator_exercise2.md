@@ -1,6 +1,24 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
 # Exercise: Bounded generator
 
+Exercise time again! Let's see if you can write a bounded generator. For reference, here is the code for the `GetFibonacciOfLength()` bounded generator:
+
+```csharp
+private IEnumerable<int> GetFibonacciOfLength(int length)
+{
+    int previousVal1 = 0;
+    int previousVal2 = 1;
+
+    for (int i = 0; i < length; i++)
+    {
+        int nextVal = previousVal1 + previousVal2;
+        previousVal1 = previousVal2;
+        previousVal2 = nextVal;
+        yield return nextVal;
+    }
+}
+```
+
 In this exercise, you will implement the same generator as in the unbounded generator exercise, but this time the sequence will be limited to the first `n` values, where `n` is a parameter to the method. As a reminder, here is the sequence you will be implementing:
 
 Alternate between adding 2 to the previous number, then multiplying the previous number by 2. Here are the first several values in this sequence:
