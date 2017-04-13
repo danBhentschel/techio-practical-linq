@@ -21,7 +21,7 @@ What does this do? Let's call it a few times and find out:
 ```csharp
 using IntExtensions;
 
-&hellip;
+  ...
 
     // Prints "Grrrrrrr" to the console
     Console.WriteLine(7.Growl('G', 'r'));

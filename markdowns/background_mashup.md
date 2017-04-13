@@ -24,6 +24,8 @@ In order to avoid the complications of dealing with generics in this exercise, l
  - The `Transform()` method should be a generator that iterates through the input `IEnumerable<int>`, applies the delegate to each value, and `yield return`s the result
  - The `Transform()` should generate an `IEnumerable<int>`
 
+## Here are some examples to help you out
+
 ### Example delegate declaration
 ```csharp
 private delegate int FuncTwoInts(int one, int two);

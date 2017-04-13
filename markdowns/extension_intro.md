@@ -34,7 +34,7 @@ The above extension method can be called as if it were a member of the `int` typ
 ```csharp
 using IntExtensions;
 
-&hellip;
+  ...
 
     // Prints "Grrrrrrr" to the console
     Console.WriteLine(7.Growl());
