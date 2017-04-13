@@ -33,7 +33,6 @@ The `file_path` is a path, from the root of the course, to a source code file th
 name for the code to pull from that file.
 
 The source code file can contain the following lines in it:
-
 ```
 //// START EMBED: <tag> ////
 //// END EMBED ////
@@ -81,3 +80,37 @@ echo -n foo
   ...
 echo bar
 ```
+
+## remove_md_files.pl
+This script is run from `post-commit`. It removes generated markdown files after committing to Git.
+
+### Problem
+I frequently found myself editing the generated files by accident, rather than the template files.
+
+### Solution
+Remove generated files after they have been committed.
+
+## sanitize_projects.pl
+This script is run from `pre-commit`. It parses project files and removes solution code from them before committing to Git.
+
+### Problems
+ - I want to be able to unit test my exercise code in a development environment.
+ - I want to ensure that my exercises are solvable before pushing changes.
+ - I want the ability to present non-compiling exercise stub code to the student.
+ - I want the ability to include multiple exercises in a single project.
+ - C# files written in Visual Studio tend to have a BOM at the beginning of the file, which the CG platform doesn't support for code stubs.
+ 
+All this requires that the stub code presented to the student must be different from the code run in the development environment, and also different from the code run by the runner.
+
+### Solution
+The `sanitize_projects.pl` script parses the `codingame.yml` file and gets a list of all projects in the course. It then copies all the files into a new directory: `<project_dir>_sanitized`. The files are content filtered during the copy process, as described below.
+
+Any content found between the following lines will be removed during copy:
+```
+//// START SOLUTION ////
+//// END SOLUTION ////
+```
+
+This allows the developer to insert solution code into the stub files that will be automatically removed later.
+
+In addition, the files are run through `dos2unix` after the copy operation, and a copy of the original files is also made in the `<project_dir>_sanitized` directory. The `build` script in the docker runner will replace the sanitized files with these original files at project build time. See [danBhentschel/cg-dotnet-runner](https://github.com/danBhentschel/cg-dotnet-runner) for more info.
