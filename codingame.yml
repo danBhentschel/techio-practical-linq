@@ -52,21 +52,6 @@ plan:
     - title: "Exercise: Implement a LINQ method"
       statement: markdowns/background_mashup.md
 projects:
-    delegates1:
-      root: /projects/Delegates1
-      runner: "danbhentschel/cg-dotnet-runner:1.9"
-    delegates2:
-      root: /projects/Delegates2
-      runner: "danbhentschel/cg-dotnet-runner:1.9"
-    extensionmethods1:
-      root: /projects/ExtensionMethods1
-      runner: "danbhentschel/cg-dotnet-runner:1.9"
-    generators1:
-      root: /projects/Generators1
-      runner: "danbhentschel/cg-dotnet-runner:1.9"
-    generators2:
-      root: /projects/Generators2
-      runner: "danbhentschel/cg-dotnet-runner:1.9"
-    background1:
-      root: /projects/Background1
-      runner: "danbhentschel/cg-dotnet-runner:1.9"
+    exercises:
+      root: /projects/LinqExercises_sanitized
+      runner: "danbhentschel/cg-dotnet-runner:1.10"

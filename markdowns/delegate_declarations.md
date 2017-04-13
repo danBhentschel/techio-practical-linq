@@ -13,4 +13,4 @@ private delegate int FuncTwoInts(int one, int two);
 
 The line above defines the type `FuncTwoInts`. The `FuncTwoInts` type is a reference to a method that takes two `int` parameters and returns a single `int` result.
 
-@[Delegates Exercise]({"stubs": ["DelegatesExercise1.cs"], "command": "Delegates1.UnitTest.Exercise1", "project": "delegates1"})
+@[Delegates Exercise]({"stubs": ["Delegates1/DelegatesExercise1.cs"], "command": "Delegates1.UnitTest.Exercise1", "project": "exercises"})

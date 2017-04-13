@@ -1,9 +1,13 @@
 #!/bin/bash
 
-generated_files=$(./embed_examples.pl codingame.yml)
+yml_file=codingame.yml
 
-IFS=$'\n'
-for file in $generated_files; do
-    git add "$file"
-done
-unset IFS
+add_all() {
+    IFS=$'\n'
+    for file in $1; do
+        git add "$file"
+    done
+}
+
+add_all $(./embed_examples.pl $yml_file)
+add_all $(./sanitize_projects.pl $yml_file)

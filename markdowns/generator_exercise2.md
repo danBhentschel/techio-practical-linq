@@ -10,4 +10,4 @@ Alternate between adding 2 to the previous number, then multiplying the previous
 = 2,   4,   6,   12,  14,   28,   30,   60,   62 ...
 </pre>
 
-@[Bounded Generator Exercise]({"stubs": ["GeneratorsExercise2.cs"], "command": "Generators2.UnitTest.Exercise2", "project": "generators2"})
+@[Bounded Generator Exercise]({"stubs": ["Generators2/GeneratorsExercise2.cs"], "command": "Generators2.UnitTest.Exercise2", "project": "exercises"})

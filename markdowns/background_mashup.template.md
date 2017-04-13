@@ -36,4 +36,4 @@ In order to avoid the complications of dealing with generics in this exercise, l
 //// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Declare GetDoubles() generator method
 ```
 
-@[Putting It Together Exercise]({"stubs": ["BackgroundReviewExercise1.cs"], "command": "Background1.UnitTest.Exercise1", "project": "background1"})
+@[Putting It Together Exercise]({"stubs": ["Background1/BackgroundReviewExercise1.cs"], "command": "Background1.UnitTest.Exercise1", "project": "exercises"})
