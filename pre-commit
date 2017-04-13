@@ -3,12 +3,13 @@
 yml_file=codingame.yml
 
 add_all() {
-    IFS=$'\n'
-    for file in $1; do
+    for file in $@; do
         echo git add "$file"
         git add "$file"
     done
 }
 
+IFS=$'\n'
 add_all $(./embed_examples.pl $yml_file)
 add_all $(./sanitize_projects.pl $yml_file)
+unset IFS
