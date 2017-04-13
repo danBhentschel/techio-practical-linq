@@ -93,14 +93,6 @@ sub get_embedded_content($$) {
                 $result .= "  ...\n";
             }
 
-            if ($in_elide) {
-                if ($line =~ /\/\/\/\/\s*END ELIDE\s*\/\/\/\//) {
-                    $in_elide = 0;
-                }
-
-                next;
-            }
-
             if ($line =~ /\/\/\/\/\s*START REPLACE:\s*"?(.*?)"?\s*:::\s*"?(.*?)"?\s*\/\/\/\//) {
                 $replacements{"$1"} = $2;
                 next;
@@ -108,6 +100,14 @@ sub get_embedded_content($$) {
 
             if ($line =~ /\/\/\/\/\s*END REPLACE:\s*"?(.*?)"?\s*\/\/\/\// && defined $replacements{"$1"}) {
                 delete $replacements{"$1"};
+                next;
+            }
+
+            if ($in_elide) {
+                if ($line =~ /\/\/\/\/\s*END ELIDE\s*\/\/\/\//) {
+                    $in_elide = 0;
+                }
+
                 next;
             }
 
@@ -124,7 +124,7 @@ sub get_embedded_content($$) {
 
             $result .= $line;
         }
-        elsif ($line =~ /^(\s*)\/\/\/\/\s*START EMBED:\s*$content_tag\s*\/\/\/\//) {
+        elsif ($line =~ /(\s*)\/\/\/\/\s*START EMBED:\s*$content_tag\s*\/\/\/\//) {
             $should_print = 1;
             $start_spaces = $1;
         }
