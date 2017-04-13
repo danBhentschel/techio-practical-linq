@@ -6,6 +6,7 @@ add_all() {
     for file in $@; do
         echo git add "$file"
         git add "$file"
+	sleep 0.2
     done
 }
 
