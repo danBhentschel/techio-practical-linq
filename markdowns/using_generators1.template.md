@@ -18,4 +18,4 @@ Why do you think this is?
 
 Eventually, the numbers produced by the `GetFibonacci()` method get large enough that they don't fit into an `int`. This is the cause of the `OverflowException`.
 
-**NOTE:** The `Count()` method used above is a LINQ method. More on this later.
+> **NOTE:** The `Count()` method used above is a LINQ method. More on this later.

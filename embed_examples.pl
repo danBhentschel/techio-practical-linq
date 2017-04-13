@@ -90,7 +90,7 @@ sub get_embedded_content($$) {
 
             if ($line =~ /\/\/\/\/\s*START ELIDE\s*\/\/\/\//) {
                 $in_elide = 1;
-                $result .= "&hellip;\n";
+                $result .= "  ...\n";
             }
 
             if ($in_elide) {
