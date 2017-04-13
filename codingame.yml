@@ -1,0 +1,62 @@
+title : C# LINQ Overview
+plan:
+  - title: "About this Course"
+    description: "An introduction to the course"
+    plan:
+    - title: "Welcome"
+      statement: markdowns/01_AboutThisCourse/welcome.md
+    - title: "Introduction"
+      statement: markdowns/01_AboutThisCourse/introduction.md
+  - title: "Background: Delegates"
+    description: "Background information on using delegates and lambda expressions in C#"
+    plan:
+    - title: "Delegate Declarations"
+      statement: markdowns/02_BackgroundDelegates/delegate_declarations.md
+    - title: "Delegate Variables"
+      statement: markdowns/02_BackgroundDelegates/delegate_variables.md
+    - title: "Delegates as Parameters"
+      statement: markdowns/02_BackgroundDelegates/delegate_parameters.md
+    - title: "Exercise: Delegates"
+      statement: markdowns/02_BackgroundDelegates/delegates_exercise.md
+  - title: "Background: Extension methods"
+    description: "Background information on extension methods in C#"
+    plan:
+    - title: "Writing extension methods"
+      statement: markdowns/03_BackgroundExtensionMethods/extension_intro.md
+    - title: "Exercise: Extension methods"
+      statement: markdowns/03_BackgroundExtensionMethods/extension_exercise.md
+    - title: "Passing extra parameters to an extension method"
+      statement: markdowns/03_BackgroundExtensionMethods/extension_parameters.md
+  - title: "Background: Generators and IEnumerable<T>"
+    description: "Background information on creating and using generators in C#"
+    plan:
+    - title: "IEnumerable<T>"
+      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/ienumerable_intro.md
+    - title: "Unbounded generators"
+      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/ienumerable_generator.md
+    - title: "Exercise: Unbounded generator"
+      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/generator_exercise1.md
+    - title: "Using generators"
+      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/using_generators1.md
+    - title: "More generator examples"
+      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/using_generators2.md
+    - title: "Exiting a generator"
+      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/bounded_generators1.md
+    - title: "Yield break"
+      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/bounded_generators2.md
+    - title: "Exercise: Bounded generator"
+      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/generator_exercise2.md
+  - title: "Background: Putting it all together"
+    description: "Applying the background information to LINQ"
+    plan:
+    - title: "Exercise: Implement a LINQ method"
+      statement: markdowns/05_BackgroundPuttingItAllTogether/background_mashup.md
+  - title: "LINQ Concepts: Putting it all together"
+    description: "The 10,000 foot view"
+    plan:
+    - title: "LINQ Concepts: How LINQ works"
+      statement: markdowns/06_LinqConcepts/concepts_intro.md
+projects:
+    exercises:
+      root: /projects/LinqExercises_sanitized
+      runner: "danbhentschel/cg-dotnet-runner:1.10"
