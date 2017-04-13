@@ -1,6 +1,12 @@
 # Exercise: Unbounded generator
 
-In the previous lesson, we saw an example of a generator method that produces numbers in the Fibonacci sequence. See if you can write a generator method that implements the following sequence:
+In the previous lesson, we saw an example of a generator method that produces numbers in the Fibonacci sequence. For reference, here is the code for that generator:
+
+```csharp
+//// EMBED: LinqCourseEmbeddedCode/IEnumerable1.cs, Declare GetFibonacci() generator method
+```
+
+Now, see if you can write your own generator method that implements the following sequence:
 
 Alternate between adding 2 to the previous number, then multiplying the previous number by 2. Here are the first several values in this sequence:
 
