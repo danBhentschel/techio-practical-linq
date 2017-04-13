@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using LinqExercises.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Delegates1
@@ -20,14 +20,9 @@ namespace Delegates1
             Assert.AreEqual("Hello, my baby!", Answers[1]);
             Assert.AreEqual("Hello, my honey!", Answers[2]);
 
-            Answers.ForEach(CgMessage);
-            CgMessage(string.Empty);
-            CgMessage("Congratulations, you did it!");
-        }
-
-        private static void CgMessage(string message)
-        {
-            Console.WriteLine($"CG> message -channel \"exercise results\" \"{message}\"");
+            Answers.ForEach(Utils.CgMessage);
+            Utils.CgMessage(string.Empty);
+            Utils.CgMessage("Congratulations, you did it!");
         }
     }
 }

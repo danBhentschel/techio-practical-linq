@@ -51,11 +51,15 @@ plan:
     plan:
     - title: "Exercise: Implement a LINQ method"
       statement: markdowns/05_BackgroundPuttingItAllTogether/background_mashup.md
-  - title: "LINQ Concepts: Putting it all together"
+  - title: "LINQ Concepts"
     description: "The 10,000 foot view"
     plan:
-    - title: "LINQ Concepts: How LINQ works"
+    - title: "Using LINQ"
       statement: markdowns/06_LinqConcepts/concepts_intro.md
+    - title: "LINQ query syntax"
+      statement: markdowns/06_LinqConcepts/query_syntax.md
+    - title: "LINQ method syntax"
+      statement: markdowns/06_LinqConcepts/method_syntax.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized
