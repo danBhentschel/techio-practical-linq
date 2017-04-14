@@ -9,17 +9,17 @@ Query syntax has a very distinctive syntactical style. Because of its unique for
 ```csharp
 using System.Linq;
 
-  ...
+   ...
 
-    List<string> animalNames = new List<string>
-        {"fawn", "gibbon", "heron", "ibex", "jackalope"};
-    
-    // Result: {"heron", "gibbon", "jackalope"}
-    IEnumerable<string> longAnimalNames =
-        from name in animalNames
-        where name.Length >= 5
-        orderby name.Length
-        select name;
+List<string> animalNames = new List<string>
+    {"fawn", "gibbon", "heron", "ibex", "jackalope"};
+
+// Result: {"heron", "gibbon", "jackalope"}
+IEnumerable<string> longAnimalNames =
+    from name in animalNames
+    where name.Length >= 5
+    orderby name.Length
+    select name;
 ```
 
 For those who are familiar with SQL syntax, you might find some similarities in this example. It's not exactly the same as SQL, though. This example gathers all the strings in `animalNames` that are at least 5 characters in length, ordered from the entry with the fewest characters to the entry with the most characters.

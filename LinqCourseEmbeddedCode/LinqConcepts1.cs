@@ -1,10 +1,9 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-//// START EMBED: LINQ query syntax ////
+//// START EMBED: using System.Linq ////
 using System.Linq;
-
-//// START ELIDE ////
+//// END EMBED ////
 
 namespace LinqCourseEmbeddedCode
 {
@@ -14,8 +13,7 @@ namespace LinqCourseEmbeddedCode
         [TestMethod]
         public void TestMethod1()
         {
-    //// END ELIDE ////
-
+    //// START EMBED: LINQ query syntax ////
     List<string> animalNames = new List<string>
         {"fawn", "gibbon", "heron", "ibex", "jackalope"};
     

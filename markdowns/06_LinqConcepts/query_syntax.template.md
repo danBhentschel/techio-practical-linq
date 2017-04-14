@@ -6,6 +6,10 @@ Query syntax has a very distinctive syntactical style. Because of its unique for
 
 ### Query syntax example
 ```csharp
+//// EMBED: LinqCourseEmbeddedCode/LinqConcepts1.cs, using System.Linq
+
+   ...
+
 //// EMBED: LinqCourseEmbeddedCode/LinqConcepts1.cs, LINQ query syntax
 ```
 

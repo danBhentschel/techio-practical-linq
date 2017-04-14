@@ -6,19 +6,15 @@ The other LINQ format is method syntax. The LINQ method syntax can do everything
 Recall this example of query syntax:
 
 ```csharp
-using System.Linq;
+List<string> animalNames = new List<string>
+    {"fawn", "gibbon", "heron", "ibex", "jackalope"};
 
-  ...
-
-    List<string> animalNames = new List<string>
-        {"fawn", "gibbon", "heron", "ibex", "jackalope"};
-    
-    // Result: {"heron", "gibbon", "jackalope"}
-    IEnumerable<string> longAnimalNames =
-        from name in animalNames
-        where name.Length >= 5
-        orderby name.Length
-        select name;
+// Result: {"heron", "gibbon", "jackalope"}
+IEnumerable<string> longAnimalNames =
+    from name in animalNames
+    where name.Length >= 5
+    orderby name.Length
+    select name;
 ```
 
 This exact same instruction can be written in method syntax like this:

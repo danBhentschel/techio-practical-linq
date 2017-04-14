@@ -10,7 +10,7 @@ namespace QuerySyntax1
         [TestMethod]
         public void Exercise1()
         {
-            Utils.CgMessage("About to test FilterAndSort({foo, bar,goo, onion}, oo)");
+            Utils.CgMessage("About to test FilterAndSort({foo, bar, goo, onion}, oo)");
             var answer = QuerySyntax1.FilterAndSort(new List<string> {"foo", "bar", "goo", "onion"}, "oo");
             Utils.AssertAreEqual("foo, goo", string.Join(", ", answer), "{foo, bar, goo, onion}, oo");
 
