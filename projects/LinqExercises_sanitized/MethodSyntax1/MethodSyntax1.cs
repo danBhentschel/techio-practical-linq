@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace QuerySyntax1
+namespace MethodSyntax1
 {
-    public static class QuerySyntax1
+    public static class MethodSyntax1
     {
         public static IEnumerable<string> FilterAndSort(IEnumerable<string> inValues, string pattern)
         {
-            return from value in inValues
-                // LINQ instructions here
-                select value;
+            return inValues
+                // LINQ method calls here
+                ;
         }
     }
 }
