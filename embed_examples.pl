@@ -16,11 +16,16 @@ if (scalar(@ARGV) < 1) {
 my $yml_file = $ARGV[0];
 my $markdowns = get_markdown_files_from($yml_file);
 
+my @done;
 foreach my $file (@$markdowns) {
     my $template = $file;
     $template =~ s/\.md$/.template.md/;
-    embed_in_file($template, $file);
+    if (embed_in_file($template, $file)) {
+        push @done, $file;
+    }
 }
+
+print join(' ', @done);
 
 sub get_markdown_files_from($) {
     my $filename = shift;
@@ -39,7 +44,7 @@ sub embed_in_file($$) {
     my $template = shift;
     my $out_file = shift;
 
-    return unless -f $template;
+    return 0 unless -f $template;
 
     open(my $fh, "<", $template) or die "Can't open < $template: $!";
     my @lines = <$fh>;
@@ -55,7 +60,7 @@ sub embed_in_file($$) {
 
     close($fh);
 
-    print "$out_file\n";
+    return 1;
 }
 
 sub get_line($) {

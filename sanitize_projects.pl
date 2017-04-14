@@ -24,9 +24,12 @@ if (scalar(@ARGV) < 1) {
 my $yml_file = $ARGV[0];
 my $projects = get_projects_from($yml_file);
 
+my @done;
 foreach my $project_dir (@$projects) {
     process_project($project_dir);
 }
+
+print join(" ", @done);
 
 sub get_projects_from($) {
     my $filename = shift;
@@ -63,12 +66,12 @@ sub process_project($) {
             $dest_filename =~ s/(\/|^)$project_dir/$1$sanitized_dir/;
             sanitize_file($File::Find::name, $dest_filename);
             unixify_file($dest_filename);
-            print "$dest_filename\n";
+            push @done, $dest_filename;
 
             my $orig_filename = "${dest_filename}.orig";
             copy($File::Find::name, $orig_filename);
             unixify_file($orig_filename);
-            print "$orig_filename\n";
+            push @done, $orig_filename;
         }
     };
 
