@@ -5,7 +5,12 @@ Using what you have learned about `First()`, `Last()`, `ElementAt()`, and `Singl
 For reference, here are some examples of LINQ methods that return a single value from the sequence:
 
 ```csharp
-//// EMBED: LinqCourseEmbeddedCode/Delegates1.cs, Passing a delegate to a method
+//// EMBED: LinqCourseEmbeddedCode/Methods1.cs, First()
+
+//// EMBED: LinqCourseEmbeddedCode/Methods1.cs, Last() - condition
+
+
+//// EMBED: LinqCourseEmbeddedCode/Methods1.cs, ElementAtOrDefault()
 ```
 
-@[Delegates Exercise]({"stubs": ["Delegates2/DelegatesExercise2.cs"], "command": "Delegates2.UnitTest.Exercise2", "project": "exercises"})
+@[Extract a Single Value Exercise]({"stubs": ["SingleValue1/SingleValue1.cs"], "command": "SingleValue1.UnitTest.Exercise1", "project": "exercises"})

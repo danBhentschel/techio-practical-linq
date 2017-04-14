@@ -6,20 +6,15 @@ Using what you have learned about `First()`, `Last()`, `ElementAt()`, and `Singl
 For reference, here are some examples of LINQ methods that return a single value from the sequence:
 
 ```csharp
-private static void Execute()
-{
-    // Prints 8
-    PrintWith_2and4((first, second) => first * second);
+List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
+double whatsThis = doubles.First();
 
-    // Prints 6
-    PrintWith_2and4((one, two) => one + two);
+List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
+double whatsThis = doubles.Last(val => val < 2.1);
 
-    // Prints 224
-    PrintWith_2and4((a, b) => int.Parse($"{a}{a}{b}"));
 
-    // Prints 9999
-    PrintWith_2and4((foo, bar) => 9999);
-}
+List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
+double whatsThis = doubles.ElementAtOrDefault(4);
 ```
 
-@[Delegates Exercise]({"stubs": ["Delegates2/DelegatesExercise2.cs"], "command": "Delegates2.UnitTest.Exercise2", "project": "exercises"})
+@[Extract a Single Value Exercise]({"stubs": ["SingleValue1/SingleValue1.cs"], "command": "SingleValue1.UnitTest.Exercise1", "project": "exercises"})
