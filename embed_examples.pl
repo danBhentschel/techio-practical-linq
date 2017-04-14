@@ -21,7 +21,7 @@ foreach my $file (@$markdowns) {
     my $template = $file;
     $template =~ s/\.md$/.template.md/;
     if (embed_in_file($template, $file)) {
-        push @done, $file;
+        push @done, "\"$file\"";
     }
 }
 

@@ -66,12 +66,12 @@ sub process_project($) {
             $dest_filename =~ s/(\/|^)$project_dir/$1$sanitized_dir/;
             sanitize_file($File::Find::name, $dest_filename);
             unixify_file($dest_filename);
-            push @done, $dest_filename;
+            push @done, "\"$dest_filename\"";
 
             my $orig_filename = "${dest_filename}.orig";
             copy($File::Find::name, $orig_filename);
             unixify_file($orig_filename);
-            push @done, $orig_filename;
+            push @done, "\"$orig_filename\"";
         }
     };
 
