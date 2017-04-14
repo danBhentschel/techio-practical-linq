@@ -38,7 +38,7 @@ double whatsThis = doubles.Last();
  - [x] 2.3
 
 ### ElementAt() method
-Try this one. What will the `ElementAt(2)` call return in this code snippet?
+Try this one. What would the `ElementAt(2)` call return in this code snippet?
 
 ```csharp
 List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
@@ -54,7 +54,7 @@ double whatsThis = doubles.ElementAt(2);
 ### Single() method
 `Single()` is an interesting method. You call it when you are expecting that there is only a single element in the sequence. If there is more than one element, then `Single()` will throw an exception.
 
-With this in mind, what do you think this will do?
+With this in mind, what do you think this would do?
 
 ```csharp
 List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
