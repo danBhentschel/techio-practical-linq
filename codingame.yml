@@ -69,6 +69,8 @@ plan:
       statement: markdowns/07_MethodsExtractAValue/conditions.md
     - title: "Single value or default"
       statement: markdowns/07_MethodsExtractAValue/or_default.md
+    - title: "Single value exercise"
+      statement: markdowns/07_MethodsExtractAValue/single_value_exercise.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized

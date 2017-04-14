@@ -32,7 +32,7 @@ double whatsThis = doubles.LastOrDefault(val => val > 2.0 && val < 2.3);
 ?[What is the value of the whatsThis variable?]
  - [ ] The default value for double: 0.0D
  - [x] 2.2
- - [ ] Nothing. The Last() call would throw an Exception.
+ - [ ] Nothing. The LastOrDefault() call would throw an Exception.
  - [ ] 2.3
 
 ### ElementAtOrDefault() method
@@ -46,7 +46,7 @@ double whatsThis = doubles.ElementAtOrDefault(4);
 ?[What is the value of the whatsThis variable?]
  - [x] The default value for double: 0.0D
  - [ ] 2.2
- - [ ] Nothing. The ElementAt() call would throw an Exception.
+ - [ ] Nothing. The ElementAtOrDefault() call would throw an Exception.
  - [ ] 2.3
 
 ### SingleOrDefault() method
@@ -62,5 +62,5 @@ double whatsThis = doubles.SingleOrDefault(val => val > 2.1 && val <= 2.3);
 ?[What is the value of the whatsThis variable?]
  - [ ] The default value for double: 0.0D
  - [ ] 2.2
- - [x] Nothing. The Single() call would throw an Exception.
+ - [x] Nothing. The SingleOrDefault() call would throw an Exception.
  - [ ] 2.3

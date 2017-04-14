@@ -29,7 +29,7 @@ What do you think the `LastOrDefault()` in this code would return?
 ?[What is the value of the whatsThis variable?]
  - [ ] The default value for double: 0.0D
  - [x] 2.2
- - [ ] Nothing. The Last() call would throw an Exception.
+ - [ ] Nothing. The LastOrDefault() call would throw an Exception.
  - [ ] 2.3
 
 ### ElementAtOrDefault() method
@@ -42,7 +42,7 @@ Try this one. What would the `ElementAtOrDefault(4)` call return in this code sn
 ?[What is the value of the whatsThis variable?]
  - [x] The default value for double: 0.0D
  - [ ] 2.2
- - [ ] Nothing. The ElementAt() call would throw an Exception.
+ - [ ] Nothing. The ElementAtOrDefault() call would throw an Exception.
  - [ ] 2.3
 
 ### SingleOrDefault() method
@@ -57,5 +57,5 @@ With this in mind, what do you think this would do?
 ?[What is the value of the whatsThis variable?]
  - [ ] The default value for double: 0.0D
  - [ ] 2.2
- - [x] Nothing. The Single() call would throw an Exception.
+ - [x] Nothing. The SingleOrDefault() call would throw an Exception.
  - [ ] 2.3
