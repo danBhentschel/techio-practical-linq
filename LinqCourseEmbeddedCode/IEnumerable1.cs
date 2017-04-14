@@ -48,6 +48,7 @@ namespace LinqCourseEmbeddedCode
         //// END EMBED ////
 
         [TestMethod]
+        [ExpectedException(typeof(OverflowException))]
         public void TestMethod2()
         {
             //// START EMBED: Call GetFibonacci().Count() ////

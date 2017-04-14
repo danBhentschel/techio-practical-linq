@@ -60,6 +60,11 @@ plan:
       statement: markdowns/06_LinqConcepts/query_syntax.md
     - title: "LINQ method syntax"
       statement: markdowns/06_LinqConcepts/method_syntax.md
+  - title: "Methods: Extracting a value"
+    description: "Examine some of the methods that can be used to extract a single value from a sequence"
+    plan:
+    - title: "First(), Last(), ElementAt(), and Single()"
+      statement: markdowns/07_MethodsExtractAValue/first_last_single.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized
