@@ -13,9 +13,9 @@ namespace LinqCourseEmbeddedCode
         {
             //// START EMBED: First() ////
             List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
-            double twoPointOh = doubles.First();
+            double whatsThis = doubles.First();
             //// END EMBED ////
-            Assert.AreEqual(2.0, twoPointOh);
+            Assert.AreEqual(2.0, whatsThis);
         }
 
         [TestMethod]
