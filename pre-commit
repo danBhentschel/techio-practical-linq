@@ -2,4 +2,5 @@
 
 yml_file=codingame.yml
 
-echo $(./embed_examples.pl $yml_file) $(./sanitize_projects.pl $yml_file) | xargs git add
+files="$(./embed_examples.pl $yml_file) $(./sanitize_projects.pl $yml_file)"
+echo $files | xargs git add
