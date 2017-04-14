@@ -67,6 +67,8 @@ plan:
       statement: markdowns/07_MethodsExtractAValue/first_last_single.md
     - title: "Conditionally extract a single value"
       statement: markdowns/07_MethodsExtractAValue/conditions.md
+    - title: "Single value or default"
+      statement: markdowns/07_MethodsExtractAValue/or_defaults.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized

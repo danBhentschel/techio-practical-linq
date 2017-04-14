@@ -77,5 +77,46 @@ namespace LinqCourseEmbeddedCode
             //// END EMBED ////
             Assert.AreEqual(2.3, whatsThis);
         }
+
+        [TestMethod]
+        public void TestMethod8()
+        {
+            //// START EMBED: FirstOrDefault() ////
+            List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
+            double whatsThis = doubles.FirstOrDefault(val => val > 2.3);
+            //// END EMBED ////
+            Assert.AreEqual(0.0D, whatsThis);
+        }
+
+        [TestMethod]
+        public void TestMethod9()
+        {
+            //// START EMBED: LastOrDefault() ////
+            List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
+            double whatsThis = doubles.LastOrDefault(val => val > 2.0 && val < 2.3);
+            //// END EMBED ////
+            Assert.AreEqual(2.2, whatsThis);
+        }
+
+        [TestMethod]
+        public void TestMethod11()
+        {
+            //// START EMBED: ElementAtOrDefault() ////
+            List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
+            double whatsThis = doubles.ElementAtOrDefault(4);
+            //// END EMBED ////
+            Assert.AreEqual(0.0D, whatsThis);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void TestMethod10()
+        {
+            //// START EMBED: SingleOrDefault() ////
+            List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
+            double whatsThis = doubles.SingleOrDefault(val => val > 2.1 && val <= 2.3);
+            //// END EMBED ////
+            Assert.AreEqual(0.0D, whatsThis);
+        }
     }
 }
