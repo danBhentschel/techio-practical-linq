@@ -32,9 +32,12 @@ namespace LinqExercises.Utils
 
         private static int GetDiffOffest(string expected, string actual)
         {
-            for (var i = 0; i < expected.Length; i++)
+            var length = Math.Max(expected.Length, actual.Length);
+            var ePadded = expected.PadRight(length, ' ');
+            var aPadded = actual.PadRight(length, ' ');
+            for (var i = 0; i < length; i++)
             {
-                if (expected[i] != actual[i])
+                if (ePadded[i] != aPadded[i])
                 {
                     return i;
                 }

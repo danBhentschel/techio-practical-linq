@@ -13,7 +13,7 @@ namespace SingleValue1
             // return words.???();
         }
 
-        // Return the first word that contains the substring "her" in it.
+        // Return the last word that contains the substring "her" in it.
         // There will always be at least one.
         public static string GetLastWordWithHerInIt(IEnumerable<string> words)
         {
