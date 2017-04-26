@@ -49,16 +49,17 @@ namespace ChangeOrder1
         {
             var names = new List<ChangeOrder2.Name>
             {
-                new NameImpl2("Martin Luther King"),
                 new NameImpl2("Johan Sebastian Bach"),
+                new NameImpl2("Martin Luther King"),
                 new NameImpl2("Billie Jean King"),
+                new NameImpl2("Im The King"),
                 new NameImpl2("Franklin Delano Roosevelt")
             };
             var description = "{" + string.Join(", ", names) + "}";
             Utils.CgMessage($"About to test SortNames({description})");
             var answer = ThenBy1.SortNames(names);
             var str = string.Join(", ", answer.Select(_ => _.First));
-            Utils.AssertAreEqual("Johan, Billie, Martin, Franklin", str, description);
+            Utils.AssertAreEqual("Johan, Billie, Im, Martin, Franklin", str, description);
 
             Utils.CgMessage(string.Empty);
             names = new List<ChangeOrder2.Name>
