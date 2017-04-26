@@ -1,24 +1,23 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
+//// START SOLUTION ////
+// ReSharper disable once CheckNamespace
+//// END SOLUTION ////
 namespace ChangeOrder1
 {
-    //// START UNCOMMENT ////
-    //public interface Name
-    //{
-    //    string First { get; }
-    //    string Middle { get; }
-    //    string Last { get; }
-    //}
-    //// END UNCOMMENT ////
-    //// START SOLUTION ////
     public interface Name
     {
+        //// START SOLUTION ////
+        // ReSharper disable UnusedMemberInSuper.Global
+        //// END SOLUTION ////
         string First { get; }
         string Middle { get; }
+        //// START SOLUTION ////
+        // ReSharper restore UnusedMemberInSuper.Global
+        //// END SOLUTION ////
         string Last { get; }
     }
-    //// END SOLUTION ////
 
     public static class OrderBy1
     {

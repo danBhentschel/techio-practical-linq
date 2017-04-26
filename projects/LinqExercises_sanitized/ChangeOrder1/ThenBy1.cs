@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ChangeOrder1
+namespace ChangeOrder2
 {
     public interface Name
     {

@@ -1,16 +1,17 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ChangeOrder1
+//// START SOLUTION ////
+// ReSharper disable once CheckNamespace
+//// END SOLUTION ////
+namespace ChangeOrder2
 {
-    //// START UNCOMMENT ////
-    //public interface Name
-    //{
-    //    string First { get; }
-    //    string Middle { get; }
-    //    string Last { get; }
-    //}
-    //// END UNCOMMENT ////
+    public interface Name
+    {
+        string First { get; }
+        string Middle { get; }
+        string Last { get; }
+    }
 
     public static class ThenBy1
     {

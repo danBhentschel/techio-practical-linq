@@ -1,9 +1,10 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
+using ChangeOrder2;
 using LinqExercises.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+// ReSharper disable once CheckNamespace
 namespace ChangeOrder1
 {
     [TestClass]
@@ -46,12 +47,12 @@ namespace ChangeOrder1
         [TestMethod]
         public void Exercise2()
         {
-            var names = new List<Name>
+            var names = new List<ChangeOrder2.Name>
             {
-                new NameImpl("Martin Luther King"),
-                new NameImpl("Johan Sebastian Bach"),
-                new NameImpl("Billie Jean King"),
-                new NameImpl("Franklin Delano Roosevelt")
+                new NameImpl2("Martin Luther King"),
+                new NameImpl2("Johan Sebastian Bach"),
+                new NameImpl2("Billie Jean King"),
+                new NameImpl2("Franklin Delano Roosevelt")
             };
             var description = "{" + string.Join(", ", names) + "}";
             Utils.CgMessage($"About to test SortNames({description})");
@@ -60,12 +61,12 @@ namespace ChangeOrder1
             Utils.AssertAreEqual("Johan, Billie, Martin, Franklin", str, description);
 
             Utils.CgMessage(string.Empty);
-            names = new List<Name>
+            names = new List<ChangeOrder2.Name>
             {
-                new NameImpl("Hillary Rodham Clinton"),
-                new NameImpl("Edgar Allan Poe"),
-                new NameImpl("Edgar Ellen Poe"),
-                new NameImpl("John Fitzgerald Kennedy")
+                new NameImpl2("Hillary Rodham Clinton"),
+                new NameImpl2("Edgar Allan Poe"),
+                new NameImpl2("Edgar Ellen Poe"),
+                new NameImpl2("John Fitzgerald Kennedy")
             };
             description = "{" + string.Join(", ", names) + "}";
             Utils.CgMessage($"About to test SortNames({description})");
@@ -79,13 +80,34 @@ namespace ChangeOrder1
 
         private class NameImpl : Name
         {
-            public string First { get; private set; }
+            public string First { get; }
 
-            public string Middle { get; private set; }
+            public string Middle { get; }
 
-            public string Last { get; private set; }
+            public string Last { get; }
 
             public NameImpl(string name)
+            {
+                var names = name.Split(' ');
+                First = names[0];
+                Middle = names[1];
+                Last = names[2];
+            }
+
+            public override string ToString()
+            {
+                return $"{First} {Middle} {Last}";
+            }
+        }
+        private class NameImpl2 : ChangeOrder2.Name
+        {
+            public string First { get; }
+
+            public string Middle { get; }
+
+            public string Last { get; }
+
+            public NameImpl2(string name)
             {
                 var names = name.Split(' ');
                 First = names[0];
