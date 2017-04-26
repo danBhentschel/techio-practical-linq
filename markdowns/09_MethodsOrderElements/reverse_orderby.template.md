@@ -18,7 +18,9 @@ The `Reverse()` method returns a new sequence that contains all the elements fro
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods3.cs, OrderBy() 1
+
 //// EMBED: LinqCourseEmbeddedCode/Methods3.cs, OrderBy() 2
+
 //// EMBED: LinqCourseEmbeddedCode/Methods3.cs, OrderBy() 3
 ```
 

@@ -23,9 +23,11 @@ IEnumerable<string> result = strings.Reverse();
 List<string> strings = new List<string> { "first", "then", "and then", "finally" };
 // Will contain { "then", "first", "finally", "and then" }
 IEnumerable<string> result = strings.OrderBy(str => str.Length);
+
 List<string> strings = new List<string> { "first", "then", "and then", "finally" };
 // Will contain { "and then", "then", "finally", "first" }
 IEnumerable<string> result = strings.OrderBy(str => str[2]);
+
 List<string> strings = new List<string> { "first", "then", "and then", "finally" };
 // Will contain { "then", "and then", "first", "finally" }
 IEnumerable<string> result = strings.OrderBy(str => new string(str.Reverse().ToArray()));
