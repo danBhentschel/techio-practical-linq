@@ -78,8 +78,26 @@ plan:
       statement: markdowns/08_MethodsExtractValues/skip_take.md
     - title: "SkipWhile and TakeWhile"
       statement: markdowns/08_MethodsExtractValues/skip_while_take_while.md
-    - title: "Distinct, Intersection, and Where"
+    - title: "Distinct, Intersect, and Where"
       statement: markdowns/08_MethodsExtractValues/distinct_intersection_where.md
+  - title: "Methods: Changing element order"
+    description: "Examines some of the methods that can be used to change the order of the elements in a sequence"
+    plan:
+    - title: "Reverse and OrderBy"
+      statement: markdowns/09_MethodsOrderElements/reverse_orderby.md
+    - title: "ThenBy"
+      statement: markdowns/09_MethodsOrderElements/reverse_thenby.md
+  - title: "Methods: Single calculated value"
+    description: "Examines some of the methods that calculate a value based on the elements in a sequence"
+    plan:
+    - title: "Count and Sum"
+      statement: markdowns/10_MethodsCalculateSingleValue/count_sum.md
+    - title: "Min and Max"
+      statement: markdowns/10_MethodsCalculateSingleValue/min_max.md
+    - title: "Any and All"
+      statement: markdowns/10_MethodsCalculateSingleValue/any_all.md
+    - title: "Aggregate"
+      statement: markdowns/10_MethodsCalculateSingleValue/aggregate.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized

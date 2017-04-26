@@ -89,11 +89,23 @@ sub sanitize_file($$) {
     open($fh, ">", $dest_filename) or die "Can't open < $dest_filename $!";
 
     my $should_print = 1;
+    my $should_uncomment = 0;
     foreach my $line (@lines) {
         if ($should_print) {
             if ($line =~ /\/\/\/\/\s*START SOLUTION\s*\/\/\/\//) {
                 $should_print = 0;
                 next;
+            }
+            if ($line =~ /\/\/\/\/\s*START UNCOMMENT\s*\/\/\/\//) {
+                $should_uncomment = 1;
+                next;
+            }
+            if ($line =~ /\/\/\/\/\s*END UNCOMMENT\s*\/\/\/\//) {
+                $should_uncomment = 0;
+                next;
+            }
+            if ($should_uncomment) {
+                $line =~ s/^(\s*)\/\/+\s*/$1/;
             }
             print $fh $line;
         }
