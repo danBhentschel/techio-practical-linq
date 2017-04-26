@@ -64,8 +64,8 @@ namespace ChangeOrder1
             names = new List<ChangeOrder2.Name>
             {
                 new NameImpl2("Hillary Rodham Clinton"),
-                new NameImpl2("Edgar Allan Poe"),
                 new NameImpl2("Edgar Ellen Poe"),
+                new NameImpl2("Edgar Allan Poe"),
                 new NameImpl2("John Fitzgerald Kennedy")
             };
             description = "{" + string.Join(", ", names) + "}";
