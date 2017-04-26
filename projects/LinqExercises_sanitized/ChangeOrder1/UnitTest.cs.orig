@@ -19,12 +19,13 @@ namespace ChangeOrder1
                 new NameImpl("Wolfgang Amadeus Mozart"),
                 new NameImpl("Franklin Delano Roosevelt")
             };
-            var description = "{\"" + string.Join("\", \"", names) + "\"}";
+            var description = "{" + string.Join(", ", names) + "}";
             Utils.CgMessage($"About to test SortNames({description})");
             var answer = OrderBy1.SortNames(names);
             var str = string.Join(", ", answer.Select(_ => _.Last));
             Utils.AssertAreEqual("Roosevelt, Mozart, King, Bach", str, description);
 
+            Utils.CgMessage(string.Empty);
             names = new List<Name>
             {
                 new NameImpl("Hillary Rodham Clinton"),
@@ -32,7 +33,7 @@ namespace ChangeOrder1
                 new NameImpl("Billie Jean King"),
                 new NameImpl("John Fitzgerald Kennedy")
             };
-            description = "{\"" + string.Join("\", \"", names) + "\"}";
+            description = "{" + string.Join(", ", names) + "}";
             Utils.CgMessage($"About to test SortNames({description})");
             answer = OrderBy1.SortNames(names);
             str = string.Join(", ", answer.Select(_ => _.Last));
@@ -52,12 +53,13 @@ namespace ChangeOrder1
                 new NameImpl("Billie Jean King"),
                 new NameImpl("Franklin Delano Roosevelt")
             };
-            var description = "{\"" + string.Join("\", \"", names) + "\"}";
+            var description = "{" + string.Join(", ", names) + "}";
             Utils.CgMessage($"About to test SortNames({description})");
             var answer = ThenBy1.SortNames(names);
             var str = string.Join(", ", answer.Select(_ => _.First));
             Utils.AssertAreEqual("Johan, Billie, Martin, Franklin", str, description);
 
+            Utils.CgMessage(string.Empty);
             names = new List<Name>
             {
                 new NameImpl("Hillary Rodham Clinton"),
@@ -65,7 +67,7 @@ namespace ChangeOrder1
                 new NameImpl("Edgar Ellen Poe"),
                 new NameImpl("John Fitzgerald Kennedy")
             };
-            description = "{\"" + string.Join("\", \"", names) + "\"}";
+            description = "{" + string.Join(", ", names) + "}";
             Utils.CgMessage($"About to test SortNames({description})");
             answer = ThenBy1.SortNames(names);
             str = string.Join(", ", answer.Select(_ => _.Middle));

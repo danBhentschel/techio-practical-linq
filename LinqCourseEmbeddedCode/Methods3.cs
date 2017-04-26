@@ -25,6 +25,7 @@ namespace LinqCourseEmbeddedCode
         {
             //// START EMBED: OrderBy() 1 ////
             List<string> strings = new List<string> { "first", "then", "and then", "finally" };
+            // Sort the strings by their length
             // Will contain { "then", "first", "finally", "and then" }
             IEnumerable<string> result = strings.OrderBy(str => str.Length);
             //// END EMBED ////
@@ -34,8 +35,9 @@ namespace LinqCourseEmbeddedCode
         [TestMethod]
         public void TestMethod3()
         {
-            //// START EMBED: OrderBy() 2 ////
             List<string> strings = new List<string> { "first", "then", "and then", "finally" };
+            //// START EMBED: OrderBy() 2 ////
+            // Sort the strings by the 3rd character
             // Will contain { "and then", "then", "finally", "first" }
             IEnumerable<string> result = strings.OrderBy(str => str[2]);
             //// END EMBED ////
@@ -45,8 +47,9 @@ namespace LinqCourseEmbeddedCode
         [TestMethod]
         public void TestMethod4()
         {
-            //// START EMBED: OrderBy() 3 ////
             List<string> strings = new List<string> { "first", "then", "and then", "finally" };
+            //// START EMBED: OrderBy() 3 ////
+            // Sort the strings by their reversed characters
             // Will contain { "then", "and then", "first", "finally" }
             IEnumerable<string> result = strings.OrderBy(ReverseCharactersInString);
             //// END EMBED ////
@@ -63,10 +66,23 @@ namespace LinqCourseEmbeddedCode
         {
             //// START EMBED: OrderBy() identity ////
             List<string> strings = new List<string> { "first", "then", "and then", "finally" };
+            // Sort the strings in alphabetical order
             // Will contain { "and then", "finally", "first", "then" }
             IEnumerable<string> result = strings.OrderBy(str => str);
             //// END EMBED ////
             Assert.IsTrue(result.SequenceEqual(new List<string> { "and then", "finally", "first", "then" }));
+        }
+
+        [TestMethod]
+        public void TestMethod6()
+        {
+            //// START EMBED: ThenBy() ////
+            List<string> strings = new List<string> { "first", "then", "and then", "finally" };
+            // Order by the last character, then by the first character
+            // Will contain { "and then", "then", "first", "finally" }
+            IEnumerable<string> result = strings.OrderBy(str => str.Last()).ThenBy(str => str.First());
+            //// END EMBED ////
+            Assert.IsTrue(result.SequenceEqual(new List<string> { "and then", "then", "first", "finally" }));
         }
     }
 }

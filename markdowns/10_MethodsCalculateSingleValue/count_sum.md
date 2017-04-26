@@ -21,12 +21,13 @@ IEnumerable<string> result = strings.Reverse();
 
 ```csharp
 List<string> strings = new List<string> { "first", "then", "and then", "finally" };
+// Sort the strings by their length
 // Will contain { "then", "first", "finally", "and then" }
 IEnumerable<string> result = strings.OrderBy(str => str.Length);
-List<string> strings = new List<string> { "first", "then", "and then", "finally" };
+// Sort the strings by the 3rd character
 // Will contain { "and then", "then", "finally", "first" }
 IEnumerable<string> result = strings.OrderBy(str => str[2]);
-List<string> strings = new List<string> { "first", "then", "and then", "finally" };
+// Sort the strings by their reversed characters
 // Will contain { "then", "and then", "first", "finally" }
 IEnumerable<string> result = strings.OrderBy(ReverseCharactersInString);
 ```
@@ -41,6 +42,7 @@ If you want to sort the elements within a sequence, then you will need to pass i
 
 ```csharp
 List<string> strings = new List<string> { "first", "then", "and then", "finally" };
+// Sort the strings in alphabetical order
 // Will contain { "and then", "finally", "first", "then" }
 IEnumerable<string> result = strings.OrderBy(str => str);
 ```

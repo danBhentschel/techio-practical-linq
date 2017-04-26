@@ -3,6 +3,7 @@
 ### ThenBy() method
 `ThenBy()` specifies a secondary sort **key** that is used to further sort data that has already been sorted with a call to `OrderBy()`.
 
+### IOrderedEnumerable&lt;T&gt;
 `ThenBy()` is an interesting method. It is not an extension to `IEnumerable<T>`. It is a method of the `IOrderedEnumerable<T>` type, which is returned from `OrderBy()`, `OrderByDescending()`, `ThenBy()`, and `ThenByDescending()`.
 
 Since `IOrderedEnumerable<T>` implements the `IEnumerable<T>` interface, it can be thought of as an `IEnumerable<T>` with attached metadata that describes the order operations that have previously been performed on the sequence.
@@ -18,6 +19,7 @@ Since `IOrderedEnumerable<T>` implements the `IEnumerable<T>` interface, it can 
  - [ ] planets = planets.OrderBy(p => p.Type).Reverse().ThenBy(p => p.Size)
  - [x] houses = houses.OrderBy(h => h.BedRooms).ThenBy(h => h.Baths).ThenBy(h => h.Size)
  - [ ] drinks = drinks.OrderBy(d => d.Calories).ThenBy(d.CaffeineContent).ThenBy(d.Price)
+ - [ ] dogs = dogs.ThenBy(d => d.Color)
 
 ### ThenBy() exercise
 In the following exercise, try to order all the input names by `Last`. If any names have the same value for `Last`, then they should be ordered by `First`. If any have matching `Last` and `First`, then they should be ordered by `Middle`.

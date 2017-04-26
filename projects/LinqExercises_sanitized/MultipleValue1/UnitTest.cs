@@ -18,6 +18,7 @@ namespace MultipleValue1
             var str = string.Join(", ", answer);
             Utils.AssertAreEqual("the, first, test", str, description);
 
+            Utils.CgMessage(string.Empty);
             words = "I'm sorry Dave I can't do that".Split(' ');
             description = "{" + string.Join(", ", words) + "}";
             Utils.CgMessage($"About to test GetFirstSingleLetterWord({description})");
@@ -25,6 +26,7 @@ namespace MultipleValue1
             str = string.Join(", ", answer);
             Utils.AssertAreEqual("Dave, I, can't", str, description);
 
+            Utils.CgMessage(string.Empty);
             words = "640K should be enough for anybody".Split(' ');
             description = "{" + string.Join(", ", words) + "}";
             Utils.CgMessage($"About to test GetFirstSingleLetterWord({description})");
@@ -46,6 +48,7 @@ namespace MultipleValue1
             var str = string.Join(", ", answer);
             Utils.AssertAreEqual("start, is, the", str, description);
 
+            Utils.CgMessage(string.Empty);
             words = "start I'm sorry Dave end I can't do that".Split(' ');
             description = "{" + string.Join(", ", words) + "}";
             Utils.CgMessage($"About to test GetFirstSingleLetterWord({description})");
@@ -53,6 +56,7 @@ namespace MultipleValue1
             str = string.Join(", ", answer);
             Utils.AssertAreEqual("start, I'm, sorry, Dave", str, description);
 
+            Utils.CgMessage(string.Empty);
             words = "640K should be start end enough for anybody".Split(' ');
             description = "{" + string.Join(", ", words) + "}";
             Utils.CgMessage($"About to test GetFirstSingleLetterWord({description})");
@@ -75,6 +79,7 @@ namespace MultipleValue1
             var str = string.Join(", ", answer);
             Utils.AssertAreEqual("see, the, for", str, description);
 
+            Utils.CgMessage(string.Empty);
             words = "Im sorry Dave I cant do that".Split(' ');
             description = "{" + string.Join(", ", words) + "}";
             Utils.CgMessage($"About to test GetFirstSingleLetterWord({description})");
@@ -82,6 +87,7 @@ namespace MultipleValue1
             str = string.Join(", ", answer);
             Utils.AssertAreEqual("Im, I, do", str, description);
 
+            Utils.CgMessage(string.Empty);
             words = "it was the best of times it was the worst of times".Split(' ');
             description = "{" + string.Join(", ", words) + "}";
             Utils.CgMessage($"About to test GetFirstSingleLetterWord({description})");
