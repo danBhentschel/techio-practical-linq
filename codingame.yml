@@ -86,7 +86,7 @@ plan:
     - title: "Reverse and OrderBy"
       statement: markdowns/09_MethodsOrderElements/reverse_orderby.md
     - title: "ThenBy"
-      statement: markdowns/09_MethodsOrderElements/reverse_thenby.md
+      statement: markdowns/09_MethodsOrderElements/thenby.md
   - title: "Methods: Single calculated value"
     description: "Examines some of the methods that calculate a value based on the elements in a sequence"
     plan:
