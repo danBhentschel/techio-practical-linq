@@ -22,4 +22,4 @@ Since `IOrderedEnumerable<T>` implements the `IEnumerable<T>` interface, it can 
 ### ThenBy() exercise
 In the following exercise, try to order all the input names by `Last`. If any names have the same value for `Last`, then they should be ordered by `First`. If any have matching `Last` and `First`, then they should be ordered by `Middle`.
 
-@[ThenBy Exercise]({"stubs": [ChangeOrder1/ThenBy1.cs"], "command": "ChangeOrder1.UnitTest.Exercise2", "project": "exercises"})
+@[ThenBy Exercise]({"stubs": ["ChangeOrder1/ThenBy1.cs"], "command": "ChangeOrder1.UnitTest.Exercise2", "project": "exercises"})

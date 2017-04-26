@@ -105,7 +105,7 @@ sub sanitize_file($$) {
                 next;
             }
             if ($should_uncomment) {
-                $line =~ s/^(\s*)\/\/+\s*/$1/;
+                $line =~ s/^(\s*)#*\/*(\s*)/$1$2/;
             }
             print $fh $line;
         }
