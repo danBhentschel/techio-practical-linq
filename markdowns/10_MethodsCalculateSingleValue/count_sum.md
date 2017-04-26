@@ -48,4 +48,4 @@ IEnumerable<string> result = strings.OrderBy(str => str);
 ### OrderBy() exercise
 In the following exercise, try to sort all the input names by `Last`, in descending order.
 
-@[OrderBy Exercise]({"stubs": [ChangeOrder1/OrderBy1.cs"], "command": "ChangeOrder1.UnitTest.Exercise1", "project": "exercises"})
+@[OrderBy Exercise]({"stubs": ["ChangeOrder1/OrderBy1.cs"], "command": "ChangeOrder1.UnitTest.Exercise1", "project": "exercises"})
