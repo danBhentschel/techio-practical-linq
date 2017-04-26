@@ -48,9 +48,14 @@ namespace LinqCourseEmbeddedCode
             //// START EMBED: OrderBy() 3 ////
             List<string> strings = new List<string> { "first", "then", "and then", "finally" };
             // Will contain { "then", "and then", "first", "finally" }
-            IEnumerable<string> result = strings.OrderBy(str => new string(str.Reverse().ToArray()));
+            IEnumerable<string> result = strings.OrderBy(ReverseCharactersInString);
             //// END EMBED ////
             Assert.IsTrue(result.SequenceEqual(new List<string> { "then", "and then", "first", "finally" }));
+        }
+
+        private static string ReverseCharactersInString(string str)
+        {
+            return new string(str.Reverse().ToArray());
         }
 
         [TestMethod]

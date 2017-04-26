@@ -28,7 +28,7 @@ List<string> strings = new List<string> { "first", "then", "and then", "finally"
 IEnumerable<string> result = strings.OrderBy(str => str[2]);
 List<string> strings = new List<string> { "first", "then", "and then", "finally" };
 // Will contain { "then", "and then", "first", "finally" }
-IEnumerable<string> result = strings.OrderBy(str => new string(str.Reverse().ToArray()));
+IEnumerable<string> result = strings.OrderBy(ReverseCharactersInString);
 ```
 
 > **NOTE:** The **key** values are sorted based on the output of the [default comparer](https://msdn.microsoft.com/en-us/library/azhsac5f%28v=vs.110%29.aspx) for the data type of the keys.
