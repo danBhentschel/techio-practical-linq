@@ -171,10 +171,10 @@ namespace LinqCourseEmbeddedCode
         {
             //// START EMBED: Aggregate() -> concat ////
             IEnumerable<string> strings = new List<string> { "a", "ab", "abc", "abcd" };
-            // Will return "a ab abc abcd"
-            string result = strings.Aggregate((concat, val) => $"{concat} {val}");
+            // Will return "a&ab&abc&abcd"
+            string result = strings.Aggregate((concat, str) => $"{concat}&{str}");
             //// END EMBED ////
-            Assert.AreEqual("a ab abc abcd", result);
+            Assert.AreEqual("a&ab&abc&abcd", result);
         }
 
         [TestMethod]

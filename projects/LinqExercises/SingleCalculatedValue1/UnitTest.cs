@@ -74,14 +74,14 @@ namespace SingleCalculatedValue1
             Utils.CgMessage(string.Empty);
             words = "I'm sorry Dave I can't do that".Split(' ');
             description = "{" + string.Join(", ", words) + "}";
-            Utils.CgMessage($"About to test LengthOfShortestWord({description})");
+            Utils.CgMessage($"About to test TotalCharactersInSequence({description})");
             answer = Aggregate1.TotalCharactersInSequence(words);
             Utils.AssertAreEqual("24", answer.ToString(), description);
 
             Utils.CgMessage(string.Empty);
             words = "She sells sea shells down by the sea shore".Split(' ');
             description = "{" + string.Join(", ", words) + "}";
-            Utils.CgMessage($"About to test LengthOfShortestWord({description})");
+            Utils.CgMessage($"About to test TotalCharactersInSequence({description})");
             answer = Aggregate1.TotalCharactersInSequence(words);
             Utils.AssertAreEqual("34", answer.ToString(), description);
 

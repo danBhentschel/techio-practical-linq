@@ -21,7 +21,8 @@ Returns `true` if every value in the source sequence meets the provided **condit
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, Any() All() question
 ```
 
-?[What would be the value of the "result" variable in the above code snippet?]
+?[What would be the value of the "result" variable in the code snippet above?]
+ - [ ] none
  - [ ] red
  - [ ] orange
  - [x] yellow

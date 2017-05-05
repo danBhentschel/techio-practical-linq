@@ -56,7 +56,8 @@ else
 }
 ```
 
-?[What would be the value of the "result" variable in the above code snippet?]
+?[What would be the value of the "result" variable in the code snippet above?]
+ - [ ] none
  - [ ] red
  - [ ] orange
  - [x] yellow

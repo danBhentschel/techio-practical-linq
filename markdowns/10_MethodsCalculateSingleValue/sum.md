@@ -24,7 +24,7 @@ int result = ints.Sum(val => val * val);
 IEnumerable<string> strings = new List<string> { "a", "ab", "abc" };
 var result = strings.Sum(str => 2.3F);
 ```
-?[What data type would the Sum() method return in this snippet?]
+?[What data type would the Sum() method return in the code snippet above?]
  - [ ] int
  - [ ] long
  - [ ] double
@@ -34,7 +34,7 @@ var result = strings.Sum(str => 2.3F);
 IEnumerable<string> strings = new List<string> { "a", "ab", "abc" };
 var result = strings.Sum(str => str.Length);
 ```
-?[What data type would the Sum() method return in this snippet?]
+?[What data type would the Sum() method return in the code snippet above?]
  - [x] int
  - [ ] long
  - [ ] double

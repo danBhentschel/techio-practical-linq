@@ -18,7 +18,7 @@ The `Sum()` method can also be called with a **selector** delegate parameter. Th
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, Sum() question 1
 ```
-?[What data type would the Sum() method return in this snippet?]
+?[What data type would the Sum() method return in the code snippet above?]
  - [ ] int
  - [ ] long
  - [ ] double
@@ -27,7 +27,7 @@ The `Sum()` method can also be called with a **selector** delegate parameter. Th
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, Sum() question 2
 ```
-?[What data type would the Sum() method return in this snippet?]
+?[What data type would the Sum() method return in the code snippet above?]
  - [x] int
  - [ ] long
  - [ ] double
