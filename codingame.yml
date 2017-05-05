@@ -90,8 +90,10 @@ plan:
   - title: "Methods: Single calculated value"
     description: "Examines some of the methods that calculate a value based on the elements in a sequence"
     plan:
-    - title: "Count and Sum"
-      statement: markdowns/10_MethodsCalculateSingleValue/count_sum.md
+    - title: "Count"
+      statement: markdowns/10_MethodsCalculateSingleValue/count.md
+    - title: "Sum"
+      statement: markdowns/10_MethodsCalculateSingleValue/sum.md
     - title: "Min and Max"
       statement: markdowns/10_MethodsCalculateSingleValue/min_max.md
     - title: "Any and All"

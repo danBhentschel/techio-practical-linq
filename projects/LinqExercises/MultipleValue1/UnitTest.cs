@@ -44,7 +44,7 @@ namespace MultipleValue1
             var words = "This start is the end first test".Split(' ');
             var description = "{" + string.Join(", ", words) + "}";
             Utils.CgMessage($"About to test GetFirstSingleLetterWord({description})");
-            var answer = SkipTakeWhile1.GetStartThroughEnd(words);
+            var answer = Count1.GetStartThroughEnd(words);
             var str = string.Join(", ", answer);
             Utils.AssertAreEqual("start, is, the", str, description);
 
@@ -52,7 +52,7 @@ namespace MultipleValue1
             words = "start I'm sorry Dave end I can't do that".Split(' ');
             description = "{" + string.Join(", ", words) + "}";
             Utils.CgMessage($"About to test GetFirstSingleLetterWord({description})");
-            answer = SkipTakeWhile1.GetStartThroughEnd(words);
+            answer = Count1.GetStartThroughEnd(words);
             str = string.Join(", ", answer);
             Utils.AssertAreEqual("start, I'm, sorry, Dave", str, description);
 
@@ -60,7 +60,7 @@ namespace MultipleValue1
             words = "640K should be start end enough for anybody".Split(' ');
             description = "{" + string.Join(", ", words) + "}";
             Utils.CgMessage($"About to test GetFirstSingleLetterWord({description})");
-            answer = SkipTakeWhile1.GetStartThroughEnd(words);
+            answer = Count1.GetStartThroughEnd(words);
             str = string.Join(", ", answer);
             Utils.AssertAreEqual("start", str, description);
 

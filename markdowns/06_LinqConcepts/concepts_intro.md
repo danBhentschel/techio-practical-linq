@@ -21,27 +21,26 @@ Based on the method name and the signature information in the [MSDN documentatio
  - [ ] Single value from the sequence
  - [ ] Multiple values from the sequence
  - [ ] Change the order of the elements
- - [ ] Different sequence based on the input
  - [x] Single calculated value based on the input
+ - [ ] Different sequence based on the input
 
 ?[Which category best describes the Intersect() method?]
  - [ ] Single value from the sequence
  - [x] Multiple values from the sequence
  - [ ] Change the order of the elements
- - [ ] Different sequence based on the input
  - [ ] Single calculated value based on the input
+ - [ ] Different sequence based on the input
 
 ?[Which category best describes the SelectMany() method?]
  - [ ] Single value from the sequence
  - [ ] Multiple values from the sequence
  - [ ] Change the order of the elements
- - [x] Different sequence based on the input
  - [ ] Single calculated value based on the input
+ - [x] Different sequence based on the input
 
 ?[Which category best describes the ElementAt() method?]
  - [x] Single value from the sequence
  - [ ] Multiple values from the sequence
  - [ ] Change the order of the elements
- - [ ] Different sequence based on the input
  - [ ] Single calculated value based on the input
-
+ - [ ] Different sequence based on the input

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace MultipleValue1
 {
-    public static class SkipTakeWhile1
+    public static class Count1
     {
         // Return all words in the sequence between "start" (inclusive)
         // and "end" (non-inclusive)
