@@ -21,7 +21,7 @@ This script is run from `pre-commit`. It parses template files and inserts code 
  - I want to be able to unit test my code examples so I know for sure that they actually do what I say they do.
 
 ### Solution
-The `embed_examples.pl` script parses the `codingame.yml` file and gets a list of all markdown files in the course. It then looks for
+The `embed_examples.pl` script parses the `techio.yml` file and gets a list of all markdown files in the course. It then looks for
 a `.template.md` file associated with each one. If the template file exists, it parses the file looking for lines that match the
 following pattern:
 
@@ -98,12 +98,12 @@ This script is run from `pre-commit`. It parses project files and removes soluti
  - I want to ensure that my exercises are solvable before pushing changes.
  - I want the ability to present non-compiling exercise stub code to the student.
  - I want the ability to include multiple exercises in a single project.
- - C# files written in Visual Studio tend to have a BOM at the beginning of the file, which the CG platform doesn't support for code stubs.
+ - C# files written in Visual Studio tend to have a BOM at the beginning of the file, which the TECH.IO platform doesn't support for code stubs.
  
 All this requires that the stub code presented to the student must be different from the code run in the development environment, and also different from the code run by the runner.
 
 ### Solution
-The `sanitize_projects.pl` script parses the `codingame.yml` file and gets a list of all projects in the course. It then copies all the files into a new directory: `<project_dir>_sanitized`. The files are content filtered during the copy process, as described below.
+The `sanitize_projects.pl` script parses the `techio.yml` file and gets a list of all projects in the course. It then copies all the files into a new directory: `<project_dir>_sanitized`. The files are content filtered during the copy process, as described below.
 
 Any content found between the following lines will be removed during copy:
 ```

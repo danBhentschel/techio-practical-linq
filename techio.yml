@@ -103,4 +103,4 @@ plan:
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized
-      runner: "danbhentschel/cg-dotnet-runner:1.10"
+      runner: "danbhentschel/cg-dotnet-runner:1.11"

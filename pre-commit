@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yml_file=codingame.yml
+yml_file=techio.yml
 
 files="$(./embed_examples.pl $yml_file) $(./sanitize_projects.pl $yml_file)"
 echo $files | xargs git add

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-yml_file=codingame.yml
+yml_file=techio.yml
 ./remove_md_files.pl $yml_file
