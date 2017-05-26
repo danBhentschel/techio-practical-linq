@@ -7,99 +7,55 @@ plan:
       statement: markdowns/01_AboutThisCourse/welcome.md
     - title: "Introduction"
       statement: markdowns/01_AboutThisCourse/introduction.md
-  - title: "Background: Delegates"
-    description: "Background information on using delegates and lambda expressions in C#"
-    plan:
-    - title: "Delegate Declarations"
-      statement: markdowns/02_BackgroundDelegates/delegate_declarations.md
-    - title: "Delegate Variables"
-      statement: markdowns/02_BackgroundDelegates/delegate_variables.md
-    - title: "Delegates as Parameters"
-      statement: markdowns/02_BackgroundDelegates/delegate_parameters.md
-    - title: "Exercise: Delegates"
-      statement: markdowns/02_BackgroundDelegates/delegates_exercise.md
-  - title: "Background: Extension methods"
-    description: "Background information on extension methods in C#"
-    plan:
-    - title: "Writing extension methods"
-      statement: markdowns/03_BackgroundExtensionMethods/extension_intro.md
-    - title: "Exercise: Extension methods"
-      statement: markdowns/03_BackgroundExtensionMethods/extension_exercise.md
-    - title: "Passing extra parameters to an extension method"
-      statement: markdowns/03_BackgroundExtensionMethods/extension_parameters.md
-  - title: "Background: Generators and IEnumerable<T>"
-    description: "Background information on creating and using generators in C#"
-    plan:
-    - title: "IEnumerable<T>"
-      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/ienumerable_intro.md
-    - title: "Unbounded generators"
-      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/ienumerable_generator.md
-    - title: "Exercise: Unbounded generator"
-      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/generator_exercise1.md
-    - title: "Using generators"
-      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/using_generators1.md
-    - title: "More generator examples"
-      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/using_generators2.md
-    - title: "Exiting a generator"
-      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/bounded_generators1.md
-    - title: "Yield break"
-      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/bounded_generators2.md
-    - title: "Exercise: Bounded generator"
-      statement: markdowns/04_BackgroundGeneratorsAndIEnumerable/generator_exercise2.md
-  - title: "Background: Putting it all together"
-    description: "Applying the background information to LINQ"
-    plan:
-    - title: "Exercise: Implement a LINQ method"
-      statement: markdowns/05_BackgroundPuttingItAllTogether/background_mashup.md
   - title: "LINQ Concepts"
     description: "The 10,000 foot view"
     plan:
     - title: "Using LINQ"
-      statement: markdowns/06_LinqConcepts/concepts_intro.md
+      statement: markdowns/02_LinqConcepts/concepts_intro.md
     - title: "LINQ query syntax"
-      statement: markdowns/06_LinqConcepts/query_syntax.md
+      statement: markdowns/02_LinqConcepts/query_syntax.md
     - title: "LINQ method syntax"
-      statement: markdowns/06_LinqConcepts/method_syntax.md
+      statement: markdowns/02_LinqConcepts/method_syntax.md
   - title: "Methods: Extracting a single value"
     description: "Examines some of the methods that can be used to extract a single value from a sequence"
     plan:
     - title: "Extract a single value"
-      statement: markdowns/07_MethodsExtractAValue/first_last_single.md
+      statement: markdowns/03_MethodsExtractAValue/first_last_single.md
     - title: "Conditionally extract a single value"
-      statement: markdowns/07_MethodsExtractAValue/conditions.md
+      statement: markdowns/03_MethodsExtractAValue/conditions.md
     - title: "Single value or default"
-      statement: markdowns/07_MethodsExtractAValue/or_default.md
+      statement: markdowns/03_MethodsExtractAValue/or_default.md
     - title: "Single value exercise"
-      statement: markdowns/07_MethodsExtractAValue/single_value_exercise.md
+      statement: markdowns/03_MethodsExtractAValue/single_value_exercise.md
   - title: "Methods: Extracting multiple values"
     description: "Examines some of the methods that can be used to extract multiple values from a sequence"
     plan:
     - title: "Skip and Take"
-      statement: markdowns/08_MethodsExtractValues/skip_take.md
+      statement: markdowns/04_MethodsExtractValues/skip_take.md
     - title: "SkipWhile and TakeWhile"
-      statement: markdowns/08_MethodsExtractValues/skip_while_take_while.md
+      statement: markdowns/04_MethodsExtractValues/skip_while_take_while.md
     - title: "Distinct, Intersect, and Where"
-      statement: markdowns/08_MethodsExtractValues/distinct_intersection_where.md
+      statement: markdowns/04_MethodsExtractValues/distinct_intersection_where.md
   - title: "Methods: Changing element order"
     description: "Examines some of the methods that can be used to change the order of the elements in a sequence"
     plan:
     - title: "Reverse and OrderBy"
-      statement: markdowns/09_MethodsOrderElements/reverse_orderby.md
+      statement: markdowns/05_MethodsOrderElements/reverse_orderby.md
     - title: "ThenBy"
-      statement: markdowns/09_MethodsOrderElements/thenby.md
+      statement: markdowns/05_MethodsOrderElements/thenby.md
   - title: "Methods: Single calculated value"
     description: "Examines some of the methods that calculate a value based on the elements in a sequence"
     plan:
     - title: "Count"
-      statement: markdowns/10_MethodsCalculateSingleValue/count.md
+      statement: markdowns/06_MethodsCalculateSingleValue/count.md
     - title: "Sum"
-      statement: markdowns/10_MethodsCalculateSingleValue/sum.md
+      statement: markdowns/06_MethodsCalculateSingleValue/sum.md
     - title: "Min and Max"
-      statement: markdowns/10_MethodsCalculateSingleValue/min_max.md
+      statement: markdowns/06_MethodsCalculateSingleValue/min_max.md
     - title: "Any and All"
-      statement: markdowns/10_MethodsCalculateSingleValue/any_all.md
+      statement: markdowns/06_MethodsCalculateSingleValue/any_all.md
     - title: "Aggregate"
-      statement: markdowns/10_MethodsCalculateSingleValue/aggregate.md
+      statement: markdowns/06_MethodsCalculateSingleValue/aggregate.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized
