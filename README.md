@@ -1,5 +1,5 @@
-# cg-linq-for-beginners
-A lesson on C# LINQ, for CodinGame Learning platform
+# techio-practical-linq
+A lesson on C# LINQ, for the tech.io learning platform
 
 A description of the course can be found in the `about.md` file.
 
