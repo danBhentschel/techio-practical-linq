@@ -24,11 +24,11 @@ namespace LinqCourseEmbeddedCode
         public void TestMethod1()
         {
             //// START EMBED: Cast() good ////
-            IEnumerable<IComparable> ints = new List<IComparable> { 2, 3, 4 };
+            IEnumerable<IComparable> values = new List<IComparable> { 2, 3, 4 };
             // Will return { 2, 3, 4 }
             // The elements in the collection are the same,
             // but the collection type is different
-            IEnumerable<int> result = ints.Cast<int>();
+            IEnumerable<int> result = values.Cast<int>();
             //// END EMBED ////
             Assert.IsTrue(result.SequenceEqual(new List<int> { 2, 3, 4 }));
         }

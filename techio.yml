@@ -7,62 +7,76 @@ plan:
       statement: markdowns/01_AboutThisCourse/01_welcome.md
     - title: "Introduction"
       statement: markdowns/01_AboutThisCourse/02_introduction.md
+  - title: "Background for beginners"
+    description: "The LINQ Background Topics course in a nutshell"
+    plan:
+    - title: "Background Intro"
+      statement: markdowns/02_Background/01_background_intro.md
+    plan:
+    - title: "Lambda Expressions"
+      statement: markdowns/02_Background/02_lambda_expressions.md
+    plan:
+    - title: "IEnumerable<T>"
+      statement: markdowns/02_Background/03_ienumerable.md
+    plan:
+    - title: "ToList() and ToArray()"
+      statement: markdowns/02_Background/04_to_list_to_array.md
   - title: "LINQ Concepts"
     description: "The 10,000 foot view"
     plan:
     - title: "Using LINQ"
-      statement: markdowns/02_LinqConcepts/01_concepts_intro.md
+      statement: markdowns/03_LinqConcepts/01_concepts_intro.md
     - title: "LINQ query syntax"
-      statement: markdowns/02_LinqConcepts/02_query_syntax.md
+      statement: markdowns/03_LinqConcepts/02_query_syntax.md
     - title: "LINQ method syntax"
-      statement: markdowns/02_LinqConcepts/03_method_syntax.md
+      statement: markdowns/03_LinqConcepts/03_method_syntax.md
   - title: "Methods: Extracting a single value"
     description: "Examines some of the methods that can be used to extract a single value from a sequence"
     plan:
     - title: "Extract a single value"
-      statement: markdowns/03_MethodsExtractAValue/01_first_last_single.md
+      statement: markdowns/04_MethodsExtractAValue/01_first_last_single.md
     - title: "Conditionally extract a single value"
-      statement: markdowns/03_MethodsExtractAValue/02_conditions.md
+      statement: markdowns/04_MethodsExtractAValue/02_conditions.md
     - title: "Single value or default"
-      statement: markdowns/03_MethodsExtractAValue/03_or_default.md
+      statement: markdowns/04_MethodsExtractAValue/03_or_default.md
     - title: "Single value exercise"
-      statement: markdowns/03_MethodsExtractAValue/04_single_value_exercise.md
+      statement: markdowns/04_MethodsExtractAValue/04_single_value_exercise.md
   - title: "Methods: Extracting multiple values"
     description: "Examines some of the methods that can be used to extract multiple values from a sequence"
     plan:
     - title: "Skip and Take"
-      statement: markdowns/04_MethodsExtractValues/01_skip_take.md
+      statement: markdowns/05_MethodsExtractValues/01_skip_take.md
     - title: "SkipWhile and TakeWhile"
-      statement: markdowns/04_MethodsExtractValues/02_skip_while_take_while.md
+      statement: markdowns/05_MethodsExtractValues/02_skip_while_take_while.md
     - title: "Distinct, Intersect, and Where"
-      statement: markdowns/04_MethodsExtractValues/03_distinct_intersection_where.md
+      statement: markdowns/05_MethodsExtractValues/03_distinct_intersection_where.md
   - title: "Methods: Changing element order"
     description: "Examines some of the methods that can be used to change the order of the elements in a sequence"
     plan:
     - title: "Reverse and OrderBy"
-      statement: markdowns/05_MethodsOrderElements/01_reverse_orderby.md
+      statement: markdowns/06_MethodsOrderElements/01_reverse_orderby.md
     - title: "ThenBy"
-      statement: markdowns/05_MethodsOrderElements/02_thenby.md
+      statement: markdowns/06_MethodsOrderElements/02_thenby.md
   - title: "Methods: Single calculated value"
     description: "Examines some of the methods that calculate a value based on the elements in a sequence"
     plan:
     - title: "Count"
-      statement: markdowns/06_MethodsCalculateSingleValue/01_count.md
+      statement: markdowns/07_MethodsCalculateSingleValue/01_count.md
     - title: "Sum"
-      statement: markdowns/06_MethodsCalculateSingleValue/02_sum.md
+      statement: markdowns/07_MethodsCalculateSingleValue/02_sum.md
     - title: "Min and Max"
-      statement: markdowns/06_MethodsCalculateSingleValue/03_min_max.md
+      statement: markdowns/07_MethodsCalculateSingleValue/03_min_max.md
     - title: "Any and All"
-      statement: markdowns/06_MethodsCalculateSingleValue/04_any_all.md
+      statement: markdowns/07_MethodsCalculateSingleValue/04_any_all.md
     - title: "Aggregate"
-      statement: markdowns/06_MethodsCalculateSingleValue/05_aggregate.md
+      statement: markdowns/07_MethodsCalculateSingleValue/05_aggregate.md
   - title: "Methods: Calculated sequence"
     description: "Examines some of the methods that calculate a new result sequence based on the elements in a source sequence"
     plan:
     - title: "Cast"
-      statement: markdowns/07_MethodsCalculateSequence/01_cast.md
+      statement: markdowns/08_MethodsCalculateSequence/01_cast.md
     - title: "Select"
-      statement: markdowns/07_MethodsCalculateSequence/02_select.md
+      statement: markdowns/08_MethodsCalculateSequence/02_select.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized
