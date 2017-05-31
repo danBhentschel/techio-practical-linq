@@ -23,9 +23,11 @@ namespace LinqExercises.Utils
 
         private static void PrintDifference(string expected, string actual)
         {
-            int offset = GetDiffOffest(expected, actual);
-            var errCaret = new string(' ', offset) + '^' +
-                           new string(' ', expected.Length - offset - 1);
+            int offset1 = GetDiffOffest(expected, actual);
+            int offset2 = expected.Length - offset1 - 1;
+            if (offset2 < 0) offset2 = 0;
+            var errCaret = new string(' ', offset1) + '^' +
+                           new string(' ', offset2);
             CgMessage($"EXPECTED: <{expected}>  GOT: <{actual}>");
             CgMessage($"           {errCaret}         {errCaret}");
         }
