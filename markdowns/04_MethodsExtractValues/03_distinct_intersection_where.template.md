@@ -27,4 +27,4 @@ The criteria is passed into `Where()` as a delegate method that takes a single p
 //// EMBED: LinqCourseEmbeddedCode/Methods2.cs, Where()
 ```
 
-@[Distinct, Intersect, and Where Exercise]({"stubs": ["MultipleValue1/DistinctIntersectWhere1.cs"], "command": "MuptipleValue1.UnitTest.Exercise3", "project": "exercises"})
+@[Distinct, Intersect, and Where Exercise]({"stubs": ["MultipleValue1/DistinctIntersectWhere1.cs"], "command": "MultipleValue1.UnitTest.Exercise3", "project": "exercises"})

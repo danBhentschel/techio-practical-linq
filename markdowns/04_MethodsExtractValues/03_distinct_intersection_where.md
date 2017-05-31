@@ -32,7 +32,7 @@ The criteria is passed into `Where()` as a delegate method that takes a single p
 ```csharp
 List<int> ints = new List<int> { 1, 2, 4, 8, 4, 2, 1 };
 // Will contain { 2, 4, 4, 2 }
-IEnumerable<int> result = ints.Where(theInt => Math.Abs(theInt - 3) == 1);
+IEnumerable<int> result = ints.Where(theInt => theInt == 2 || theInt == 4);
 ```
 
-@[Distinct, Intersect, and Where Exercise]({"stubs": ["MultipleValue1/DistinctIntersectWhere1.cs"], "command": "MuptipleValue1.UnitTest.Exercise3", "project": "exercises"})
+@[Distinct, Intersect, and Where Exercise]({"stubs": ["MultipleValue1/DistinctIntersectWhere1.cs"], "command": "MultipleValue1.UnitTest.Exercise3", "project": "exercises"})
