@@ -11,7 +11,7 @@ The `Reverse()` method returns a new sequence that contains all the elements fro
 //// EMBED: LinqCourseEmbeddedCode/Methods3.cs, Reverse()
 ```
 
-> **NOTE:** The `Reverse()` LINQ method (an extension method to `IEnumerable<T>`) behaves differently from the `Reverse()` method on `List<T>`. This unfortunate situation can cause confusion. More on this in the Advanced Topics section.
+> **NOTE:** The `Reverse()` LINQ method (an extension method to `IEnumerable<T>`) behaves differently from the `Reverse()` method on `List<T>`. This unfortunate situation can cause confusion. More on this in the **Advanced Topics** course.
 
 ### OrderBy() method
 `OrderBy()` sorts the elements in the source sequence based on a **key** value. The key for an element is calculated by a **key selector** delegate method passed into the `OrderBy()` call. The examples below demonstrate how this works.

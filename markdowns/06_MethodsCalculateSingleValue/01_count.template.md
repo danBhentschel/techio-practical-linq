@@ -3,13 +3,13 @@
 The LINQ methods in this chapter examine the elements of an `IEnumerable<T>` sequence and return a result based on the examined values. For most of the methods we will examine, this result will be either a `bool` or an `int`.
 
 ### Count() method
-We have already seen the `Count()` method in use. In its simplest form (without any parameters) it returns an `int` indicating the number of elements in the source sequence.
+In its simplest form (without any parameters) the `Count()` method returns an `int` indicating the number of elements in the source sequence.
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, Count()
 ```
 
-> **NOTE:** The `Count()` LINQ method (an extension method to `IEnumerable<T>`) is slightly different from the `Count` method on `List<T>`. This unfortunate situation can cause some confusion. More on this in the Advanced Topics section.
+> **NOTE:** The `Count()` LINQ method (an extension method to `IEnumerable<T>`) is slightly different from the `Count` property on `List<T>`. This unfortunate situation can cause some confusion. More on this in the **Advanced Topics** course.
 
 > **NOTE 2:** There is also a `LongCount()` method that returns a `long`, for use with sequences that have more values.
 

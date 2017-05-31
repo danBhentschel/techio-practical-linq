@@ -24,18 +24,18 @@ int result = ints.Sum(val => val * val);
 IEnumerable<string> strings = new List<string> { "a", "ab", "abc" };
 var result = strings.Sum(str => 2.3F);
 ```
-?[What data type would the Sum() method return in the code snippet above?]
- - [ ] int
- - [ ] long
- - [ ] double
- - [x] float
+?[What value and data type would the Sum() method return in the code snippet above?]
+ - [ ] 3 (int)
+ - [ ] 6 (int)
+ - [ ] 6.9 (double)
+ - [x] 6.9 (float)
 
 ```csharp
 IEnumerable<string> strings = new List<string> { "a", "ab", "abc" };
 var result = strings.Sum(str => str.Length);
 ```
-?[What data type would the Sum() method return in the code snippet above?]
- - [x] int
- - [ ] long
- - [ ] double
- - [ ] float
+?[What value and data type would the Sum() method return in the code snippet above?]
+ - [ ] 3 (int)
+ - [x] 6 (int)
+ - [ ] 6.9 (double)
+ - [ ] 6 (float)

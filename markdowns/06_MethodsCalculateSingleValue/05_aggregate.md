@@ -31,7 +31,7 @@ int result = strings.Aggregate(0, (count, val) => count + 1);
 
 
 IEnumerable<string> strings = new List<string> { "a", "ab", "abc", "abcd" };
-// Reimplementation of the Any() method utilizing Aggregate()
+// Reimplementation of Any(str => str.Length > 3) utilizing Aggregate()
 // Will return true
 bool result = strings.Aggregate(false, (any, val) => any || (val.Length > 3));
 ```
