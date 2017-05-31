@@ -18,4 +18,4 @@ The `Skip()` method can be thought of as the exact opposite of the `Take()` meth
 //// EMBED: LinqCourseEmbeddedCode/Methods2.cs, Skip()
 ```
 
-@[Take and Skip Exercise]({"stubs": ["MultipleValue1/SkipTake1.cs"], "command": "MuptipleValue1.UnitTest.Exercise1", "project": "exercises"})
+@[Take and Skip Exercise]({"stubs": ["MultipleValue1/SkipTake1.cs"], "command": "MultipleValue1.UnitTest.Exercise1", "project": "exercises"})

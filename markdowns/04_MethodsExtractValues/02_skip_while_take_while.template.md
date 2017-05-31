@@ -20,4 +20,4 @@ Again the criteria is provided as a delegate method that takes a single value of
 //// EMBED: LinqCourseEmbeddedCode/Methods2.cs, SkipWhile()
 ```
 
-@[TakeWhile and SkipWhile Exercise]({"stubs": ["MultipleValue1/SkipTakeWhile1.cs"], "command": "MuptipleValue1.UnitTest.Exercise2", "project": "exercises"})
+@[TakeWhile and SkipWhile Exercise]({"stubs": ["MultipleValue1/SkipTakeWhile1.cs"], "command": "MultipleValue1.UnitTest.Exercise2", "project": "exercises"})
