@@ -11,8 +11,8 @@ This course starts out by explaining LINQ: what it is and where you would use it
 
 ### Supplementary Courses
 There are two supplementary LINQ courses designed to be taken in conjunction with this course:
- - **C# LINQ Background Topics**
- - **C# LINQ Advanced Topics**
+ - **C# LINQ Background Topics** (Link TBD)
+ - **C# LINQ Advanced Topics** (LINK TBD)
 
 Neither supplementary course is required for the **Using C# LINQ** course. You may want to take the **Background** course before (or after) this one, but it is only recommended for advanced programmers. Beginners may be confused by some of the content.
 

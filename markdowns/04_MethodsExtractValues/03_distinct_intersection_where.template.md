@@ -18,10 +18,12 @@ For example:
 //// EMBED: LinqCourseEmbeddedCode/Methods2.cs, Intersect()
 ```
 
-### Where() method
+### Where(&lt;predicate&gt;) method
 `Where()` returns a new sequence containing all the values from the target sequence that meet a specified criteria.
 
-The criteria is passed into `Where()` as a delegate method that takes a single parameter of type `T` (where `T` is the type of values in the `IEnumerable<T>` sequence) and returns a `bool` indicating whether or not the passed-in value should be included in the returned sequence.
+> **NOTE:** LINQ is showing its SQL roots here. The `Where()` method is named based on SQL syntax, but acts like the `filter()` function in Java, JavaScript, Python, etc.
+
+The criteria is passed into `Where()` as a **predicate** delegate method that takes a single parameter of type `T` (where `T` is the type of values in the `IEnumerable<T>` sequence) and returns a `bool` indicating whether or not the passed-in value should be included in the returned sequence.
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods2.cs, Where()

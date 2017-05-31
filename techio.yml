@@ -56,6 +56,13 @@ plan:
       statement: markdowns/06_MethodsCalculateSingleValue/04_any_all.md
     - title: "Aggregate"
       statement: markdowns/06_MethodsCalculateSingleValue/05_aggregate.md
+  - title: "Methods: Calculated sequence"
+    description: "Examines some of the methods that calculate a new result sequence based on the elements in a source sequence"
+    plan:
+    - title: "Cast"
+      statement: markdowns/07_MethodsCalculateSequence/01_cast.md
+    - title: "Select"
+      statement: markdowns/07_MethodsCalculateSequence/02_select.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized
