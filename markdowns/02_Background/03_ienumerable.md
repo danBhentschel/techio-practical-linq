@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# Background Topics - IEnumerable<T>
+# Background Topics - IEnumerable&lt;T&gt;
 
 The `IEnumerable<T>` interface is central to LINQ. All LINQ methods are extension methods to the `IEnumerable<T>` interface. That means that you can call **any** LINQ method on **any** object that implements `IEnumerable<T>`. You can even create your own classes that implement `IEnumerable<T>`, and those classes will instantly "inherit" all LINQ functionality!
 
