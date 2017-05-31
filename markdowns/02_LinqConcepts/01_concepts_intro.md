@@ -5,7 +5,7 @@ LINQ is a collection of extension methods that extend the `IEnumerable<T>` inter
 
 [MSDN Enumerable Methods documentation](https://msdn.microsoft.com/en-us/library/system.linq.enumerable_methods%28v=vs.110%29.aspx)
 
-Some methods are very simple, such as the `Count()` method that we have already seen and used in previous examples. Several LINQ methods are very complicated and difficult to understand, though. The `GroupJoin()` method would be a good example of this type.
+Some methods are very simple, such as the `Count()` method. Several LINQ methods are very complicated and difficult to understand, though. The `GroupJoin()` method would be a good example of this type.
 
 ### General method categories
  - Some methods return a single value from the target sequence, such as `First()` or `Last()`.

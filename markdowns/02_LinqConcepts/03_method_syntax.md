@@ -8,7 +8,7 @@ Recall this example of query syntax:
 ```csharp
 List<string> animalNames = new List<string>
     {"fawn", "gibbon", "heron", "ibex", "jackalope"};
-
+    
 // Result: {"heron", "gibbon", "jackalope"}
 IEnumerable<string> longAnimalNames =
     from name in animalNames

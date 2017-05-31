@@ -9,14 +9,14 @@ This course is designed as an introduction to using LINQ in the C# language.
 ### Course Content
 This course starts out by explaining LINQ: what it is and where you would use it. It then introduces students to about 25 different LINQ methods. Similar methods are grouped together to aid comprehension and retention.
 
-### Related Courses
-There are two other supplementary LINQ courses designed to be taken in conjunction with this course:
+### Supplementary Courses
+There are two supplementary LINQ courses designed to be taken in conjunction with this course:
  - **C# LINQ Background Topics**
  - **C# LINQ Advanced Topics**
 
 Neither supplementary course is required for the **Using C# LINQ** course. You may want to take the **Background** course before (or after) this one, but it is only recommended for advanced programmers. Beginners may be confused by some of the content.
 
-The **Advanced** course should be taken after the **Using** course, but beginning programmers might want to skip this course as well. It is not required to be able to use LINQ in most situations.
+The **Advanced** course provides some hints and precautions for how to get the most out of LINQ while avoiding some of its pitfalls. It should be taken after the **Using** course, but beginning programmers might want to skip this course as well. The **Advanced** course is not required to be able to use LINQ in most situations.
 
 ### Previous Knowledge
 The lessons provided here are geared towards beginner to intermediate programmers. Students should have a basic understanding of the fundamentals of C#. Required skills include crafting of classes, fields, and methods. A good understanding of C# data types is also strongly recommended. 
