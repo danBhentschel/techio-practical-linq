@@ -17,7 +17,9 @@ Notice that the `num` parameter doesn't explicitly specify a data type. The comp
 You can also create lambda expressions with more than one parameter, as shown here:
 
 ```csharp
-ERROR: CONTENT NOT FOUND FOR TAG "Lambda\ 2" in LinqCourseEmbeddedCode/Background1.cs
+Func<int, int, int> multiplyTwoNumbers = (a, b) => a * b;
+// Returns 35
+int result = multiplyTwoNumbers(7, 5);
 ```
 
 We won't be using multi-parameter lambda expressions much in this course
