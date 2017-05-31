@@ -19,7 +19,7 @@ namespace CalculatedSequence1
                 new NameImpl("Franklin Delano Roosevelt")
             };
             var description = "{" + string.Join(", ", names) + "}";
-            Utils.CgMessage($"About to test SortNames({description})");
+            Utils.CgMessage($"About to test DisplayStringsForNames({description})");
             var answer = Select1.DisplayStringsForNames(names);
             var str = string.Join("; ", answer);
             Utils.AssertAreEqual("King, Martin; Bach, Johan; Mozart, Wolfgang; Roosevelt, Franklin", str, description);
@@ -33,7 +33,7 @@ namespace CalculatedSequence1
                 new NameImpl("John Fitzgerald Kennedy")
             };
             description = "{" + string.Join(", ", names) + "}";
-            Utils.CgMessage($"About to test SortNames({description})");
+            Utils.CgMessage($"About to test DisplayStringsForNames({description})");
             answer = Select1.DisplayStringsForNames(names);
             str = string.Join("; ", answer);
             Utils.AssertAreEqual("Clinton, Hillary; Poe, Edgar; King, Billie; Kennedy, John", str, description);
