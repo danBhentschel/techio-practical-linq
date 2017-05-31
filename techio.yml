@@ -12,13 +12,10 @@ plan:
     plan:
     - title: "Background Intro"
       statement: markdowns/02_Background/01_background_intro.md
-    plan:
     - title: "Lambda Expressions"
       statement: markdowns/02_Background/02_lambda_expressions.md
-    plan:
     - title: "IEnumerable<T>"
       statement: markdowns/02_Background/03_ienumerable.md
-    plan:
     - title: "ToList() and ToArray()"
       statement: markdowns/02_Background/04_to_list_to_array.md
   - title: "LINQ Concepts"
