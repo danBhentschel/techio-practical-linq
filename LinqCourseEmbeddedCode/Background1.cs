@@ -23,7 +23,7 @@ namespace LinqCourseEmbeddedCode
         [TestMethod]
         public void TestMethod2()
         {
-            //// START EMBED: Lambda 1 ////
+            //// START EMBED: Lambda 2 ////
             Func<int, int, int> multiplyTwoNumbers = (a, b) => a * b;
             // Returns 35
             int result = multiplyTwoNumbers(7, 5);
