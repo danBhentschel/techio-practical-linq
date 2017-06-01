@@ -1,7 +1,7 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
 # Background Topics - Lambda Expressions
 
-A lambda expression is a way of defining an anonymous (unnamed) function that can be passed around as a variable, or a parameter to a method call. Here is an example:
+A lambda expression is a convenient way of defining an anonymous (unnamed) function that can be passed around as a variable, or a parameter to a method call. Many LINQ methods take a function (called a **delegate**) as a parameter. Here is an example of what a lambda expression looks like:
 
 ```csharp
 Func<int, int> multiplyByFive = num => num * 5;
