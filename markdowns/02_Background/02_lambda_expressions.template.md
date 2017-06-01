@@ -27,3 +27,8 @@ Notice also that there is no `return` statement. Single-line lambda expressions 
 ```
 
 In this case, since the lambda expression has more than one line, the `return` keyword is required.
+
+### Exercise
+In this exercise, write a lambda expression that returns the provided plus one.
+
+@[Lambda Expressions Exercise]({"stubs": ["Background1/LambdaExpressions1.cs"], "command": "Background1.UnitTest.Exercise1", "project": "exercises"})
