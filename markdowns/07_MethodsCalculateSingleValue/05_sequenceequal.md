@@ -14,10 +14,12 @@ bool isEqual2 = new List<int> { 1, 2, 3, 4 }.SequenceEqual(new[] { 1, 2, 3 });
 // returns true
 bool isEqual3 = new List<int> { 1, 2, 3, 4 }.Take(3).SequenceEqual(new[] { 1, 2, 3 });
 // returns false
-bool isEqual4 = new[] { 2, 1, 2, 3 }.SequenceEqual(new[] { 1, 1, 2, 3 });
+bool isEqual4 = new[] { 2, 1, 2 }.SequenceEqual(new[] { 1, 1, 2 });
 // returns true
 bool isEqual5 = new[] { 2, 1, 2 }.Skip(1).SequenceEqual(new[] { 1, 1, 2 }.Skip(1));
 ```
+
+> **NOTE:** There is also another form of `SequenceEqual()` that takes an `IEqualityComparer<T>` comparer parameter to use instead of the default equality comparer.
 
 ### SequenceEqual() quiz
 Based on this, which of the following would **both** compile correctly and return `true`?

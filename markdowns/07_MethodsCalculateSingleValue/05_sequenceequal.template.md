@@ -9,6 +9,8 @@ It is interesting to note that this can be used to compare *any* two sequences! 
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, SequenceEqual()
 ```
 
+> **NOTE:** There is also another form of `SequenceEqual()` that takes an `IEqualityComparer<T>` comparer parameter to use instead of the default equality comparer.
+
 ### SequenceEqual() quiz
 Based on this, which of the following would **both** compile correctly and return `true`?
 
