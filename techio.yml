@@ -65,8 +65,10 @@ plan:
       statement: markdowns/07_MethodsCalculateSingleValue/03_min_max.md
     - title: "Any and All"
       statement: markdowns/07_MethodsCalculateSingleValue/04_any_all.md
+    - title: "SequenceEqual"
+      statement: markdowns/07_MethodsCalculateSingleValue/05_sequenceequal.md
     - title: "Aggregate"
-      statement: markdowns/07_MethodsCalculateSingleValue/05_aggregate.md
+      statement: markdowns/07_MethodsCalculateSingleValue/06_aggregate.md
   - title: "Methods: Calculated sequence"
     description: "Examines some of the methods that calculate a new result sequence based on the elements in a source sequence"
     plan:

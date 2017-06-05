@@ -1,5 +1,4 @@
 # Using C# LINQ - A Practical Overview
-
 This course is designed as an introduction to using LINQ in the C# language.
 
 ### Who Will the Course Benefit?

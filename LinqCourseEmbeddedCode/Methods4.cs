@@ -200,5 +200,37 @@ namespace LinqCourseEmbeddedCode
             //// END EMBED ////
             Assert.IsTrue(result);
         }
+
+        [TestMethod]
+        public void TestMethod16()
+        {
+            //// START EMBED: SequenceEqual() ////
+            // returns true
+            bool isEqual1 = new[] { 1, 2, 3 }.SequenceEqual(new List<int> { 1, 2, 3 });
+            // returns false
+            bool isEqual2 = new List<int> { 1, 2, 3, 4 }.SequenceEqual(new[] { 1, 2, 3 });
+            // returns true
+            bool isEqual3 = new List<int> { 1, 2, 3, 4 }.Take(3).SequenceEqual(new[] { 1, 2, 3 });
+            // returns false
+            bool isEqual4 = new[] { 2, 1, 2, 3 }.SequenceEqual(new[] { 1, 1, 2, 3 });
+            // returns true
+            bool isEqual5 = new[] { 2, 1, 2 }.Skip(1).SequenceEqual(new[] { 1, 1, 2 }.Skip(1));
+            //// END EMBED ////
+            Assert.IsTrue(isEqual1);
+            Assert.IsFalse(isEqual2);
+            Assert.IsTrue(isEqual3);
+            Assert.IsFalse(isEqual4);
+            Assert.IsTrue(isEqual5);
+
+            // quiz
+            // no compile: new[] {2}.SequenceEqual(2);
+            Assert.IsTrue(new SortedSet<int> { 1, 2, 4 }.SequenceEqual(new[] { 1, 2, 4 }));
+            Assert.IsFalse(new[] { 2, 5, 2 }.SequenceEqual(new[] { 2, 5, 2, 2 }));
+            Assert.IsFalse(new[] { 1, 1, 1 }.SequenceEqual(new[] { 1, 1 }));
+            // no compile: new[] { "1", "2", "3"}.SequenceEqual(new[] { 1, 2, 3});
+            Assert.IsTrue(new List<string> { "a", "b", "abc" }.SequenceEqual(new[] { "a", "b", "abc" }));
+            Assert.IsTrue(new List<string> { "a", "b", "abc" }.SequenceEqual(new[] { "a", "b", "abc" }));
+            // no compile: new[] {1, 2}.SequenceEqual(new[] {1.0, 2.0});
+        }
     }
 }
