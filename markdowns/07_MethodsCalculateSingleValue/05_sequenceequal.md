@@ -22,7 +22,7 @@ bool isEqual5 = new[] { 2, 1, 2 }.Skip(1).SequenceEqual(new[] { 1, 1, 2 }.Skip(1
 > **NOTE:** There is also another form of `SequenceEqual()` that takes an `IEqualityComparer<T>` comparer parameter to use instead of the default equality comparer.
 
 ### SequenceEqual() quiz
-Based on this, which of the following would **both** compile correctly and return `true`?
+Which of the following would **both** compile correctly **and** return `true`?
 
 ?[Which statements would compile and return true?]
  - [ ] new[]{2}.SequenceEqual(2)
