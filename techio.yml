@@ -38,7 +38,7 @@ plan:
       statement: markdowns/04_MethodsExtractAValue/03_or_default.md
     - title: "Single element exercise"
       statement: markdowns/04_MethodsExtractAValue/04_single_value_exercise.md
-  - title: "Methods: Extracting multiple element"
+  - title: "Methods: Extracting multiple elements"
     description: "Examines some of the methods that can be used to extract multiple elements from a sequence"
     plan:
     - title: "Skip and Take"
@@ -88,6 +88,8 @@ plan:
     plan:
     - title: "Review"
       statement: markdowns/10_FinalWords/01_review.md
+    - title: "What next"
+      statement: markdowns/10_FinalWords/02_what_next.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized
