@@ -81,7 +81,6 @@ plan:
     plan:
     - title: "Combined Exercise #1"
       statement: markdowns/09_AllTogether/01_together.md
-    plan:
     - title: "Combined Exercise #2"
       statement: markdowns/09_AllTogether/02_together.md
 projects:
