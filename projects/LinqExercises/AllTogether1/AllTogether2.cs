@@ -9,7 +9,9 @@ namespace AllTogether1
         // then sort the remaining words alphabetically, then return the following phrase using
         // only the final word in the resulting sequence:
         //    -> "The last word is <word>"
-        // If there are no words with the character 'e' in them, then return "NONE".
+        // If there are no words with the character 'e' in them, then return null.
+        //
+        // TRY to do it all using only LINQ statements. No loops or if statements.
         public static string GetTheLastWord(IEnumerable<string> words)
         {
             return words
@@ -19,7 +21,6 @@ namespace AllTogether1
                 .OrderBy(_ => _)
                 .Select(_ => $"The last word is {_}")
                 .LastOrDefault()
-                ?? "NONE"
                 //// END SOLUTION ////
                 ;
         }

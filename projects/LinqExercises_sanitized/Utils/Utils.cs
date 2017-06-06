@@ -10,8 +10,11 @@ namespace LinqExercises.Utils
             Console.WriteLine($"TECHIO> message -channel \"exercise results\" \"{message}\"");
         }
 
-        public static void AssertAreEqual(string expected, string actual, string provided)
+        public static void AssertAreEqual(string expectedVal, string actualVal, string provided)
         {
+            var expected = expectedVal ?? "null";
+            var actual = actualVal ?? "null";
+
             if (expected != actual)
             {
                 PrintDifference(expected, actual);

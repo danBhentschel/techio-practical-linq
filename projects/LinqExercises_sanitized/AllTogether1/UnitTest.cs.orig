@@ -49,7 +49,7 @@ namespace AllTogether1
             Utils.CgMessage(string.Empty);
             Utils.CgMessage("About to call GetTheLastWord({\"hop\",\"top\",\"stop\",\"cop\",\"lop\",\"chop\"})");
             answer = FullExercise2.GetTheLastWord(new[] { "hop", "top", "stop", "cop", "lop", "chop" });
-            Utils.AssertAreEqual("NONE", answer, "{\"hop\",\"top\",\"stop\",\"cop\",\"lop\",\"chop\"}");
+            Utils.AssertAreEqual(null, answer, "{\"hop\",\"top\",\"stop\",\"cop\",\"lop\",\"chop\"}");
 
             Utils.CgMessage(string.Empty);
             Utils.CgMessage("About to call GetTheLastWord({\"elastic\",\"elaborate\",\"elephant\",\"iris\",\"ibis\",\"incredible\"})");
@@ -59,7 +59,7 @@ namespace AllTogether1
             Utils.CgMessage(string.Empty);
             Utils.CgMessage("About to call GetTheLastWord({})");
             answer = FullExercise2.GetTheLastWord(new string[0]);
-            Utils.AssertAreEqual("NONE", answer, "{}");
+            Utils.AssertAreEqual(null, answer, "{}");
 
             Utils.CgMessage(string.Empty);
             Utils.CgMessage("Congratulations, you did it!");
