@@ -1,0 +1,18 @@
+[//]: # (GENERATED FILE -- DO NOT EDIT)
+# Combined Exercise #1
+
+As we have already seen in some of the examples, LINQ methods can build on each other. Since many LINQ methods return an `IEnumerable<T>`, subsequent LINQ methods can be called on the results. For example:
+
+```csharp
+IEnumerable<string> values = new List<string> { "fe", "fi", "fo", "fum" };
+// Will return 12
+int result = values
+    .Select(word => $"{word}-{word}")
+    .Skip(2)
+    .Select(phrase => phrase.Length)
+    .Sum();
+```
+
+In this example, combine LINQ method calls together to determine if the second sequence passed into the `TestForSquares()` method contains the squares of the elements in the first sequence.
+
+@[Combined Exercise 1]({"stubs": ["AllTogether1/AllTogether1.cs"], "command": "AllTogether1.UnitTest.Exercise1", "project": "exercises"})

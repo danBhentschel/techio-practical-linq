@@ -21,6 +21,16 @@ namespace LinqExercises.Utils
             CgMessage($"IN: <{provided}> OUT: <{actual}>");
         }
 
+        public static void AssertAreEqual(bool expected, bool actual, string provided)
+        {
+            if (actual != expected)
+            {
+                CgMessage($"EXPECTED: <{expected}>  GOT: <{actual}>");
+            }
+            Assert.AreEqual(expected, actual);
+            CgMessage($"IN: <{provided}> OUT: <{actual}>");
+        }
+
         private static void PrintDifference(string expected, string actual)
         {
             int offset1 = GetDiffOffest(expected, actual);

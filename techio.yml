@@ -76,6 +76,11 @@ plan:
       statement: markdowns/08_MethodsCalculateSequence/01_cast.md
     - title: "Select"
       statement: markdowns/08_MethodsCalculateSequence/02_select.md
+  - title: "Putting It All Together"
+    description: "Exercises using multiple LINQ methods in conjunction"
+    plan:
+    - title: "Combined Exercise #1"
+      statement: markdowns/09_AllTogether/01_together.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized
