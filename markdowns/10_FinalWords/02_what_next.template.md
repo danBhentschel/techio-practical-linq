@@ -1,5 +1,5 @@
 # What next?
-So now that we've opened the door a crack, what's the next step? There's several directions you can go from here...
+So now that we've opened the door a crack, what's the next step? There are several directions you can go from here...
 
 ### Reinforcing
 Here are some other resources you can tap into to reinforce the information covered in this course.
