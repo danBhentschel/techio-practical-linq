@@ -27,19 +27,19 @@ plan:
       statement: markdowns/03_LinqConcepts/02_query_syntax.md
     - title: "LINQ method syntax"
       statement: markdowns/03_LinqConcepts/03_method_syntax.md
-  - title: "Methods: Extracting a single value"
-    description: "Examines some of the methods that can be used to extract a single value from a sequence"
+  - title: "Methods: Extracting a single element"
+    description: "Examines some of the methods that can be used to extract a single element from a sequence"
     plan:
-    - title: "Extract a single value"
+    - title: "Extract a single element"
       statement: markdowns/04_MethodsExtractAValue/01_first_last_single.md
-    - title: "Conditionally extract a single value"
+    - title: "Conditionally extract a single element"
       statement: markdowns/04_MethodsExtractAValue/02_conditions.md
-    - title: "Single value or default"
+    - title: "Single element or default"
       statement: markdowns/04_MethodsExtractAValue/03_or_default.md
-    - title: "Single value exercise"
+    - title: "Single element exercise"
       statement: markdowns/04_MethodsExtractAValue/04_single_value_exercise.md
-  - title: "Methods: Extracting multiple values"
-    description: "Examines some of the methods that can be used to extract multiple values from a sequence"
+  - title: "Methods: Extracting multiple element"
+    description: "Examines some of the methods that can be used to extract multiple elements from a sequence"
     plan:
     - title: "Skip and Take"
       statement: markdowns/05_MethodsExtractValues/01_skip_take.md
@@ -83,6 +83,11 @@ plan:
       statement: markdowns/09_AllTogether/01_together.md
     - title: "Combined Exercise #2"
       statement: markdowns/09_AllTogether/02_together.md
+  - title: "Final Words"
+    description: "A review of the course and some suggestions on further learning materials"
+    plan:
+    - title: "Review"
+      statement: markdowns/10_FinalWords/01_review.md
 projects:
     exercises:
       root: /projects/LinqExercises_sanitized

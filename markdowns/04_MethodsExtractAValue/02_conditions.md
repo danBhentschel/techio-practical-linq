@@ -1,9 +1,9 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# Methods: Conditionally extract a single value
+# Methods: Conditionally extract a single element
 
-Three of the four methods in the previous lesson (`First()`, `Last()`, and `Single()`) have another form that accepts a delegate parameter to make them more selective in which value they return. The provided delegate should take a parameter of type `T` and return a `bool` indicating whether or not the provided parameter meets the criteria.
+Three of the four methods in the previous lesson (`First()`, `Last()`, and `Single()`) have another form that accepts a delegate parameter to make them more selective in which element they return. The provided delegate should take a parameter of type `T` and return a `bool` indicating whether or not the provided parameter meets the criteria.
 
-> **NOTE:** Same remark as in the previous lesson. If these methods can't find an appropriate value to return, they will throw an exception.
+> **NOTE:** Same remark as in the previous lesson. If these methods can't find an appropriate element to return, they will throw an exception.
 
 ### First(&lt;condition&gt;) method
 Any idea what this call to `First()` would do?

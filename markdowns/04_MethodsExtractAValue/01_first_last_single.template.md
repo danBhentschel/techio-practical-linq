@@ -1,11 +1,11 @@
-# Methods: Extract a single value
+# Methods: Extract a single element
 
-These LINQ methods can be used to extract a single value from an `IEnumerable<T>` sequence. 
+These LINQ methods can be used to extract a single element from an `IEnumerable<T>` sequence. 
 
-> **NOTE:** All four of the methods in this lesson throw an exception if they can't find an appropriate value to return. Only use them if you are absolutely certain that a value exists for them to return. You could `catch` the exception (and probably should to handle true error conditions) but if you expect that these may reasonably fail, you should use the `OrDefault` variants instead. We will go over those methods in a later lesson.
+> **NOTE:** All four of the methods in this lesson throw an exception if they can't find an appropriate element to return. Only use them if you are absolutely certain that an element exists for them to return. You could `catch` the exception (and probably should to handle true error conditions) but if you expect that these may reasonably fail, you should use the `OrDefault` variants instead. We will go over those methods in a later lesson.
 
 ### First() method
-Intuitively enough, this extracts the first value in the sequence. The type of value returned depends on the type of `T` in the `IEnumerable<T>` that the method is invoked on. If it is a sequence of `int`, then `First()` will return an `int`.
+Intuitively enough, this extracts the first element in the sequence. The datatype of the value returned depends on the type of `T` in the `IEnumerable<T>` that the method is invoked on. If it is a sequence of `int`, then `First()` will return an `int`.
 
 For example:
 
