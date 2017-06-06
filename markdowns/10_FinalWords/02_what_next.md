@@ -11,7 +11,7 @@ Pluralsight is an excellent online training site. It offers a large number of .N
 The [Practical LINQ](https://app.pluralsight.com/library/courses/practical-linq/table-of-contents) course, by Deborah Kurata, is very well presented and goes over much of the same material as the course you have just completed.
 
 ##### 101 LINQ Samples
-This is a set of Visual Studio solutions, provided by the Visual Studio Product Team, designed to illustrate LINQ usage. They can be opened using the free [Visual Studio Community](https://www.visualstudio.com/downloads/) IDE, and provide a great method to explore LINQ.
+[101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b) is a set of Visual Studio solutions, provided by the Visual Studio Product Team, designed to illustrate LINQ usage. They can be opened using the free [Visual Studio Community](https://www.visualstudio.com/downloads/) IDE, and provide a great method to explore LINQ.
 
 ##### CondinGame puzzles
 The [CodinGame](http://www.codingame.com) website provides a large suite of programming puzzles that can be solved in many languages. Here is a list of puzzles that lend themselves to a LINQ-based solution.
