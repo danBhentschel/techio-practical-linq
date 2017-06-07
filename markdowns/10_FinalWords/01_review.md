@@ -29,10 +29,10 @@ Every LINQ method is documented on MSDN at the following address:
 There are two different ways to express a LINQ statement in C#. They are query syntax and method syntax. Query syntax looks similar to SQL, and may be more human-readable, but not all LINQ methods are supported by query syntax. Method syntax looks more like standard C# code, and supports the full set of LINQ methods. Query syntax is converted into method syntax by the compiler.
 
 ### LINQ Methods
-We discussed 26 different LINQ methods, arranged into five categories:
+We discussed 27 different LINQ methods, arranged into five categories:
 
  - Methods to **extract a single element** from a sequence: `First()`, `Last()`, `Single()`, `FirstOrDefault()`, `LastOrDefault()`, and `SingleOrDefault()`
  - Methods to **extract multiple elements** from a sequence: `Skip()`, `Take()`, `SkipWhile()`, `TakeWhile()`, `Distinct()`, `Intersect()`, and `Where()`
  - Methods to **change the order** of the elements in a sequence: `Reverse()`, `OrderBy()` and `ThenBy()`
  - Methods to **calculate a single value** based on a sequence: `Count()`, `Sum()`, `Min()`, `Max()`, `Any()`, `All()`, `SequenceEqual()`, and `Aggregate()`
- - Methods to **calculate a new sequence** based on a source sequence: `Cast<U>()` and `Select()`
+ - Methods to **calculate a new sequence** based on a source sequence: `Cast<U>()`, `Select()`, and `SelectMany()`

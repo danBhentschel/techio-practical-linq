@@ -71,5 +71,37 @@ namespace LinqCourseEmbeddedCode
             //// END EMBED ////
             Assert.IsTrue(result.SequenceEqual(new List<string> { "(0, 0)", "(1, 1)", "(2, 0)" }));
         }
+
+        [TestMethod]
+        public void TestMethod5()
+        {
+            //// START EMBED: SelectMany() 1 ////
+            int[][] arrays = {
+                new[] {1, 2, 3},
+                new[] {4},
+                new[] {5, 6, 7, 8},
+                new[] {12, 14}
+            };
+            // Will return { 1, 2, 3, 4, 5, 6, 7, 8, 12, 14 }
+            IEnumerable<int> result = arrays.SelectMany(array => array);
+            //// END EMBED ////
+            Assert.IsTrue(result.SequenceEqual(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 12, 14 }));
+        }
+
+        [TestMethod]
+        public void TestMethod6()
+        {
+            //// START EMBED: SelectMany() 2 ////
+            List<List<int>> lists = new List<List<int>> {
+                new List<int> {1, 2, 3},
+                new List<int> {12},
+                new List<int> {5, 6, 5, 7},
+                new List<int> {10, 10, 10, 12}
+            };
+            // Will return { 1, 2, 3, 12, 5, 6, 7, 10, 12 }
+            IEnumerable<int> result = lists.SelectMany(array => array.Distinct());
+            //// END EMBED ////
+            Assert.IsTrue(result.SequenceEqual(new[] { 1, 2, 3, 12, 5, 6, 7, 10, 12 }));
+        }
     }
 }

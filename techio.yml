@@ -76,6 +76,8 @@ plan:
       statement: markdowns/08_MethodsCalculateSequence/01_cast.md
     - title: "Select"
       statement: markdowns/08_MethodsCalculateSequence/02_select.md
+    - title: "SelectMany"
+      statement: markdowns/08_MethodsCalculateSequence/03_selectmany.md
   - title: "Putting It All Together"
     description: "Exercises using multiple LINQ methods in conjunction"
     plan:
