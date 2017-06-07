@@ -99,7 +99,7 @@ namespace LinqCourseEmbeddedCode
                 new List<int> {10, 10, 10, 12}
             };
             // Will return { 1, 2, 3, 12, 5, 6, 7, 10, 12 }
-            IEnumerable<int> result = lists.SelectMany(array => array.Distinct());
+            IEnumerable<int> result = lists.SelectMany(list => list.Distinct());
             //// END EMBED ////
             Assert.IsTrue(result.SequenceEqual(new[] { 1, 2, 3, 12, 5, 6, 7, 10, 12 }));
         }
