@@ -2,7 +2,7 @@
 # Using C# LINQ - A Practical Overview
 Welcome to **Using C# LINQ**. This course is designed as an introduction to LINQ for programmers who are already familiar with the C# language (or perhaps another C-like language such as C++ or Java).
 
-The lesson plan starts out with some brief and simple background information, followed by an explanation of what LINQ is and where you would use it. It then introduces students to about 25 different LINQ methods. Similar methods are grouped together to aid comprehension and retention. The course ends with some exercises geared towards using LINQ methods in conjunction.
+The lesson plan starts out with some brief and simple background information, followed by an explanation of what LINQ is and where you would use it. It then introduces students to 27 different LINQ methods. Similar methods are grouped together to aid comprehension and retention. The course ends with some exercises geared towards using LINQ methods in conjunction.
 
 The LINQ methods discussed in this course are some of the simpler and / or more commonly used methods, based on my own experience. There are other very powerful LINQ methods that are not addressed here, because I consider them to be either too obscure or too complicated for this overview. You are encouraged to explore these other options on your own.
 
