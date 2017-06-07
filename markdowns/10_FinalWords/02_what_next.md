@@ -14,9 +14,13 @@ The [Practical LINQ](https://app.pluralsight.com/library/courses/practical-linq/
 [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b) is a set of Visual Studio solutions, provided by the Visual Studio Product Team, designed to illustrate LINQ usage. They can be opened using the free [Visual Studio Community](https://www.visualstudio.com/downloads/) IDE, and provide a great method to explore LINQ.
 
 ### CondinGame puzzles
-The [CodinGame](http://www.codingame.com) website provides a large suite of programming puzzles that can be solved in many languages. Here is a list of puzzles that lend themselves to a LINQ-based solution.
+The [CodinGame](http://www.codingame.com) website provides a large suite of programming puzzles that can be solved in many languages. Here is a list of puzzles that lend themselves to a completely (or mostly) LINQ-based solution. See if you can figure them out.
 
- - TBD
+ - [Temperatures](https://www.codingame.com/training/easy/temperatures)
+ - [Minimal Number of Swaps](https://www.codingame.com/training/community/minimal-number-of-swaps)
+ - [The Beautiful Sequence](https://www.codingame.com/training/community/the-beautiful-sequence)
+ - [The Fastest](https://www.codingame.com/training/community/the-fastest)
+ - [Gravity Tumbler](https://www.codingame.com/training/community/gravity-tumbler)
 
 ### LINQPad
 [LINQPad](https://www.linqpad.net) is a Windows application that lets you experiment with LINQ queries in a nice GUI environment. It requires a connection to a datasource, which can be a bit of a challenge to setup, but if you are willing to take the time to do so, it can be a rewarding learning experience.
