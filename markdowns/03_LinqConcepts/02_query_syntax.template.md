@@ -32,6 +32,6 @@ Try to decipher that, I challenge you!
 
 ### Query syntax exercise
 
-Now you try it out. The following code shows a LINQ query that returns the input `inValues` unmodified. Using the format of the above example, see if you can return only the strings that have `pattern` in them (using the `.Contains()` method of `string`) and order the list alphabetically.
+Now you try it out. The following code shows a LINQ query that returns the input `inValues` unmodified. Using the format of the above example, see if you can return only the strings that have `pattern` in them (using the [`String.Contains()`](https://msdn.microsoft.com/en-us/library/dy85x1sa%28v=vs.110%29.aspx) method of `string`) and order the list alphabetically.
 
 @[Query Syntax Exercise]({"stubs": ["QuerySyntax1/QuerySyntax1.cs"], "command": "QuerySyntax1.UnitTest.Exercise1", "project": "exercises"})
