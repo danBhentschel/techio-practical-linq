@@ -5,7 +5,7 @@ These LINQ methods can be used to extract a single element from an `IEnumerable<
 
 > **NOTE:** All four of the methods in this lesson throw an exception if they can't find an appropriate element to return. Only use them if you are absolutely certain that an element exists for them to return. You could `catch` the exception (and probably should to handle true error conditions) but if you expect that these may reasonably fail, you should use the `OrDefault` variants instead. We will go over those methods in a later lesson.
 
-### First() method
+### [First()](https://msdn.microsoft.com/en-us/library/bb291976%28v=vs.110%29.aspx) method
 Intuitively enough, this extracts the first element in the sequence. The data type of the value returned depends on the type of `T` in the `IEnumerable<T>` that the method is invoked on. If it is a sequence of `int`, then `First()` will return an `int`.
 
 For example:
