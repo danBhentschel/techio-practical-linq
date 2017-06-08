@@ -5,7 +5,7 @@ Three of the four methods in the previous lesson (`First()`, `Last()`, and `Sing
 
 > **NOTE:** Same remark as in the previous lesson. If these methods can't find an appropriate element to return, they will throw an exception.
 
-### First(&lt;condition&gt;) method
+### [First(&lt;condition&gt;)](https://msdn.microsoft.com/en-us/library/bb535050%28v=vs.110%29.aspx) method
 Any idea what this call to `First()` would return?
 
 ```csharp
@@ -19,7 +19,7 @@ double whatsThis = doubles.First(val => val > 2.3);
  - [x] Nothing. The First() call would throw an Exception.
  - [ ] 2.3
 
-### Last(&lt;condition&gt;) method
+### [Last(&lt;condition&gt;)](https://msdn.microsoft.com/en-us/library/bb549138%28v=vs.110%29.aspx) method
 How about this call to `Last()`?
 
 ```csharp
@@ -33,7 +33,7 @@ double whatsThis = doubles.Last(val => val < 2.1);
  - [ ] Nothing. The Last() call would throw an Exception.
  - [ ] 2.3
 
-### Single() method
+### [Single()](https://msdn.microsoft.com/en-us/library/bb535118%28v=vs.110%29.aspx) method
 And this call to `Single()`?
 
 ```csharp

@@ -6,7 +6,7 @@ What value do they return? That depends on the type (`T`) of the `IEnumerable<T>
 
 For all other data types, there is a [table of default values available on MSDN](https://msdn.microsoft.com/en-us/library/83fhsxwc.aspx).
 
-### FirstOrDefault() method
+### [FirstOrDefault()](https://msdn.microsoft.com/en-us/library/bb340482%28v=vs.110%29.aspx) method
 What do you think this call to `FirstOrDefault()` would return?
 
 ```csharp
@@ -19,7 +19,7 @@ What do you think this call to `FirstOrDefault()` would return?
  - [ ] Nothing. The FirstOrDefault() call would throw an Exception.
  - [ ] 2.3
 
-### LastOrDefault() method
+### [LastOrDefault()](https://msdn.microsoft.com/en-us/library/bb301849%28v=vs.110%29.aspx) method
 What do you think the `LastOrDefault()` in this code would return?
 
 ```csharp
@@ -32,7 +32,7 @@ What do you think the `LastOrDefault()` in this code would return?
  - [ ] Nothing. The LastOrDefault() call would throw an Exception.
  - [ ] 2.3
 
-### ElementAtOrDefault() method
+### [ElementAtOrDefault()](https://msdn.microsoft.com/en-us/library/bb494386%28v=vs.110%29.aspx) method
 Try this one. What would the `ElementAtOrDefault()` call return in this code snippet?
 
 ```csharp
@@ -45,7 +45,7 @@ Try this one. What would the `ElementAtOrDefault()` call return in this code sni
  - [ ] Nothing. The ElementAtOrDefault() call would throw an Exception.
  - [ ] 2.3
 
-### SingleOrDefault() method
+### [SingleOrDefault()](https://msdn.microsoft.com/en-us/library/bb342451%28v=vs.110%29.aspx) method
 `SingleOrDefault()` is a bit different from the others. If there is no element in the list that meets the criteria, then a default value is returned. If more than one value meets the criteria, then `SingleOrDefault()` still throws an exception, just like the `Single()` method.
 
 With this in mind, what do you think this would do?

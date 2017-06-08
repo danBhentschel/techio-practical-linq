@@ -2,7 +2,7 @@
 
 The LINQ methods in this chapter examine the elements of an `IEnumerable<T>` sequence and return a result based on the examined values. For most of the methods we will discuss, this result will be either a `bool` or an `int`.
 
-### Count() method
+### [Count()](https://msdn.microsoft.com/en-us/library/bb338038%28v=vs.110%29.aspx) method
 In its simplest form (without any parameters) the `Count()` method returns an `int` indicating the number of elements in the source sequence.
 
 ```csharp
@@ -13,7 +13,7 @@ In its simplest form (without any parameters) the `Count()` method returns an `i
 
 > **NOTE 2:** There is also a `LongCount()` method that returns a `long`, for use with sequences that have a large number of elements.
 
-### Count(&lt;condition&gt;) method
+### [Count(&lt;condition&gt;)](https://msdn.microsoft.com/en-us/library/bb535181%28v=vs.110%29.aspx) method
 There is another form of the `Count()` method that takes a **condition** delegate parameter. The provided delegate should take a parameter of type `T` and return a `bool` indicating whether or not the provided parameter meets the criteria.
 
 This form of `Count()` will return an `int` indicating the number of elements in the source sequence that meet the provided condition. This provides the same result as `<source>.Where(<condition>).Count()`.

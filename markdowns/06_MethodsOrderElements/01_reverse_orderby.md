@@ -5,7 +5,7 @@ These LINQ methods reorder the elements in an `IEnumerable<T>` sequence. Each me
 
 > **NOTE:** Same comment as in the last chapter. If I state that a method "returns a sequence," this is not technically true. The methods in this chapter return an `IEnumerable<T>`, which is a generator (or an iterator) that can provide a sequence on demand.
 
-### Reverse() method
+### [Reverse()](https://msdn.microsoft.com/en-us/library/bb358497%28v=vs.110%29.aspx) method
 The `Reverse()` method returns a new sequence that contains all the elements from the source sequence in the opposite order.
 
 ```csharp
@@ -16,7 +16,7 @@ IEnumerable<string> result = strings.Reverse();
 
 > **NOTE:** The `Reverse()` LINQ method (an extension method to `IEnumerable<T>`) behaves differently from the `Reverse()` method on `List<T>`. This unfortunate situation can cause confusion. More on this in the **Advanced Topics** course.
 
-### OrderBy(&lt;keySelector&gt;) method
+### [OrderBy(&lt;keySelector&gt;)](https://msdn.microsoft.com/en-us/library/bb534966%28v=vs.110%29.aspx) method
 `OrderBy()` sorts the elements in the source sequence based on a **key** value. The key for an element is calculated by a **keySelector** delegate method passed into the `OrderBy()` call. The examples below demonstrate how this works.
 
 ```csharp

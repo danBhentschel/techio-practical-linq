@@ -1,6 +1,6 @@
 # Methods: Changing element order
 
-### ThenBy() method
+### [ThenBy()](https://msdn.microsoft.com/en-us/library/bb534743%28v=vs.110%29.aspx) method
 `ThenBy()` specifies a secondary sort **key** that is used to further sort data that has already been sorted with a call to `OrderBy()`.
 
 ### IOrderedEnumerable&lt;T&gt;

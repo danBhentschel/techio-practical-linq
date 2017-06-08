@@ -1,6 +1,6 @@
 # Methods: Calculate a new sequence
 
-### SelectMany(&lt;selector&gt;) method
+### [SelectMany(&lt;selector&gt;)](https://msdn.microsoft.com/en-us/library/bb534336%28v=vs.110%29.aspx) method
 The `SelectMany()` method is used to "flatten" a sequence in which the elements of the sequence are, themselves, sequences. For example, `SelectMany()` can turn a two-dimensional array into a single sequence of values, as shown in this example:
 
 ```csharp

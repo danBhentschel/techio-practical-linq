@@ -1,7 +1,7 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
 # Methods: Calculating a single value
 
-### Min() and Max() methods
+### [Min()](https://msdn.microsoft.com/en-us/library/bb339189%28v=vs.110%29.aspx) and [Max()](https://msdn.microsoft.com/en-us/library/bb292667%28v=vs.110%29.aspx) methods
 Very simply, the `Min()` method returns the minimum value from the source sequence and the `Max()` method returns the maximum value. As with the `Sum()` method, they can only be called on sequences containing numerical values.
 
 ```csharp
@@ -10,7 +10,7 @@ IEnumerable<int> ints = new List<int> { 2, 2, 4, 6, 3, 6, 5 };
 int result = ints.Max();
 ```
 
-### Min(&lt;selector&gt;) and Max(&lt;selector&gt;) methods
+### [Min(&lt;selector&gt;)](https://msdn.microsoft.com/en-us/library/bb549416%28v=vs.110%29.aspx) and [Max(&lt;selector&gt;)](https://msdn.microsoft.com/en-us/library/bb535031%28v=vs.110%29.aspx) methods
 Similar to the `Sum()` method, `Min()` and `Max()` can also be called with a **selector** delegate parameter. The provided delegate should take a parameter of type `T` and return a numerical value. The result of the `Min()` or `Max()` method call will be the minimum or maximum of all of these numerical values, as calculated for each element in the sequence. The type of the value returned from `Min()` or `Max()` matches the data type of the of the value returned from the **selector**.
 
 ```csharp

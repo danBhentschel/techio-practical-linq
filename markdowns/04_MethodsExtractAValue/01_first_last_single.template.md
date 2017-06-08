@@ -21,7 +21,7 @@ Looking at this code, what do you think the `First()` method call would return?
  - [ ] Nothing. The First() call would throw an Exception.
  - [ ] 2.3
 
-### Last() method
+### [Last()](https://msdn.microsoft.com/en-us/library/bb358775%28v=vs.110%29.aspx) method
 Hmm.... What do you think the `Last()` in this code would return?
 
 ```csharp
@@ -34,7 +34,7 @@ Hmm.... What do you think the `Last()` in this code would return?
  - [ ] Nothing. The Last() call would throw an Exception.
  - [x] 2.3
 
-### ElementAt() method
+### [ElementAt()](https://msdn.microsoft.com/en-us/library/bb299233%28v=vs.110%29.aspx) method
 Try this one. What would the `ElementAt(2)` call return in this code snippet?
 
 ```csharp
@@ -47,7 +47,7 @@ Try this one. What would the `ElementAt(2)` call return in this code snippet?
  - [ ] Nothing. The ElementAt() call would throw an Exception.
  - [ ] 2.3
 
-### Single() method
+### [Single()](https://msdn.microsoft.com/en-us/library/bb155325%28v=vs.110%29.aspx) method
 `Single()` is an interesting method. You call it when you are expecting that there is only a single element in the sequence. If there is more than one element, or if there are no elements, then `Single()` will throw an exception.
 
 With this in mind, what do you think this would return?
