@@ -1,6 +1,6 @@
 # Methods: Calculating a single value
 
-### [Sum()]https://msdn.microsoft.com/en-us/library/bb338442%28v=vs.110%29.aspx) method
+### [Sum()](https://msdn.microsoft.com/en-us/library/bb338442%28v=vs.110%29.aspx) method
 Without a parameter, the `Sum()` method can only be called on a sequence containing numerical elements. It returns a single value indicating the sum of all elements in the sequence. The type of the value returned matches the data type of the elements in the sequence.
 
 ```csharp
