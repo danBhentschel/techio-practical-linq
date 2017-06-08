@@ -46,7 +46,7 @@ Try this one. What would the `ElementAtOrDefault()` call return in this code sni
  - [ ] 2.3
 
 ### SingleOrDefault() method
-`SingleOrDefault()` is a bit different from the others. If there is no element in the list that meets the criteria, then a default value is returned. If more than one value meets the criteria, then it still throws an exception, just like the `Single()` method.
+`SingleOrDefault()` is a bit different from the others. If there is no element in the list that meets the criteria, then a default value is returned. If more than one value meets the criteria, then `SingleOrDefault()` still throws an exception, just like the `Single()` method.
 
 With this in mind, what do you think this would do?
 
