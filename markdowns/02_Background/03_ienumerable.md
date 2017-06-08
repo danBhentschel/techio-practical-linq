@@ -6,7 +6,7 @@ The `IEnumerable<T>` interface is central to LINQ. All LINQ methods are extensio
 Pretty cool huh?
 
 ### What is IEnumerable&lt;T&gt;?
-It is an interface that guarantees that a given class is **iterable**. That's a technical term that indicates that a class that implements `IEnumerable<T>` can be thought of as a sequence of elements.
+It is an interface that guarantees that a given class is **iterable**. That's a technical term indicating that a class that implements `IEnumerable<T>` can be thought of and used as a sequence of elements.
 
 ### What classes implement IEnumerable&lt;T&gt;?
 Most C# **collections** and all C# **arrays** implement `IEnumerable<T>`. Here are some examples:

@@ -207,12 +207,16 @@ namespace LinqCourseEmbeddedCode
             //// START EMBED: SequenceEqual() ////
             // returns true
             bool isEqual1 = new[] { 1, 2, 3 }.SequenceEqual(new List<int> { 1, 2, 3 });
+
             // returns false
             bool isEqual2 = new List<int> { 1, 2, 3, 4 }.SequenceEqual(new[] { 1, 2, 3 });
+
             // returns true
             bool isEqual3 = new List<int> { 1, 2, 3, 4 }.Take(3).SequenceEqual(new[] { 1, 2, 3 });
+
             // returns false
             bool isEqual4 = new[] { 2, 1, 2 }.SequenceEqual(new[] { 1, 1, 2 });
+
             // returns true
             bool isEqual5 = new[] { 2, 1, 2 }.Skip(1).SequenceEqual(new[] { 1, 1, 2 }.Skip(1));
             //// END EMBED ////

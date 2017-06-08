@@ -8,7 +8,7 @@
 
 Since `IOrderedEnumerable<T>` implements the `IEnumerable<T>` interface, it can be thought of as an `IEnumerable<T>` with attached metadata that describes the order operations that have previously been performed on the sequence.
 
-`ThenBy()` can be called any number of times, providing a new **key** on each subsequent call.
+`ThenBy()` can be called any number of times, providing a new **key** on each subsequent call. Here is an example of `ThenBy()` usage:
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods3.cs, ThenBy()

@@ -5,7 +5,7 @@ Three of the four methods in the previous lesson (`First()`, `Last()`, and `Sing
 > **NOTE:** Same remark as in the previous lesson. If these methods can't find an appropriate element to return, they will throw an exception.
 
 ### First(&lt;condition&gt;) method
-Any idea what this call to `First()` would do?
+Any idea what this call to `First()` would return?
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods1.cs, First() - condition

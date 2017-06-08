@@ -23,7 +23,7 @@ The [CodinGame](http://www.codingame.com) website provides a large suite of prog
  - [Gravity Tumbler](https://www.codingame.com/training/community/gravity-tumbler)
 
 ### LINQPad
-[LINQPad](https://www.linqpad.net) is a Windows application that lets you experiment with LINQ queries in a nice GUI environment. It requires a connection to a datasource, which can be a bit of a challenge to setup, but if you are willing to take the time to do so, it can be a rewarding learning experience.
+[LINQPad](https://www.linqpad.net) is a Windows application that lets you experiment with LINQ queries in a nice GUI environment. It requires a connection to a datasource, which requires some knowledge to setup, but if you are willing to take the time to do so, it can be a rewarding learning experience.
 
 # Expansion
 Here are some resources to expand your knowledge of LINQ. They build on the information introduced in the course you have just completed.

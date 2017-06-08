@@ -4,7 +4,7 @@
 `Take()` and `Skip()` return consecutive elements at the beginning and end of a sequence, but there are also ways to extract specific elements scattered throughout a given sequence.
 
 ### Distinct() method
-The `Distinct()` method works the same way as the `DISTINCT` directive in SQL. It returns a new sequence containing all the elements from the target sequence that are distinct from each other, as determined by the default equality comparer for the data type of the sequence.
+The `Distinct()` method works the same way as the `DISTINCT` directive in SQL. It returns a new sequence containing all the elements from the target sequence that are distinct from each other, as determined by the [default equality comparer](https://msdn.microsoft.com/en-us/library/ms224763%28v=vs.110%29.aspx) for the data type of the sequence.
 
 For example:
 
@@ -29,7 +29,7 @@ IEnumerable<int> result = ints.Intersect(filter);
 
 > **NOTE:** LINQ is showing its SQL roots here. The `Where()` method is named based on SQL syntax, but acts like the `filter()` function in Java, JavaScript, Python, etc.
 
-The criteria is passed into `Where()` as a **predicate** delegate method that takes a single parameter of type `T` (where `T` is the datatype of the elements in the `IEnumerable<T>` sequence) and returns a `bool` indicating whether or not the passed-in element should be included in the returned sequence.
+The criteria is passed into `Where()` as a **predicate** delegate method that takes a single parameter of type `T` (where `T` is the data type of the elements in the `IEnumerable<T>` sequence) and returns a `bool` indicating whether or not the passed-in element should be included in the returned sequence.
 
 ```csharp
 List<int> ints = new List<int> { 1, 2, 4, 8, 4, 2, 1 };

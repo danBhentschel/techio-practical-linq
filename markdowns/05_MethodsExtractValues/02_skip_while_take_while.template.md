@@ -5,7 +5,7 @@ In the previous lesson we learned about `Take()` and `Skip()`, both of which acc
 ### TakeWhile(&lt;criteria&gt;) method
 `TakeWhile()` behaves similarly to the `Take()` method except that, instead of taking the first `n` elements of a sequence, it "takes" all of the initial elements of a sequence that meet a specified **criteria**, and stops on the first element that doesn't meet the criteria. It then returns a new sequence containing all the "taken" elements.
 
-The criteria is passed into `TakeWhile()` as a delegate method that takes a single parameter of type `T` (where `T` is the datatype of the elements in the `IEnumerable<T>` sequence) and returns a `bool` indicating whether or not the passed-in elements should be "taken".
+The criteria is passed into `TakeWhile()` as a delegate method that takes a single parameter of type `T` (where `T` is the data type of the elements in the `IEnumerable<T>` sequence) and returns a `bool` indicating whether or not the passed-in element should be "taken".
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods2.cs, TakeWhile()

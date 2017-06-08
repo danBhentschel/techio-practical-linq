@@ -1,7 +1,7 @@
 # Methods: Calculating a single value
 
 ### Any(&lt;condition&gt;) method
-Returns `true` if at least one of the values in the source sequence meets the provided **condition**. Otherwise it returns `false`.
+Returns `true` if _at least one of the elements_ in the source sequence meets the provided **condition**. Otherwise it returns `false`.
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, Any()
@@ -10,7 +10,7 @@ Returns `true` if at least one of the values in the source sequence meets the pr
 > **NOTE:** `Any()` can also be called without a condition, in which case it will return `true` if there is at least one element in the source sequence.
 
 ### All(&lt;condition&gt;) method
-Returns `true` if every value in the source sequence meets the provided **condition**. Otherwise it returns `false`.
+Returns `true` if _every element_ in the source sequence meets the provided **condition**. Otherwise it returns `false`.
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, All()

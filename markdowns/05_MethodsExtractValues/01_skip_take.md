@@ -3,7 +3,7 @@
 
 These LINQ methods can be used to extract multiple elements from an `IEnumerable<T>` sequence. Each method in this chapter provides a different means of defining the criteria determining which sequence elements to remove and which elements to keep.
 
-> **NOTE:** Throughout this chapter I state that a method "returns a sequence". This is not technically true. The methods in this chapter return an `IEnumerable<T>`, which is a generator method (or an iterator) that can provide a sequence on demand. The difference is subtle, and can often be ignored, but there are some situations where the distinction is important. This will be discussed in more detail in the **Advanced Topics** course.
+> **NOTE:** Throughout this chapter I state that a method "returns a sequence". This is not technically true. The methods in this chapter return an `IEnumerable<T>`, which is a generator (or an iterator) that can provide a sequence on demand. The difference is subtle, and can often be ignored, but there are some situations where the distinction is important. This will be discussed in more detail in the **Advanced Topics** course.
 
 ### Take() method
 The `Take()` method extracts the first `n` elements (where `n` is a parameter to the method) from the beginning of the target sequence, and returns a new sequence containing only the elements taken. 

@@ -7,7 +7,7 @@ As we have already seen in some of the examples, LINQ methods can build on each 
 IEnumerable<string> values = new List<string> { "fe", "fi", "fo", "fum" };
 // Will return 12
 int result = values
-    .Select(word => $"{word}-{word}")
+    .Select(word => $"{word}-{word}") // { "fe-fe", "fi-fi", ... }
     .Skip(2)
     .Select(phrase => phrase.Length)
     .Sum();

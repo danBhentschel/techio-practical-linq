@@ -1,9 +1,9 @@
 # Methods: Calculating a single value
 
 ### SequenceEqual() method
-The `SequenceEqual()` method takes a "second" `IEnumerable<T>` sequence as a parameter, and performs a comparison, element-by-element, with the target (first) sequence. If the two sequences contain the same number of elements, and each element in the first sequence is equal to the corresponding element in the second sequence (using the default equality comparer) then `SequenceEqual()` returns `true`.  Otherwise, `false` is returned.
+The `SequenceEqual()` method takes a **second** `IEnumerable<T>` sequence as a parameter, and performs a comparison, element-by-element, with the target (first) sequence. If the two sequences contain the same number of elements, and each element in the first sequence is equal to the corresponding element in the second sequence (using the [default equality comparer](https://msdn.microsoft.com/en-us/library/ms224763%28v=vs.110%29.aspx)) then `SequenceEqual()` returns `true`.  Otherwise, `false` is returned.
 
-It is interesting to note that this can be used to compare *any* two sequences! So, for example, a list and an array can be compared using this method. It can be quite handy sometimes. The only stipulation is that the datatype of the two sequences, `<T>`, must be the same.
+It is interesting to note that this can be used to compare *any* two sequences! So, for example, a list and an array can be compared using this method. It can be quite handy sometimes. The only stipulation is that the data type of the two sequences, `<T>`, must be the same.
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, SequenceEqual()
@@ -12,7 +12,7 @@ It is interesting to note that this can be used to compare *any* two sequences! 
 > **NOTE:** There is also another form of `SequenceEqual()` that takes an `IEqualityComparer<T>` comparer parameter to use instead of the default equality comparer.
 
 ### SequenceEqual() quiz
-Which of the following would **both** compile correctly **and** return `true`?
+Which of the following would _both_ compile correctly _and_ return `true`?
 
 ?[Which statements would compile and return true?]
  - [ ] new[]{2}.SequenceEqual(2)

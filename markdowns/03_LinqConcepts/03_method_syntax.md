@@ -1,9 +1,9 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
 # LINQ Concepts: Method syntax
-The other LINQ format is method syntax. The LINQ method syntax can do everything that query syntax can do, and more. It's just a different way to format the instructions.
+The other LINQ format is method syntax. LINQ method syntax can do everything that query syntax can do, and more. It's just a different way to format the instructions.
 
 ### Method syntax example
-Recall this example of query syntax:
+Recall this example of query syntax from the previous lesson:
 
 ```csharp
 List<string> animalNames = new List<string>
@@ -17,7 +17,7 @@ IEnumerable<string> longAnimalNames =
     select name;
 ```
 
-This exact same instruction can be written in method syntax like this:
+This exact same instruction set can be written using method syntax like this:
 
 ```csharp
 List<string> animalNames = new List<string>
@@ -29,9 +29,11 @@ IEnumerable<string> longAnimalNames =
     .OrderBy(name => name.Length);
 ```
 
+> **NOTE:** The spaces, tabs, and linebreaks in these examples are just whitespace, used for formatting, and are not syntactically important.
+
 ### Advantages of method syntax
 
-I, personally, prefer method syntax over query syntax, and this is the format that will be used for the rest of this course. Here are some of the advantages of method syntax
+I, personally, prefer method syntax over query syntax, and this is the format that will be used for the rest of this course. Here are some of the advantages of method syntax:
 
  - All query syntax is automatically converted to method syntax at compilation time
  - Not all LINQ methods can be utilized with query syntax

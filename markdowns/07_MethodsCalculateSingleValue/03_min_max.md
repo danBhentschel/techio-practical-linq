@@ -2,7 +2,7 @@
 # Methods: Calculating a single value
 
 ### Min() and Max() methods
-Very simply, the `Min()` method returns the minimum value from the source sequence and the `Max()` method returns the maximum value.
+Very simply, the `Min()` method returns the minimum value from the source sequence and the `Max()` method returns the maximum value. As with the `Sum()` method, they can only be called on sequences containing numerical values.
 
 ```csharp
 IEnumerable<int> ints = new List<int> { 2, 2, 4, 6, 3, 6, 5 };

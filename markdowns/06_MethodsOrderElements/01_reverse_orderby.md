@@ -3,7 +3,7 @@
 
 These LINQ methods reorder the elements in an `IEnumerable<T>` sequence. Each method in this chapter provides a different means of specifying the desired element order.
 
-> **NOTE:** Same comment as in the last chapter. If I state that a method "returns a sequence," this is not technically true. The methods in this chapter return an `IEnumerable<T>`, which is a generator method (or an iterator) that can provide a sequence on demand.
+> **NOTE:** Same comment as in the last chapter. If I state that a method "returns a sequence," this is not technically true. The methods in this chapter return an `IEnumerable<T>`, which is a generator (or an iterator) that can provide a sequence on demand.
 
 ### Reverse() method
 The `Reverse()` method returns a new sequence that contains all the elements from the source sequence in the opposite order.
@@ -16,8 +16,8 @@ IEnumerable<string> result = strings.Reverse();
 
 > **NOTE:** The `Reverse()` LINQ method (an extension method to `IEnumerable<T>`) behaves differently from the `Reverse()` method on `List<T>`. This unfortunate situation can cause confusion. More on this in the **Advanced Topics** course.
 
-### OrderBy() method
-`OrderBy()` sorts the elements in the source sequence based on a **key** value. The key for an element is calculated by a **key selector** delegate method passed into the `OrderBy()` call. The examples below demonstrate how this works.
+### OrderBy(&lt;keySelector&gt;) method
+`OrderBy()` sorts the elements in the source sequence based on a **key** value. The key for an element is calculated by a **keySelector** delegate method passed into the `OrderBy()` call. The examples below demonstrate how this works.
 
 ```csharp
 List<string> strings = new List<string> { "first", "then", "and then", "finally" };
@@ -31,7 +31,7 @@ IEnumerable<string> result = strings.OrderBy(str => str[2]);
 
 // Sort the strings by their reversed characters
 // Will contain { "then", "and then", "first", "finally" }
-IEnumerable<string> result = strings.OrderBy(ReverseCharactersInString);
+IEnumerable<string> result = strings.OrderBy(str => new string(str.Reverse().ToArray()));
 ```
 
 > **NOTE:** The **key** values are sorted based on the output of the [default comparer](https://msdn.microsoft.com/en-us/library/azhsac5f%28v=vs.110%29.aspx) for the data type of the keys.
@@ -40,7 +40,7 @@ IEnumerable<string> result = strings.OrderBy(ReverseCharactersInString);
 
 ### There is no Sort()
 
-If you want to sort the elements within a sequence, then you will need to pass in an _identity_ **keySelector** method that indicates that each element in the sequence is a **key**. Here is what that looks like:
+If you want to sort the elements within a sequence, then you will need to pass in an _identity_ **keySelector** method that indicates that each element in the sequence is, itself, a **key**. Here is what that looks like:
 
 ```csharp
 List<string> strings = new List<string> { "first", "then", "and then", "finally" };

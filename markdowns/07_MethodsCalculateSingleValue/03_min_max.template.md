@@ -1,7 +1,7 @@
 # Methods: Calculating a single value
 
 ### Min() and Max() methods
-Very simply, the `Min()` method returns the minimum value from the source sequence and the `Max()` method returns the maximum value.
+Very simply, the `Min()` method returns the minimum value from the source sequence and the `Max()` method returns the maximum value. As with the `Sum()` method, they can only be called on sequences containing numerical values.
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, Max()

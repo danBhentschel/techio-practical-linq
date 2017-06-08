@@ -3,12 +3,12 @@
 
 The previous two lessons had a note explaining that the `First()`, `Last()`, etc. methods would throw an exception if they couldn't return an element. The methods shown here don't throw an exception. They instead return a default value.
 
-What value do they return? That depends on the type (`T`) of the `IEnumerable<T>` sequence. If `T` is a class type, then the default value is always `null`. If it is a struct, then the default is an instance of that struct with all its elements set to their default values.
+What value do they return? That depends on the type (`T`) of the `IEnumerable<T>` sequence. If `T` is a reference type (a class), then the default value is always `null`. If it is a struct, then the default value is an instance of that struct with all its elements set to their default values.
 
 For all other data types, there is a [table of default values available on MSDN](https://msdn.microsoft.com/en-us/library/83fhsxwc.aspx).
 
 ### FirstOrDefault() method
-What do you think that this call to `FirstOrDefault()` would return?
+What do you think this call to `FirstOrDefault()` would return?
 
 ```csharp
 List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
@@ -36,7 +36,7 @@ double whatsThis = doubles.LastOrDefault(val => val > 2.0 && val < 2.3);
  - [ ] 2.3
 
 ### ElementAtOrDefault() method
-Try this one. What would the `ElementAtOrDefault(4)` call return in this code snippet?
+Try this one. What would the `ElementAtOrDefault()` call return in this code snippet?
 
 ```csharp
 List<double> doubles = new List<double> { 2.0, 2.1, 2.2, 2.3 };
@@ -50,7 +50,7 @@ double whatsThis = doubles.ElementAtOrDefault(4);
  - [ ] 2.3
 
 ### SingleOrDefault() method
-`SingleOrDefault()` is a bit different from the others. If there is no element in the list that meets the criteria, then a default value is returned. If more than one value meets the criteria, then it throws an exception.
+`SingleOrDefault()` is a bit different from the others. If there is no element in the list that meets the criteria, then a default value is returned. If more than one value meets the criteria, then it still throws an exception, just like the `Single()` method.
 
 With this in mind, what do you think this would do?
 

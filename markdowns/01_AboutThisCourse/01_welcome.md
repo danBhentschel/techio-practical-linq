@@ -7,7 +7,7 @@ The lesson plan starts out with some brief and simple background information, fo
 The LINQ methods discussed in this course are some of the simpler and / or more commonly used methods, based on my own experience. There are other very powerful LINQ methods that are not addressed here, because I consider them to be either too obscure or too complicated for this overview. You are encouraged to explore these other options on your own.
 
 ### Supplementary courses
-There are two supplementary LINQ courses designed to be taken in conjunction with this course:
+There are two supplementary LINQ courses designed to be taken along with this course:
  - **C# LINQ Background Topics** (Link TBD)
  - **C# LINQ Advanced Topics** (Link TBD)
 
