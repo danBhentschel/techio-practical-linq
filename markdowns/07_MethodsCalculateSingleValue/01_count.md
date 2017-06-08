@@ -16,10 +16,10 @@ int result = strings.Count();
 
 > **NOTE 2:** There is also a `LongCount()` method that returns a `long`, for use with sequences that have a large number of elements.
 
-### [Count(&lt;condition&gt;)](https://msdn.microsoft.com/en-us/library/bb535181%28v=vs.110%29.aspx) method
-There is another form of the `Count()` method that takes a **condition** delegate parameter. The provided delegate should take a parameter of type `T` and return a `bool` indicating whether or not the provided parameter meets the criteria.
+### [Count(&lt;predicate&gt;)](https://msdn.microsoft.com/en-us/library/bb535181%28v=vs.110%29.aspx) method
+There is another form of the `Count()` method that takes a **predicate** delegate parameter. The provided delegate should take a parameter of type `T` and return a `bool` indicating whether or not the provided parameter meets the criteria.
 
-This form of `Count()` will return an `int` indicating the number of elements in the source sequence that meet the provided condition. This provides the same result as `<source>.Where(<condition>).Count()`.
+This form of `Count()` will return an `int` indicating the number of elements in the source sequence that meet the criteria. This produces the same result as `<source>.Where(<condition>).Count()`.
 
 ```csharp
 IEnumerable<string> strings = new List<string> { "first", "then", "and then", "finally" };
