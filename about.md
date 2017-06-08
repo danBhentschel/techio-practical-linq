@@ -21,10 +21,10 @@ The **Advanced** course provides some hints and precautions for how to get the m
 The lessons provided here are geared towards beginner to intermediate programmers. Students should have a basic understanding of the fundamentals of C#. Required skills include crafting of classes, fields, and methods. A good understanding of C# data types is also strongly recommended. 
 
 ### Difficulty Level
-Beginner - Intermediate
+Beginner / Intermediate
 
 ### Estimated Time
-TBD
+About 2 hours
 
 ### Current Course Version
 0.0.1
