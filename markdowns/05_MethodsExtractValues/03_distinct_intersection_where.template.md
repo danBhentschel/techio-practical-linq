@@ -2,7 +2,7 @@
 
 `Take()` and `Skip()` return consecutive elements at the beginning and end of a sequence, but there are also ways to extract specific elements scattered throughout a given sequence.
 
-### [Distinct()](https://msdn.microsoft.com/en-us/library/bb348436%28v=vs.110%29.aspx) method
+# [Distinct()](https://msdn.microsoft.com/en-us/library/bb348436%28v=vs.110%29.aspx) method
 The `Distinct()` method works the same way as the `DISTINCT` directive in SQL. It returns a new sequence containing all the elements from the target sequence that are distinct from each other, as determined by the [default equality comparer](https://msdn.microsoft.com/en-us/library/ms224763%28v=vs.110%29.aspx) for the data type of the sequence.
 
 For example:
@@ -11,14 +11,14 @@ For example:
 //// EMBED: LinqCourseEmbeddedCode/Methods2.cs, Distinct()
 ```
 
-### [Intersect()](https://msdn.microsoft.com/en-us/library/bb460136%28v=vs.110%29.aspx) method
+# [Intersect()](https://msdn.microsoft.com/en-us/library/bb460136%28v=vs.110%29.aspx) method
 `Intersect()` returns a new sequence containing all the elements that are common to both the target sequence and a second sequence provided as a parameter to the method. Both sequences must provide the same data type, and commonality is determined by the default equality comparer for that data type.
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods2.cs, Intersect()
 ```
 
-### [Where(&lt;predicate&gt;)](https://msdn.microsoft.com/en-us/library/bb534803%28v=vs.110%29.aspx) method
+# [Where(&lt;predicate&gt;)](https://msdn.microsoft.com/en-us/library/bb534803%28v=vs.110%29.aspx) method
 `Where()` returns a new sequence containing all the elements from the target sequence that meet a specified criteria.
 
 > **NOTE:** LINQ is showing its SQL roots here. The `Where()` method is named based on SQL syntax, but acts like the `filter()` function in Java, JavaScript, Python, etc.

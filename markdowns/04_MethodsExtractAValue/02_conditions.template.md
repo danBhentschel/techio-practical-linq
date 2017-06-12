@@ -4,7 +4,7 @@ Three of the four methods in the previous lesson (`First()`, `Last()`, and `Sing
 
 > **NOTE:** Same remark as in the previous lesson. If these methods can't find an appropriate element to return, they will throw an exception.
 
-### [First(&lt;predicate&gt;)](https://msdn.microsoft.com/en-us/library/bb535050%28v=vs.110%29.aspx) method
+# [First(&lt;predicate&gt;)](https://msdn.microsoft.com/en-us/library/bb535050%28v=vs.110%29.aspx) method
 Any idea what this call to `First()` would return?
 
 ```csharp
@@ -17,7 +17,7 @@ Any idea what this call to `First()` would return?
  - [x] Nothing. The First() call would throw an Exception.
  - [ ] 2.3
 
-### [Last(&lt;predicate&gt;)](https://msdn.microsoft.com/en-us/library/bb549138%28v=vs.110%29.aspx) method
+# [Last(&lt;predicate&gt;)](https://msdn.microsoft.com/en-us/library/bb549138%28v=vs.110%29.aspx) method
 How about this call to `Last()`?
 
 ```csharp
@@ -30,7 +30,7 @@ How about this call to `Last()`?
  - [ ] Nothing. The Last() call would throw an Exception.
  - [ ] 2.3
 
-### [Single(&lt;predicate&gt;)](https://msdn.microsoft.com/en-us/library/bb535118%28v=vs.110%29.aspx) method
+# [Single(&lt;predicate&gt;)](https://msdn.microsoft.com/en-us/library/bb535118%28v=vs.110%29.aspx) method
 And this call to `Single()`?
 
 ```csharp

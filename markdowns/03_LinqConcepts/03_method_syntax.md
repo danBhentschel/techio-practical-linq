@@ -2,7 +2,7 @@
 # LINQ Concepts: Method syntax
 The other LINQ format is method syntax. LINQ method syntax can do everything that query syntax can do, and more. It's just a different way to format the instructions.
 
-### Method syntax example
+## Method syntax example
 Recall this example of query syntax from the previous lesson:
 
 ```csharp
@@ -31,7 +31,7 @@ IEnumerable<string> longAnimalNames =
 
 > **NOTE:** The spaces, tabs, and linebreaks in these examples are just whitespace, used for formatting, and are not syntactically important.
 
-### Advantages of method syntax
+## Advantages of method syntax
 
 I, personally, prefer method syntax over query syntax, and this is the format that will be used for the rest of this course. Here are some of the advantages of method syntax:
 
@@ -39,7 +39,7 @@ I, personally, prefer method syntax over query syntax, and this is the format th
  - Not all LINQ methods can be utilized with query syntax
  - Method syntax is stylistically more similar to other C# code
 
-### Method syntax exercise
+# Method syntax exercise
 
 This is the exact same exercise as in the previous lesson. Now try to write it with method syntax.
 

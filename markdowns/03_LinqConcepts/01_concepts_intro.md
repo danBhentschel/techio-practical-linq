@@ -7,14 +7,14 @@ LINQ is a collection of extension methods that extend the `IEnumerable<T>` inter
 
 Some methods are very simple, such as the `Count()` method. Several LINQ methods are very complicated and difficult to understand, though. The `GroupJoin()` method would be a good example of this type.
 
-### General method categories
+## General method categories
  - Some methods return a single element from the target sequence, such as `First()` or `Last()`.
  - Some methods return multiple elements out of the target sequence, such as `Take()`, `Skip()`, and `Where()`.
  - Some methods return the entire target sequence with the elements' order changed, such as `Reverse()` and `OrderBy()`.
  - Some methods return a single calculated value based on the input. `Any()`, `Sum()`, and `Max()` are examples of this type.
  - Some methods return a completely different sequence based on the target sequence, such as `Select()` and `Cast()`.
 
-### Categorization quiz
+# Categorization quiz
 Based on the method name and the signature information in the [MSDN documentation](https://msdn.microsoft.com/en-us/library/system.linq.enumerable_methods%28v=vs.110%29.aspx), try to guess in which of the above categories each method belongs.
 
 ?[Which category best describes the Count() method?]
