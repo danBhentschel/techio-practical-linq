@@ -29,4 +29,6 @@ The criteria is passed into `Where()` as a **predicate** delegate method that ta
 //// EMBED: LinqCourseEmbeddedCode/Methods2.cs, Where()
 ```
 
+# Exercise
+
 @[Distinct, Intersect, and Where Exercise]({"stubs": ["MultipleValue1/DistinctIntersectWhere1.cs"], "command": "MultipleValue1.UnitTest.Exercise3", "project": "exercises"})

@@ -23,4 +23,6 @@ List<bool> bools = new List<bool> { true, false, true, true, false };
 IEnumerable<bool> result = bools.Skip(2);
 ```
 
+# Exercise
+
 @[Take and Skip Exercise]({"stubs": ["MultipleValue1/SkipTake1.cs"], "command": "MultipleValue1.UnitTest.Exercise1", "project": "exercises"})

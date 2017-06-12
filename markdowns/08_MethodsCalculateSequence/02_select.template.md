@@ -15,6 +15,8 @@ The **selector** method should take a single parameter of type `T`, and should r
 //// EMBED: LinqCourseEmbeddedCode/Methods5.cs, Select() 2
 ```
 
+# Exercise
+
 In this exercise, try to return a sequence of strings that consist of the provided names in the form: `"<Last>, <First>"`.
 
 @[Select Exercise]({"stubs": ["CalculatedSequence1/Select1.cs"], "command": "CalculatedSequence1.UnitTest.Exercise1", "project": "exercises"})

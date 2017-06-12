@@ -25,6 +25,8 @@ IEnumerable<Point> points = new List<Point>
 IEnumerable<string> result = points.Select(pt => $"({pt.X}, {pt.Y})");
 ```
 
+# Exercise
+
 In this exercise, try to return a sequence of strings that consist of the provided names in the form: `"<Last>, <First>"`.
 
 @[Select Exercise]({"stubs": ["CalculatedSequence1/Select1.cs"], "command": "CalculatedSequence1.UnitTest.Exercise1", "project": "exercises"})

@@ -37,4 +37,6 @@ List<int> ints = new List<int> { 1, 2, 4, 8, 4, 2, 1 };
 IEnumerable<int> result = ints.Where(theInt => theInt == 2 || theInt == 4);
 ```
 
+# Exercise
+
 @[Distinct, Intersect, and Where Exercise]({"stubs": ["MultipleValue1/DistinctIntersectWhere1.cs"], "command": "MultipleValue1.UnitTest.Exercise3", "project": "exercises"})

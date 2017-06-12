@@ -20,4 +20,6 @@ Again, the **predicate** is provided as a delegate method that takes a single el
 //// EMBED: LinqCourseEmbeddedCode/Methods2.cs, SkipWhile()
 ```
 
+# Exercise
+
 @[TakeWhile and SkipWhile Exercise]({"stubs": ["MultipleValue1/SkipTakeWhile1.cs"], "command": "MultipleValue1.UnitTest.Exercise2", "project": "exercises"})
