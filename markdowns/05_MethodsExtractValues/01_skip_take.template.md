@@ -19,5 +19,6 @@ The `Skip()` method can be thought of as the exact opposite of the `Take()` meth
 ```
 
 # Exercise
+In this exercise, make the `GetThirdFourthFifthItems()` method return the 3rd, 4th, and 5th elements of the provided sequence.
 
 @[Take and Skip Exercise]({"stubs": ["MultipleValue1/SkipTake1.cs"], "command": "MultipleValue1.UnitTest.Exercise1", "project": "exercises"})

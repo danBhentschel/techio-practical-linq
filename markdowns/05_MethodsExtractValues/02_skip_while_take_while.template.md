@@ -21,5 +21,6 @@ Again, the **predicate** is provided as a delegate method that takes a single el
 ```
 
 # Exercise
+In this exercise, make the `GetStartThroughEnd()` method return all the words from the provided sequence that occur between the words "start" (inclusive) and "end" (non-inclusive).
 
 @[TakeWhile and SkipWhile Exercise]({"stubs": ["MultipleValue1/SkipTakeWhile1.cs"], "command": "MultipleValue1.UnitTest.Exercise2", "project": "exercises"})

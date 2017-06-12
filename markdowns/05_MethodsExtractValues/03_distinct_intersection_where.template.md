@@ -30,5 +30,6 @@ The criteria is passed into `Where()` as a **predicate** delegate method that ta
 ```
 
 # Exercise
+In this exercise, make the `GetDistinctShortWords()` method return the words from the provided sequence that have fewer than four letters in them _and_ are distinct.
 
 @[Distinct, Intersect, and Where Exercise]({"stubs": ["MultipleValue1/DistinctIntersectWhere1.cs"], "command": "MultipleValue1.UnitTest.Exercise3", "project": "exercises"})
