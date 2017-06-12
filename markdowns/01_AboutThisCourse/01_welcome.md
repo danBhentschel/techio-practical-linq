@@ -28,8 +28,8 @@ Beginner / Intermediate
 About 2 hours
 
 ## Current Course Version
-0.0.1
+0.0.2
 
 ## Course Revision History
-None
+2017-06-12 - Changes for tech.io design update
 
