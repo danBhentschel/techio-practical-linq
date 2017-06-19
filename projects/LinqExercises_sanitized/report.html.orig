@@ -1,0 +1,66 @@
+<!-- ReSharper disable All -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>%%TITLE%%</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      body > .container {
+        padding-top: 50px;
+      }
+
+      .green-highlight, .pink-highlight, .yellow-highlight {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+      .green-highlight { background: #45ffa5;}
+      .green-highlight::selection {    background: #99CCCC; }
+      .green-highlight::-moz-selection {    background: #99CCCC;}
+      .pink-highlight {    background: #FFCCFF;}
+      .pink-highlight::selection {    background: #FF99FF;}
+      .pink-highlight::-moz-selection {    background: #FF99FF;}
+      .yellow-highlight {    background: #ffff19;}
+      .yellow-highlight::selection {    background: #FFFF66;}
+      .yellow-highlight::-moz-selection {    background: #FFFF66;}
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+          <div class="progress">
+            <div class="porogress-bar brogress-bar-%%BAR_TYPE%%" role="progressbar" aria-valuenow="%%BAR_PERCENT%%" aria-valuemin="0" aria-valuemax="100" style="width:%%BAR_PERCENT%%%">
+              %%BAR_MESSAGE%%
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        %%TABLE_HEADER
+                    </tr>
+                </thead>
+                <tbody>
+                    %%TABLE_BODY%%
+                </tbody>
+            </table>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
+<!-- ReSharper restore All -->
