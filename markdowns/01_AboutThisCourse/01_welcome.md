@@ -28,8 +28,9 @@ Beginner / Intermediate
 About 2 hours
 
 ## Current Course Version
-0.0.2
+0.0.3
 
 ## Course Revision History
 2017-06-12 - Changes for tech.io design update
+2017-06-19 - Minor change to Combined Exercise #1 (review feedback)
 
