@@ -158,23 +158,23 @@ namespace LinqCourseEmbeddedCode
         public void TestMethod12()
         {
             //// START EMBED: Aggregate() -> Sum() ////
-            IEnumerable<int> ints = new List<int> { 2, 2, 4, 6 };
+            IEnumerable<int> ints = new List<int> { 2, 4, 1, 6 };
             // Reimplementation of the Sum() method utilizing Aggregate()
-            // Will return 14
+            // Will return 13
             int result = ints.Aggregate((sum, val) => sum + val);
             //// END EMBED ////
-            Assert.AreEqual(14, result);
+            Assert.AreEqual(13, result);
         }
 
         [TestMethod]
         public void TestMethod13()
         {
             //// START EMBED: Aggregate() -> concat ////
-            IEnumerable<string> strings = new List<string> { "a", "ab", "abc", "abcd" };
-            // Will return "a&ab&abc&abcd"
+            IEnumerable<string> strings = new List<string> { "a", "ab", "abc", "abcd", "z" };
+            // Will return "a&ab&abc&abcd&z"
             string result = strings.Aggregate((concat, str) => $"{concat}&{str}");
             //// END EMBED ////
-            Assert.AreEqual("a&ab&abc&abcd", result);
+            Assert.AreEqual("a&ab&abc&abcd&z", result);
         }
 
         [TestMethod]
