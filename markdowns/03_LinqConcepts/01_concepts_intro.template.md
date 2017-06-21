@@ -1,16 +1,16 @@
 # LINQ Concepts: Using LINQ
 
-LINQ is a collection of extension methods that extend the `IEnumerable<T>` interface, as discussed in the Background lessons. There are around 50 unique methods currently available in LINQ, or even more than that if you count different signature variations as separate methods. The complete list can be found here:
+LINQ is a collection of extension methods that extend the `IEnumerable<T>` interface, as discussed in the Background lessons. There are around 50 unique methods currently available in LINQ (even more if you count different signature variations as separate methods)! The complete list can be found here:
 
 [MSDN Enumerable Methods documentation](https://msdn.microsoft.com/en-us/library/system.linq.enumerable_methods%28v=vs.110%29.aspx)
 
-Some methods are very simple, such as the `Count()` method. Several LINQ methods are very complicated and difficult to understand, though. The `GroupJoin()` method would be a good example of this type.
+Some methods are very simple, such as the `Count()` method. On the other hand, several LINQ methods are very complicated and difficult to understand. The `GroupJoin()` method would be a good example of this.
 
 ## General method categories
  - Some methods return a single element from the target sequence, such as `First()` or `Last()`.
  - Some methods return multiple elements out of the target sequence, such as `Take()`, `Skip()`, and `Where()`.
  - Some methods return the entire target sequence with the elements' order changed, such as `Reverse()` and `OrderBy()`.
- - Some methods return a single calculated value based on the input. `Any()`, `Sum()`, and `Max()` are examples of this type.
+ - Some methods return a single calculated value based on the input, such as `Any()`, `Sum()`, and `Max()`.
  - Some methods return a completely different sequence based on the target sequence, such as `Select()` and `Cast()`.
 
 # Categorization quiz
