@@ -26,7 +26,7 @@ Notice also that there is no `return` statement. Single-line lambda expressions 
 //// EMBED: LinqCourseEmbeddedCode/Background1.cs, Lambda 3
 ```
 
-In this case, since the lambda expression has more than one line, the `return` keyword and the brackets `{ }` around the statements are both requried.
+In this case, since the lambda expression has more than one line, both the `return` keyword and the brackets `{ }` around the statements are requried.
 
 # Exercise
 In this exercise, write a lambda expression that returns the provided value plus one.
