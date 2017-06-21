@@ -7,7 +7,7 @@ The `SelectMany()` method is used to "flatten" a sequence in which each of the e
 
 Notice that in the code above, we passed an identity lambda expression into the `SelectMany()` call. This causes the elements of the constituent arrays to be copied into the resultant sequence without alteration.
 
-As shown in this example utilizing a list of lists, you can also perform transformations on the constituent sequences:
+You can also perform transformations on the constituent sequences, as shown in this example utilizing a list of lists:
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods5.cs, SelectMany() 2
