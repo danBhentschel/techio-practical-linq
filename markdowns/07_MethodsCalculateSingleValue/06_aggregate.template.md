@@ -9,9 +9,9 @@ This is a somewhat complicated concept, and is best shown with some examples.
 
 What's happening in this example? We have provided the lambda expression `(sum, val) => sum + val` to the `Aggregate()` method. This expression will be executed 3 (length - 1) times:
 
-1) It is passed 2 and 4 for the `sum` and `val` parameters, and returns the sum: 6.
-2) It is passed 6 and 1 for `sum` and `val`, and returns 7.
-3) It is passed 7 and 6 and returns 13.
+1. It is passed 2 and 4 for the `sum` and `val` parameters, and returns the sum: 6.
+2. It is passed 6 and 1 for `sum` and `val`, and returns 7.
+3. It is passed 7 and 6 and returns 13.
 
 
 ```csharp
@@ -20,10 +20,10 @@ What's happening in this example? We have provided the lambda expression `(sum, 
 
 In this example, the expression `(concat, str) => $"{concat}&{str}"` is called 4 times:
 
-1) It is passed "a" and "ab" for the `concat` and `str` parameters, and returns "a&ab".
-2) It is passed "a&ab" and "abc" and returns "a&ab&abc".
-3) "a&ab&abc" and "abcd" -> "a&ab&abc&abcd"
-4) "a&ab&abc&abcd" and "z" -> "a&ab&abc&abcd&z"
+1. It is passed "a" and "ab" for the `concat` and `str` parameters, and returns "a&ab".
+2. It is passed "a&ab" and "abc" and returns "a&ab&abc".
+3. "a&ab&abc" and "abcd" -> "a&ab&abc&abcd"
+4. "a&ab&abc&abcd" and "z" -> "a&ab&abc&abcd&z"
 
 > **NOTE:** The return value of the `Aggregate()` call (and the provided **func**) must be the same data type as that of the elements in the source sequence.
 
