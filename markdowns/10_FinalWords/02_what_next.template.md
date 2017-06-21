@@ -1,11 +1,11 @@
 # What next?
-So now that we've opened the door a crack, what's the next step? There are several directions you can go from here...
+So now that we've opened the door a bit, what's the next step? There are several directions you can go from here!
 
 ## Reinforcing
-Here are some other resources you can tap into to reinforce the information covered in this course.
+Here are some other resources you can use to reinforce the information covered in this course.
 
 ### Practical LINQ (Pluralsight)
-Pluralsight is an excellent online training site. It offers a large number of .NET courses on a wide variety of topics, presented by very knowledgeable developers. Pluralsight is a paid resource, but if you are serious about learning .NET, then I think it is well worth the money.
+Pluralsight is an excellent online training site. It offers a large number of .NET courses on a wide variety of topics, presented by very knowledgeable developers. Pluralsight is a paid resource, but it is well worth the money if you are serious about learning .NET.
 
 The [Practical LINQ](https://app.pluralsight.com/library/courses/practical-linq/table-of-contents) course, by Deborah Kurata, is very well presented and goes over much of the same material as the course you have just completed.
 

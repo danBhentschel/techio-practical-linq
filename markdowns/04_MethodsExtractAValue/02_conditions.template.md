@@ -2,7 +2,7 @@
 
 Three of the four methods in the previous lesson (`First()`, `Last()`, and `Single()`) have another form that accepts a delegate parameter to make them more selective in which element they return. The provided delegate should take a parameter of type `T` and return a `bool` indicating whether or not the provided parameter meets the criteria.
 
-> **NOTE:** Same remark as in the previous lesson. If these methods can't find an appropriate element to return, they will throw an exception.
+> **NOTE:** Same remark as the previous lesson. If these methods can't find an appropriate element to return, they will throw an exception.
 
 # [First(&lt;predicate&gt;)](https://msdn.microsoft.com/en-us/library/bb535050%28v=vs.110%29.aspx) method
 Any idea what this call to `First()` would return?
