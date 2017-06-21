@@ -3,7 +3,9 @@
 The C# programming language is quite popular with developers, in large part because of its many powerful and intuitive language features. One of these impressive (and fun, in a nerdy way) features is LINQ.
 
 ## What is LINQ?
-[LINQ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq) is a libary used to execute queries directly in C# syntax against many types of data.
+[LINQ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq) is a libary used to execute queries directly in C# syntax against many types of data. It is implemented as a set of **extension methods** on the `IEnumerable<T>` interface.
+
+> **NOTE:** More informaiton on extension methods and `IEnumerable<T>` can be found in the **LINQ Background Topics** course.
 
 ## LINQ != SQL
 The acronym LINQ stands for Language Integrated Query. LINQ syntax is roughly derived from SQL. New C# developers often misinterpret this to mean that LINQ is a database access API. Although it is true that LINQ was conceived as a way to access data in a database from code, that is not the extent of its utility.
