@@ -3,7 +3,7 @@
 `ThenBy()` specifies a secondary sort **key** that is used to further sort data that has already been sorted with a call to `OrderBy()`.
 
 ## IOrderedEnumerable&lt;T&gt;
-`ThenBy()` is an interesting method. It is not an extension to `IEnumerable<T>`. It is a method of the `IOrderedEnumerable<T>` type, which is returned from `OrderBy()`, `OrderByDescending()`, `ThenBy()`, and `ThenByDescending()`.
+`ThenBy()` is an interesting method. It is not an extension to `IEnumerable<T>`. Instead, it is a method of the `IOrderedEnumerable<T>` type, which is returned from `OrderBy()`, `OrderByDescending()`, `ThenBy()`, and `ThenByDescending()`.
 
 Since `IOrderedEnumerable<T>` implements the `IEnumerable<T>` interface, it can be thought of as an `IEnumerable<T>` with attached metadata that describes the order operations that have previously been performed on the sequence.
 

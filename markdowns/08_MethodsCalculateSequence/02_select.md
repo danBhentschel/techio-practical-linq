@@ -6,7 +6,7 @@ Wow! That's a mouthful! Let's try it this way. `Select()` takes each source elem
 
 > **NOTE:** Here we see LINQ showing its SQL roots again. The `Select()` method is named based on SQL syntax, but acts like the `map()` function in Java, JavaScript, Python, etc.
 
-The **selector** method should take a single parameter of type `T`, and should return a value of type `U`. The result sequence will have the same number of elements as the source sequence, and each element will be of type `U`.
+The **selector** method should take a single parameter of type `T` and should return a value of type `U`. The result sequence will have the same number of elements as the source sequence and each element will be of type `U`.
 
 ```csharp
 IEnumerable<string> strings = new List<string> { "one", "two", "three", "four" };

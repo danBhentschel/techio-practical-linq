@@ -1,9 +1,9 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
 # Methods: Changing element order
 
-These LINQ methods reorder the elements in an `IEnumerable<T>` sequence. Each method in this chapter provides a different means of specifying the desired element order.
+These LINQ methods reorder the elements in an `IEnumerable<T>` sequence. Each method in this chapter provides a different way of specifying the desired element order.
 
-> **NOTE:** Same comment as in the last chapter. If I state that a method "returns a sequence," this is not technically true. The methods in this chapter return an `IEnumerable<T>`, which is a generator (or an iterator) that can provide a sequence on demand.
+> **NOTE:** Same comment as in the previous chapter. If I state that a method "returns a sequence", this is not technically true. The methods in this chapter return an `IEnumerable<T>`, which is a generator (or an iterator) that can provide a sequence on demand.
 
 # [Reverse()](https://msdn.microsoft.com/en-us/library/bb358497%28v=vs.110%29.aspx) method
 The `Reverse()` method returns a new sequence that contains all the elements from the source sequence in the opposite order.

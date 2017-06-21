@@ -17,7 +17,7 @@ IEnumerable<string> longAnimalNames =
     select name;
 ```
 
-This exact same instruction set can be written using method syntax like this:
+The exact same instruction set can be written using method syntax like this:
 
 ```csharp
 List<string> animalNames = new List<string>
@@ -33,9 +33,9 @@ IEnumerable<string> longAnimalNames =
 
 ## Advantages of method syntax
 
-I, personally, prefer method syntax over query syntax, and this is the format that will be used for the rest of this course. Here are some of the advantages of method syntax:
+Personally, I prefer method syntax over query syntax, and this is the format that will be used for the rest of this course. Here are some of the advantages of method syntax:
 
- - All query syntax is automatically converted to method syntax at compilation time
+ - Query syntax is automatically converted to method syntax at compilation time
  - Not all LINQ methods can be utilized with query syntax
  - Method syntax is stylistically more similar to other C# code
 
@@ -43,6 +43,6 @@ I, personally, prefer method syntax over query syntax, and this is the format th
 
 This is the exact same exercise as in the previous lesson. Now try to write it with method syntax.
 
-The following code shows a LINQ query that returns the input `inValues` unmodified. Using the format of the above example, see if you can return only the strings that have `pattern` in them (using the [`String.Contains()`](https://msdn.microsoft.com/en-us/library/dy85x1sa%28v=vs.110%29.aspx) method) and order the list alphabetically.
+The following code shows a LINQ query that returns the input `inValues` unmodified. Using the format of the example above, see if you can return only the strings that have `pattern` in them (using the [`String.Contains()`](https://msdn.microsoft.com/en-us/library/dy85x1sa%28v=vs.110%29.aspx) method) and order the list alphabetically.
 
 @[Method Syntax Exercise]({"stubs": ["MethodSyntax1/MethodSyntax1.cs"], "command": "MethodSyntax1.UnitTest.Exercise1", "project": "exercises"})
