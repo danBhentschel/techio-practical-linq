@@ -2,7 +2,7 @@
 
 There are two different syntax paradigms for accessing LINQ functionality: **query syntax** and **method syntax**.
 
-Query syntax has a very distinctive syntactical style. Due to its' unique format, query syntax is very memorable and somewhat iconic as it's often what people envision when thinking of LINQ. Here is an example of LINQ code using query syntax:
+Query syntax has a very distinctive syntactical style. Due to its unique format, query syntax is very memorable and somewhat iconic as it's often what people envision when thinking of LINQ. Here is an example of LINQ code using query syntax:
 
 ## Query syntax example
 ```csharp
