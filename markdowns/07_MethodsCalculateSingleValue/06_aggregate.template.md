@@ -7,7 +7,7 @@ This is a somewhat complicated concept, and is best shown with some examples.
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, Aggregate() -> Sum()
 ```
 
-What's happening in this example? We have provided the lambda expression `(sum, val) => sum + val` to the `Aggregate()` method. This expression will be executed 3 (length - 1) times:
+What's happening in this example? We have provided the lambda expression `(sum, val) => sum + val` to the `Aggregate()` method. This expression will be executed 3 (length of the list - 1) times:
 
 1. It is passed 2 and 4 for the `sum` and `val` parameters, and returns the sum: 6.
 2. It is passed 6 and 1 for `sum` and `val`, and returns 7.
@@ -22,8 +22,8 @@ In this example, the expression `(concat, str) => $"{concat}&{str}"` is called 4
 
 1. It is passed "a" and "ab" for the `concat` and `str` parameters, and returns "a&ab".
 2. It is passed "a&ab" and "abc" and returns "a&ab&abc".
-3. "a&ab&abc" and "abcd" -> "a&ab&abc&abcd"
-4. "a&ab&abc&abcd" and "z" -> "a&ab&abc&abcd&z"
+3. "a&ab&abc" and "abcd" &rarr; "a&ab&abc&abcd"
+4. "a&ab&abc&abcd" and "z" &rarr; "a&ab&abc&abcd&z"
 
 > **NOTE:** The return value of the `Aggregate()` call (and the provided **func**) must be the same data type as that of the elements in the source sequence.
 
@@ -32,10 +32,25 @@ Another form of `Aggregate()` takes a **seed**, which specifies the initial valu
 
 ```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, Aggregate() -> Count()
+```
 
+In this example, the expression `(count, val) => count + 1` is called 4 times:
 
+1. It is passed 0 and "a" for the `count` and `val` parameters, and returns 1.
+2. It is passed 1 and "ab" and returns 2.
+3. 2 and "abc" &rarr; 3
+4. 3 and "abcd" &rarr; 4
+
+```csharp
 //// EMBED: LinqCourseEmbeddedCode/Methods4.cs, Aggregate() -> Any()
 ```
+In this example, the expression `(any, val) => any || (val.Length > 3)` is called 5 times:
+
+1. It is passed `false` and "a" for the `any` and `val` parameters, and returns `false`.
+2. It is passed `false` and "ab" and returns `false`.
+3. `false` and "abc" &rarr; `false`
+4. `false` and "abcd" &rarr; `true`
+5. `true` and "z" &rarr; `true`
 
 # Aggregate() exercise
 Think you can handle it? Try to use `Aggregate()` to write a method that will return the total number of characters in all the words in the source sequence.

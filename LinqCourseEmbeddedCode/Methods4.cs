@@ -193,7 +193,7 @@ namespace LinqCourseEmbeddedCode
         public void TestMethod15()
         {
             //// START EMBED: Aggregate() -> Any() ////
-            IEnumerable<string> strings = new List<string> { "a", "ab", "abc", "abcd" };
+            IEnumerable<string> strings = new List<string> { "a", "ab", "abc", "abcd", "z" };
             // Reimplementation of Any(str => str.Length > 3) utilizing Aggregate()
             // Will return true
             bool result = strings.Aggregate(false, (any, val) => any || (val.Length > 3));
