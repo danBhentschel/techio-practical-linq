@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# LINQ Concepts: Using LINQ
+# LINQ Concepts - Using LINQ
 
 LINQ is a collection of extension methods that extend the `IEnumerable<T>` interface, as discussed in the Background lessons. There are around 50 unique methods currently available in LINQ (even more if you count different signature variations as separate methods)! The complete list can be found here:
 

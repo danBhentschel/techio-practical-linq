@@ -1,4 +1,4 @@
-# Methods: Extract multiple elements
+# Methods - Extract multiple elements
 
 In the previous lesson, we learned about `Take()` and `Skip()`, both of which accept an integer parameter. Each of these methods also have a variant that utilizes a delegate method to determine which elements will be taken or skipped.
 

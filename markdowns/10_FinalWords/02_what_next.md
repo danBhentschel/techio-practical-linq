@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# What next?
+# What Next?
 So now that we've opened the door a bit, what's the next step? There are several directions you can go from here!
 
 ## Reinforcing

@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# Methods: Extract multiple elements
+# Methods - Extract multiple elements
 
 These LINQ methods can be used to extract multiple elements from an `IEnumerable<T>` sequence. Each method in this chapter provides a different means of defining the criteria determining which sequence elements to remove and which elements to keep.
 

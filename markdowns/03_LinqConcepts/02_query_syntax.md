@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# LINQ Concepts: Query syntax
+# LINQ Concepts - Query syntax
 
 There are two different syntax paradigms for accessing LINQ functionality: **query syntax** and **method syntax**.
 

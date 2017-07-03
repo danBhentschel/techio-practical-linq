@@ -1,4 +1,4 @@
-# Methods: Extract a single element
+# Methods - Extract a single element
 
 These LINQ methods can be used to extract a single element from an `IEnumerable<T>` sequence. 
 

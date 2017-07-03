@@ -1,4 +1,4 @@
-# LINQ Concepts: Method syntax
+# LINQ Concepts - Method syntax
 The other LINQ format is method syntax. LINQ method syntax can do everything that query syntax can do, and more. It's just a different way to format the instructions.
 
 ## Method syntax example

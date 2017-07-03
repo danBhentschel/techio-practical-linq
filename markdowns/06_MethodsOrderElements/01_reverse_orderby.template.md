@@ -1,4 +1,4 @@
-# Methods: Changing element order
+# Methods - Changing element order
 
 These LINQ methods reorder the elements in an `IEnumerable<T>` sequence. Each method in this chapter provides a different way of specifying the desired element order.
 

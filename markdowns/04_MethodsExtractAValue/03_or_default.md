@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# Methods: Extract a single element or default
+# Methods - Extract a single element or default
 
 The previous two lessons had a note explaining that the `First()`, `Last()`, etc. methods would throw an exception if they couldn't return an element. The methods shown here don't throw an exception. They instead return a default value.
 

@@ -1,4 +1,4 @@
-# Methods: Calculating a single value
+# Methods - Calculating a single value
 
 The LINQ methods in this chapter examine the elements of an `IEnumerable<T>` sequence and return a result based on the examined values. For most of the methods we will discuss, this returned result will be either a `bool` or an `int`.
 

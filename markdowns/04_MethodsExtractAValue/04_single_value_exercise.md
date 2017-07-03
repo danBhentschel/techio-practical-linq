@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# Exercise: Extract a single element
+# Exercise - Extract a single element
 
 Using what you have learned about `First()`, `Last()`, `ElementAt()`, and `Single()` (and their variations) modify the methods in this exercise to extract the desired element from the provided sequence of strings.
 

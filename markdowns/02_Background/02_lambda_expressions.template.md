@@ -1,4 +1,4 @@
-# Background Topics - Lambda Expressions
+# Background Topics - Lambda expressions
 
 A lambda expression is a convenient way of defining an anonymous (unnamed) function that can be passed around as a variable or as a parameter to a method call. Many LINQ methods take a function (called a **delegate**) as a parameter. Here is an example of what a lambda expression looks like:
 

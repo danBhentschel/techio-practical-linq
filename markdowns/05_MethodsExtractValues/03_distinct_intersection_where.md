@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# Methods: Extract multiple elements
+# Methods - Extract multiple elements
 
 `Take()` and `Skip()` return consecutive elements at the beginning and end of a sequence, but there are also ways to extract specific elements scattered throughout a given sequence.
 

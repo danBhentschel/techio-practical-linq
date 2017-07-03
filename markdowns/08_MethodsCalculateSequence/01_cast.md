@@ -1,5 +1,5 @@
 [//]: # (GENERATED FILE -- DO NOT EDIT)
-# Methods: Calculate a new sequence
+# Methods - Calculate a new sequence
 
 These LINQ methods can be used to create a new `IEnumerable<T>` result sequence based on the values in the source sequence.
 
