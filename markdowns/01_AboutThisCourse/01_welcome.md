@@ -31,4 +31,4 @@ About 2 hours
 1.0
 
 ## Course Revision History
-2017-??-?? - Published
+2017-07-10 - Published
