@@ -29,9 +29,7 @@ The [CodinGame](http://www.codingame.com) website provides a large suite of prog
 Here are some resources to expand your knowledge of LINQ. They build on the information introduced in the course you have just completed.
 
 ### C# LINQ Background Topics
-This **tech.io** course is designed to augment the information contained in the course you have just completed. It goes into more detail on things such as delegates, the `IEnumerable<T>` interface, and extension methods.
-
-**Link to course TBD**
+The [C# LINQ Background Topics](https://tech.io/playgrounds/345) **tech.io** course is designed to augment the information contained in the course you have just completed. It goes into more detail on things such as delegates, the `IEnumerable<T>` interface, and extension methods.
 
 ### C# LINQ Advanced Topics
 This **tech.io** course is also designed to augment the information contained in the course you have just completed. It provides some hints and precautions for how to get the most out of LINQ while avoiding some of its pitfalls. If you haven't already, you should take the **Background Topics** course before moving on to **Advanced Topics**.

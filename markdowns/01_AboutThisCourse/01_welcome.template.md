@@ -10,7 +10,7 @@ The lesson plan starts out with some brief and simple background information, fo
 
 ## Supplementary Courses
 There are two supplementary LINQ courses designed to be taken along with this course:
- - **C# LINQ Background Topics** (Link TBD)
+ - [C# LINQ Background Topics](https://tech.io/playgrounds/345)
  - **C# LINQ Advanced Topics** (LINK TBD)
 
 Neither supplementary course is required for the **Using C# LINQ** course. You may want to take the **Background** course before (or after) this one, but it is only recommended for advanced programmers. Beginners may be confused by some of the content.
@@ -27,7 +27,8 @@ Beginner / Intermediate
 About 2 hours
 
 ## Current Course Version
-1.0
+1.1
 
 ## Course Revision History
+2017-07-27 - Add links to the Background Topics course
 2017-07-10 - Published
