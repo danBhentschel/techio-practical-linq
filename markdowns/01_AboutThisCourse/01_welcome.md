@@ -31,5 +31,5 @@ About 2 hours
 1.1
 
 ## Course Revision History
-2017-07-27 - Add links to the Background Topics course
+2017-07-27 - Add links to the Background Topics course<br />
 2017-07-10 - Published
