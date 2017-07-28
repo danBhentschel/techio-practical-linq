@@ -26,9 +26,15 @@ Beginner / Intermediate
 ## Estimated Time
 About 2 hours
 
+## GitHub Repository
+This course is stored in a GitHub repository. You can not only see how the course was created, but there are solutions to all the exercises in there as well.
+
+[techio-practical-linq](https://github.com/danBhentschel/techio-practical-linq)
+
 ## Current Course Version
-1.1
+1.2
 
 ## Course Revision History
+2017-07-28 - Add link to GitHub<br />
 2017-07-27 - Add links to the Background Topics course<br />
 2017-07-10 - Published
